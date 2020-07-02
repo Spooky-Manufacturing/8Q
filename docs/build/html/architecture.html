@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Architecture &mdash; 8Q Processor 2020 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Programming Guide" href="programming.html" />
+    <link rel="prev" title="8Q Instruction Set" href="instructions.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> 8Q Processor
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="instructions.html">8Q Instruction Set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instructions.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#opcodes">Opcodes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#quantum-instructions">Quantum Instructions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#unitary-gates">Unitary Gates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-quantum-gates">Other Quantum Gates</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#digital-instructions">Digital Instructions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#data-transfer">Data Transfer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sequencing">Sequencing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-architecture-issues-for-programmers">Hardware Architecture Issues For Programmers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="programming.html">Programming Guide</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">8Q Processor</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Architecture</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/architecture.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="architecture">
+<h1>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="opcodes">
+<h2>Opcodes<a class="headerlink" href="#opcodes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="quantum-instructions">
+<h3>Quantum Instructions<a class="headerlink" href="#quantum-instructions" title="Permalink to this headline">¶</a></h3>
+<p>The 8Q Supports the following quantum operations with the opcodes:</p>
+<div class="section" id="unitary-gates">
+<h4>Unitary Gates<a class="headerlink" href="#unitary-gates" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="other-quantum-gates">
+<h4>Other Quantum Gates<a class="headerlink" href="#other-quantum-gates" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="digital-instructions">
+<h3>Digital Instructions<a class="headerlink" href="#digital-instructions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="data-transfer">
+<h4>Data Transfer<a class="headerlink" href="#data-transfer" title="Permalink to this headline">¶</a></h4>
+<p>move
+load
+store</p>
+<p>DATA OPERATIONS:
+Data Operations
+^^^^^^^^^^^^^^^^^
+add
+add with carry
+subtract
+subtract with borrow
+logical and
+logical or
+logical exclusive or
+shift right
+compare unsigned</p>
+</div>
+<div class="section" id="sequencing">
+<h4>Sequencing<a class="headerlink" href="#sequencing" title="Permalink to this headline">¶</a></h4>
+<p>jump
+return
+halt</p>
+<p>Instruction</p>
+</div>
+</div>
+</div>
+<div class="section" id="hardware-architecture-issues-for-programmers">
+<h2>Hardware Architecture Issues For Programmers<a class="headerlink" href="#hardware-architecture-issues-for-programmers" title="Permalink to this headline">¶</a></h2>
+<p>When programming the 8Q it is important to remember these are physical qubits (photons) traversing a physical (optical) circuit, each instruction physically alters the path of the qubit through the circuit. Another very important fact to understand is that all of the gates within this processor are probabilistic, this is quite a bit unlike most programming you will have been acquainted with. What this means is sometimes the qubits will be destroyed during their transit through the processor, the workaround for this is to run a given algorithm multiple times, collect the results of your experiment, and then use classical arithmetic to confirm the answer.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="programming.html" class="btn btn-neutral float-right" title="Programming Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="instructions.html" class="btn btn-neutral float-left" title="8Q Instruction Set" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Noah G. Wood
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
