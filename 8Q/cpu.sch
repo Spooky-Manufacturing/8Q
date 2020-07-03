@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 2 9
 Title "8Q Quantum Computer"
 Date "2020-06-29"
 Rev ""
@@ -33,5 +33,11 @@ S 11750 0    3000 3050
 U 5EFAAA35
 F0 "cpu_power" 50
 F1 "cpu_power.sch" 50
+$EndSheet
+$Sheet
+S 11850 3750 2300 2150
+U 5F329712
+F0 "RAM" 51
+F1 "RAM.sch" 51
 $EndSheet
 $EndSCHEMATC

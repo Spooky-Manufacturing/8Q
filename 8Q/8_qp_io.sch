@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 8 9
 Title ""
 Date ""
 Rev ""
@@ -106,35 +106,35 @@ Text GLabel 9600 2550 0    50   Input ~ 0
 CH
 Text GLabel 9700 2450 0    50   Input ~ 0
 SWAP
-Text GLabel 5250 6200 0    50   Input ~ 0
+Text GLabel 9150 4150 0    50   Input ~ 0
 Q1-Out
 Text GLabel 1600 4600 0    50   Input ~ 0
 Q1-S
-Text GLabel 5250 6300 0    50   Input ~ 0
+Text GLabel 9150 4250 0    50   Input ~ 0
 Q2-Out
 Text GLabel 1600 4700 0    50   Input ~ 0
 Q2-S
-Text GLabel 5250 6400 0    50   Input ~ 0
+Text GLabel 9150 4350 0    50   Input ~ 0
 Q3-Out
 Text GLabel 1600 4800 0    50   Input ~ 0
 Q3-S
-Text GLabel 5250 6500 0    50   Input ~ 0
+Text GLabel 9150 4450 0    50   Input ~ 0
 Q4-Out
 Text GLabel 1600 4900 0    50   Input ~ 0
 Q4-S
-Text GLabel 5750 6200 2    50   Input ~ 0
+Text GLabel 9650 4150 2    50   Input ~ 0
 Q5-Out
 Text GLabel 2100 4600 2    50   Input ~ 0
 Q5-S
-Text GLabel 5750 6300 2    50   Input ~ 0
+Text GLabel 9650 4250 2    50   Input ~ 0
 Q6-Out
 Text GLabel 2100 4700 2    50   Input ~ 0
 Q6-S
-Text GLabel 5750 6400 2    50   Input ~ 0
+Text GLabel 9650 4350 2    50   Input ~ 0
 Q7-Out
 Text GLabel 2100 4800 2    50   Input ~ 0
 Q7-S
-Text GLabel 5750 6500 2    50   Input ~ 0
+Text GLabel 9650 4450 2    50   Input ~ 0
 Q8-Out
 Text GLabel 2100 4900 2    50   Input ~ 0
 Q8-S
@@ -202,7 +202,7 @@ Text Notes 4400 1750 0    118  ~ 0
 Operations In QuByte Order
 Text Notes 900  4450 0    118  ~ 0
 Post-Processing Data
-Text Notes 5150 6050 0    118  ~ 0
+Text Notes 9050 4000 0    118  ~ 0
 Byte Out
 Text Notes 1250 1700 0    118  ~ 0
 Bit Set/Reset

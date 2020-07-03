@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr User 47992 35433
 encoding utf-8
-Sheet 4 8
+Sheet 5 9
 Title "8Q Quantum Computer"
 Date "2020-06-29"
 Rev ""

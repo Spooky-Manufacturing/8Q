@@ -4,14 +4,14 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
-Title "8Q Quantum Computer"
-Date "2020-06-29"
+Sheet 4 9
+Title ""
+Date ""
 Rev ""
-Comp "Spooky Manufacturing, LLC"
-Comment1 "(c) 2020"
+Comp ""
+Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "Development Schematics"
+Comment4 ""
 $EndDescr
 $EndSCHEMATC
