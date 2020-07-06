@@ -1,5 +1,11 @@
 # 8Q
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 Computer with built-in General Purpose 8 Qubit Optical Quantum Processor
+
+# Contributors
+[Thank you to all the contributors who make this possible](./CONTRIBUTORS.md)
 
 # Status
 The 8Q processor is currently in development
@@ -52,4 +58,3 @@ None: src/
 #### Development Tools
 
 None: tools/
-

@@ -1,0 +1,26 @@
+{
+  "files": [
+    "CONTRIBUTORS.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "NoahGWood",
+      "name": "Noah Wood",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/26890744?v=4",
+      "profile": "https://github.com/NoahGWood",
+      "contributions": [
+        "tool",
+        "test",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "8Q",
+  "projectOwner": "Spooky-Manufacturing",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
