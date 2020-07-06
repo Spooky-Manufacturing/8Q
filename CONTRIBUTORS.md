@@ -10,7 +10,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/NoahGWood"><img src="https://avatars3.githubusercontent.com/u/26890744?v=4" width="100px;" alt=""/><br /><sub><b>Noah$
+    <td align="center"><a href="https://github.com/NoahGWood"><img src="https://avatars3.githubusercontent.com/u/26890744?v=4" width="100px;" alt=""/><br /><sub><b>NoahGWood" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
