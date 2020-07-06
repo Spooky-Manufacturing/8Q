@@ -1,5 +1,9 @@
 # 8Q - RoadMap
 
+[TOC]
+
+
+
 ## Why Open Source/Open Core?
 
 Quantum Computing is currently relegated to the very high-end industrial and scientific markets, there isn't really anyone working on quantum computing for mere mortals like us. As we have seen in every other tech revolution in history, industrial giants tend to hog technology, locking it down with things like DRM, non-standard hardware, and doing some less than ethical things to get their customers to upgrade, all of this hurts all of us. The entire reason the Open-Source Movement was started was because of hardware giants like IBM having incredibly restrictive licensing agreements (No offense to IBM, they've changed a lot since the 80's) which prevented users from actually using their computers and, were it not for the open and free-source movements that sprung up as a result, we would be missing out on a lot of the technologies we take for granted today.
