@@ -10,7 +10,7 @@
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/NoahGWood"><img src="https://avatars3.githubusercontent.com/u/26890744?v=4" width="100px;" alt=""/><br /><sub><b>Noah Wood</b></sub></a><br /><a href="#tool-NoahGWood" title="Tools">🔧</a> <a href="https://github.com/Spooky-Manufacturing/8Q/commits?author=NoahGWood" title="Tests">⚠️</a> <a href="https://github.com/Spooky-Manufacturing/8Q/commits?author=NoahGWood" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/NoahGWood"><img src="https://avatars3.githubusercontent.com/u/26890744?v=4" width="100px;" alt=""/><br /><sub><b>Noah Wood</b></sub></a><br /><a href="#tool-NoahGWood" title="Tools">🔧</a> <a href="https://github.com/Spooky-Manufacturing/8Q/commits?author=NoahGWood" title="Tests">⚠️</a> <a href="https://github.com/Spooky-Manufacturing/8Q/commits?author=NoahGWood" title="Documentation">📖</a> <a href="https://github.com/Spooky-Manufacturing/8Q/commits?author=NoahGWood" title="Code">💻</a></td>
   </tr>
 </table>
 
