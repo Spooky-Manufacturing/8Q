@@ -34,6 +34,14 @@ The SPS consists of a sub-nanosecond laser driver which takes an input called "T
 
 ### Quantum Logic Gates
 
+#### Primitives
+
+##### NSx Gate
+
+Quantum computing is non-linear, however the Pauli Gates are linear, that is to say that they are deterministic gates. In order to achieve quantum computation that is more useful than classical simulation we have to introduce the element of non-linearity, or indeterministic states. To achieve this, we use modified versions of the Non-linear sign-flip gate or NSx Gate. The NSx Gate is a single-qubit operation that performs a phase-shift on one mode conditioned on two ancilliary modes.
+
+![NS Gate](./docs/source/imgs/ns_1_gate.png)
+
 #### Measure
 
 The measurement gate counts the number of photons in each mode for each qubit, to do this a silicon photomultiplier is used in the H and V modes.
