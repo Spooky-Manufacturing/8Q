@@ -30,9 +30,7 @@ The SPS consists of a sub-nanosecond laser driver which takes an input called "T
 
 #### Faint Laser SPS
 
-![image-20200706033554456](/home/noah/Desktop/8Q/DEV/docs/source/imgs/faint_laser.png)
-
-
+![Faint Laser SPS](./docs/source/imgs/faint_laser.png)
 
 ### Quantum Logic Gates
 
@@ -52,7 +50,11 @@ The measurement gate counts the number of photons in each mode for each qubit, t
 
 #### Controlled Gates
 
+Controlled gates are special cases for the quantum processor, 
+
 ##### CX Gate
+
+The Controlled-X Gate (shorthand: CX) performs a controlled NOT operation on two qubits. 
 
 ![CX Gate](./docs/source/imgs/cx_gate.png)
 
