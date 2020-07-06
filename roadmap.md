@@ -9,7 +9,7 @@ Table of Contents
   * [Documentation Success](#documentation-success)
   * [Dev Board Success](#development-board-success)
 * [Non-Goals](#non-goals)
-* [Participating](participating-in-the-project)
+* [Participating](#participating-in-the-project)
 
 ## Why Open Source?
 
