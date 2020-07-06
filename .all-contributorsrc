@@ -11,9 +11,7 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/26890744?v=4",
       "profile": "https://github.com/NoahGWood",
       "contributions": [
-        "test",
-        "tool",
-        "doc"
+        "test"
       ]
     }
   ],
@@ -24,3 +22,4 @@
   "repoHost": "https://github.com",
   "skipCi": true
 }
+
