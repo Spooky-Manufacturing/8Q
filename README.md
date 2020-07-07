@@ -2,6 +2,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![DOI](https://zenodo.org/badge/275711975.svg)](https://zenodo.org/badge/latestdoi/275711975)
 Computer with built-in General Purpose 8 Qubit Optical Quantum Processor
 
 # Contributors
