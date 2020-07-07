@@ -90,4 +90,11 @@ Do you have questions about the project?
 
 ## Steps To Contributing
 
-### 
+1. Fork the project repo to your github
+2. Clone the repo from your github
+3. Create a development branch
+4. Checkout development branch
+5. Make changes
+6. Submit pull request
+7. ???
+8. Profit!
