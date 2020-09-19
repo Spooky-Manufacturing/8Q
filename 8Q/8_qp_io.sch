@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 8 13
 Title ""
 Date ""
 Rev ""
@@ -14,11 +14,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 4150 1900 0    50   Input ~ 0
+Text GLabel 3750 1950 3    50   Input ~ 0
 Q1X
-Text GLabel 4150 2000 0    50   Input ~ 0
+Text GLabel 3850 1950 3    50   Input ~ 0
 Q1Y
-Text GLabel 4150 2100 0    50   Input ~ 0
+Text GLabel 3950 1950 3    50   Input ~ 0
 Q1Z
 Text GLabel 5500 3650 0    50   Input ~ 0
 Q1D
@@ -30,47 +30,47 @@ Text GLabel 5500 3950 0    50   Input ~ 0
 Q4D
 Text GLabel 5500 4050 0    50   Input ~ 0
 CCD
-Text GLabel 4650 1900 0    50   Input ~ 0
+Text GLabel 4300 1950 3    50   Input ~ 0
 Q2X
-Text GLabel 4650 2000 0    50   Input ~ 0
+Text GLabel 4400 1950 3    50   Input ~ 0
 Q2Y
-Text GLabel 4650 2100 0    50   Input ~ 0
+Text GLabel 4500 1950 3    50   Input ~ 0
 Q2Z
-Text GLabel 5150 1900 0    50   Input ~ 0
+Text GLabel 4850 1950 3    50   Input ~ 0
 Q3X
-Text GLabel 5150 2000 0    50   Input ~ 0
+Text GLabel 4950 1950 3    50   Input ~ 0
 Q3Y
-Text GLabel 5150 2100 0    50   Input ~ 0
+Text GLabel 5050 1950 3    50   Input ~ 0
 Q3Z
-Text GLabel 5650 1900 0    50   Input ~ 0
+Text GLabel 5400 1950 3    50   Input ~ 0
 Q4X
-Text GLabel 5650 2000 0    50   Input ~ 0
+Text GLabel 5500 1950 3    50   Input ~ 0
 Q4Y
-Text GLabel 5650 2100 0    50   Input ~ 0
+Text GLabel 5600 1950 3    50   Input ~ 0
 Q4Z
-Text GLabel 6150 1900 0    50   Input ~ 0
+Text GLabel 5950 1950 3    50   Input ~ 0
 Q5X
-Text GLabel 6150 2000 0    50   Input ~ 0
+Text GLabel 6050 1950 3    50   Input ~ 0
 Q5Y
-Text GLabel 6150 2100 0    50   Input ~ 0
+Text GLabel 6150 1950 3    50   Input ~ 0
 Q5Z
-Text GLabel 6650 1900 0    50   Input ~ 0
+Text GLabel 6500 1950 3    50   Input ~ 0
 Q6X
-Text GLabel 6650 2000 0    50   Input ~ 0
+Text GLabel 6600 1950 3    50   Input ~ 0
 Q6Y
-Text GLabel 6650 2100 0    50   Input ~ 0
+Text GLabel 6700 1950 3    50   Input ~ 0
 Q6Z
-Text GLabel 7150 1900 0    50   Input ~ 0
+Text GLabel 7100 1950 3    50   Input ~ 0
 Q7X
-Text GLabel 7150 2000 0    50   Input ~ 0
+Text GLabel 7200 1950 3    50   Input ~ 0
 Q7Y
-Text GLabel 7150 2100 0    50   Input ~ 0
+Text GLabel 7300 1950 3    50   Input ~ 0
 Q7Z
-Text GLabel 7650 1900 0    50   Input ~ 0
+Text GLabel 7700 1950 3    50   Input ~ 0
 Q8X
-Text GLabel 7650 2000 0    50   Input ~ 0
+Text GLabel 7800 1950 3    50   Input ~ 0
 Q8Y
-Text GLabel 7650 2100 0    50   Input ~ 0
+Text GLabel 7900 1950 3    50   Input ~ 0
 Q8Z
 Text GLabel 6000 4050 2    50   Input ~ 0
 CTD
@@ -82,21 +82,21 @@ Text GLabel 6000 3750 2    50   Input ~ 0
 Q6D
 Text GLabel 6000 3650 2    50   Input ~ 0
 Q5D
-Text GLabel 4150 2200 0    50   Input ~ 0
+Text GLabel 4050 1950 3    50   Input ~ 0
 Q1M
-Text GLabel 4650 2200 0    50   Input ~ 0
+Text GLabel 4600 1950 3    50   Input ~ 0
 Q2M
-Text GLabel 5150 2200 0    50   Input ~ 0
+Text GLabel 5150 1950 3    50   Input ~ 0
 Q3M
-Text GLabel 5650 2200 0    50   Input ~ 0
+Text GLabel 5700 1950 3    50   Input ~ 0
 Q4M
-Text GLabel 6150 2200 0    50   Input ~ 0
+Text GLabel 6250 1950 3    50   Input ~ 0
 Q5M
-Text GLabel 6650 2200 0    50   Input ~ 0
+Text GLabel 6800 1950 3    50   Input ~ 0
 Q6M
-Text GLabel 7150 2200 0    50   Input ~ 0
+Text GLabel 7400 1950 3    50   Input ~ 0
 Q7M
-Text GLabel 7650 2200 0    50   Input ~ 0
+Text GLabel 8000 1950 3    50   Input ~ 0
 Q8M
 Text GLabel 9600 2750 0    50   Input ~ 0
 CY
@@ -198,7 +198,7 @@ Text GLabel 10400 2050 0    50   Input ~ 0
 Q7C
 Text GLabel 10650 2050 0    50   Input ~ 0
 Q8C
-Text Notes 4400 1750 0    118  ~ 0
+Text Notes 4350 1750 0    118  ~ 0
 Operations In QuByte Order
 Text Notes 900  4450 0    118  ~ 0
 Post-Processing Data
@@ -228,4 +228,26 @@ Text Notes 8950 1900 0    51   ~ 0
 Left
 Text Notes 10000 1900 0    51   ~ 0
 Right
+Text GLabel 3650 1950 3    50   Input ~ 0
+Q1C
+Text GLabel 4200 1950 3    50   Input ~ 0
+Q2C
+Text GLabel 5300 1950 3    50   Input ~ 0
+Q4C
+Text GLabel 4750 1950 3    50   Input ~ 0
+Q3C
+Text GLabel 5850 1950 3    50   Input ~ 0
+Q5C
+Text GLabel 6400 1950 3    50   Input ~ 0
+Q6C
+Text GLabel 7000 1950 3    50   Input ~ 0
+Q7C
+Text GLabel 7600 1950 3    50   Input ~ 0
+Q8C
+$Sheet
+S 11900 300  4700 2750
+U 5F935B1A
+F0 "inorder" 51
+F1 "inorder.sch" 51
+$EndSheet
 $EndSCHEMATC
