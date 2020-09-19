@@ -1,0 +1,1419 @@
+EESchema Schematic File Version 4
+LIBS:8Q-cache
+EELAYER 26 0
+EELAYER END
+$Descr A1 33110 23386
+encoding utf-8
+Sheet 10 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1500 2750 0    51   ~ 0
+16 instructions Max
+Text Notes 1500 2850 0    51   ~ 0
+12 bit Program Iteration Counter
+Wire Notes Line
+	1200 11450 14100 11450
+Wire Notes Line
+	14100 11450 14100 1300
+Wire Notes Line
+	13800 1650 900  1650
+Wire Notes Line
+	900  1650 900  11800
+Text Notes 6150 2100 0    51   ~ 0
+Iteration Counter
+$Comp
+L 74xx:74LS590 U181
+U 1 1 5F9440A9
+P 19300 4600
+F 0 "U181" H 19300 5478 50  0000 C CNN
+F 1 "74LS590" H 19300 5387 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 19300 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls590" H 19300 4650 50  0001 C CNN
+	1    19300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS590 U183
+U 1 1 5F94412D
+P 20100 5500
+F 0 "U183" H 20100 6378 50  0000 C CNN
+F 1 "74LS590" H 20100 6287 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 20100 5550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls590" H 20100 5550 50  0001 C CNN
+	1    20100 5500
+	1    0    0    -1  
+$EndComp
+Text Notes 19300 3550 0    51   ~ 0
+Program Counter
+Wire Notes Line
+	17850 7150 22250 7150
+Wire Notes Line
+	22250 7150 22250 3100
+Wire Notes Line
+	22250 3100 17850 3100
+Wire Notes Line
+	17850 3100 17850 7150
+$Comp
+L Memory_EEPROM:28C256 U193
+U 1 1 5F68EA9D
+P 17600 14800
+F 0 "U193" H 17600 16078 50  0000 C CNN
+F 1 "28C256" H 17600 15987 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 17600 14800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 17600 14800 50  0001 C CNN
+	1    17600 14800
+	1    0    0    -1  
+$EndComp
+Text GLabel 17200 13900 0    51   Input ~ 0
+QA0
+Text GLabel 17200 14000 0    51   Input ~ 0
+QA1
+Text GLabel 17200 14100 0    51   Input ~ 0
+QA2
+Text GLabel 17200 14200 0    51   Input ~ 0
+QA3
+Text GLabel 17200 14300 0    51   Input ~ 0
+QA4
+Text GLabel 17200 14400 0    51   Input ~ 0
+QA5
+Text GLabel 17200 14500 0    51   Input ~ 0
+QA6
+Text GLabel 17200 14600 0    51   Input ~ 0
+QA7
+Text GLabel 17200 14700 0    51   Input ~ 0
+QA8
+Text GLabel 17200 14800 0    51   Input ~ 0
+QA9
+Text GLabel 17200 14900 0    51   Input ~ 0
+QA10
+Text GLabel 17200 15000 0    51   Input ~ 0
+QA11
+Text GLabel 17200 15100 0    51   Input ~ 0
+QA12
+Text GLabel 17200 15200 0    51   Input ~ 0
+QA13
+Text GLabel 17200 15300 0    51   Input ~ 0
+QA14
+Text GLabel 17200 15500 0    51   Input ~ 0
+Q_WE
+Text GLabel 17200 15600 0    51   Input ~ 0
+Q_OE
+Wire Wire Line
+	17600 13700 16600 13700
+Wire Wire Line
+	16600 13700 16600 15700
+Wire Wire Line
+	16600 15700 17200 15700
+$Comp
+L Memory_EEPROM:28C256 U194
+U 1 1 5F6980C0
+P 19100 16950
+F 0 "U194" H 19100 18228 50  0000 C CNN
+F 1 "28C256" H 19100 18137 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 19100 16950 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 19100 16950 50  0001 C CNN
+	1    19100 16950
+	1    0    0    -1  
+$EndComp
+Text GLabel 18700 16050 0    51   Input ~ 0
+QA0
+Text GLabel 18700 16150 0    51   Input ~ 0
+QA1
+Text GLabel 18700 16250 0    51   Input ~ 0
+QA2
+Text GLabel 18700 16350 0    51   Input ~ 0
+QA3
+Text GLabel 18700 16450 0    51   Input ~ 0
+QA4
+Text GLabel 18700 16550 0    51   Input ~ 0
+QA5
+Text GLabel 18700 16650 0    51   Input ~ 0
+QA6
+Text GLabel 18700 16750 0    51   Input ~ 0
+QA7
+Text GLabel 18700 16850 0    51   Input ~ 0
+QA8
+Text GLabel 18700 16950 0    51   Input ~ 0
+QA9
+Text GLabel 18700 17050 0    51   Input ~ 0
+QA10
+Text GLabel 18700 17150 0    51   Input ~ 0
+QA11
+Text GLabel 18700 17250 0    51   Input ~ 0
+QA12
+Text GLabel 18700 17350 0    51   Input ~ 0
+QA13
+Text GLabel 18700 17450 0    51   Input ~ 0
+QA14
+Text GLabel 18700 17650 0    51   Input ~ 0
+Q_WE
+Text GLabel 18700 17750 0    51   Input ~ 0
+Q_OE
+Wire Wire Line
+	19100 15850 18100 15850
+Wire Wire Line
+	18100 15850 18100 17850
+Wire Wire Line
+	18100 17850 18700 17850
+$Comp
+L Memory_EEPROM:28C256 U198
+U 1 1 5F6981AE
+P 20700 19100
+F 0 "U198" H 20700 20378 50  0000 C CNN
+F 1 "28C256" H 20700 20287 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 20700 19100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 20700 19100 50  0001 C CNN
+	1    20700 19100
+	1    0    0    -1  
+$EndComp
+Text GLabel 20300 18200 0    51   Input ~ 0
+QA0
+Text GLabel 20300 18300 0    51   Input ~ 0
+QA1
+Text GLabel 20300 18400 0    51   Input ~ 0
+QA2
+Text GLabel 20300 18500 0    51   Input ~ 0
+QA3
+Text GLabel 20300 18600 0    51   Input ~ 0
+QA4
+Text GLabel 20300 18700 0    51   Input ~ 0
+QA5
+Text GLabel 20300 18800 0    51   Input ~ 0
+QA6
+Text GLabel 20300 18900 0    51   Input ~ 0
+QA7
+Text GLabel 20300 19000 0    51   Input ~ 0
+QA8
+Text GLabel 20300 19100 0    51   Input ~ 0
+QA9
+Text GLabel 20300 19200 0    51   Input ~ 0
+QA10
+Text GLabel 20300 19300 0    51   Input ~ 0
+QA11
+Text GLabel 20300 19400 0    51   Input ~ 0
+QA12
+Text GLabel 20300 19500 0    51   Input ~ 0
+QA13
+Text GLabel 20300 19600 0    51   Input ~ 0
+QA14
+Text GLabel 20300 19800 0    51   Input ~ 0
+Q_WE
+Text GLabel 20300 19900 0    51   Input ~ 0
+Q_OE
+Wire Wire Line
+	20700 18000 19700 18000
+Wire Wire Line
+	19700 18000 19700 18050
+Wire Wire Line
+	19700 20000 20300 20000
+$Comp
+L Memory_EEPROM:28C256 U204
+U 1 1 5F69850C
+P 22400 21250
+F 0 "U204" H 22400 22528 50  0000 C CNN
+F 1 "28C256" H 22400 22437 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 22400 21250 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 22400 21250 50  0001 C CNN
+	1    22400 21250
+	1    0    0    -1  
+$EndComp
+Text GLabel 22000 20350 0    51   Input ~ 0
+QA0
+Text GLabel 22000 20450 0    51   Input ~ 0
+QA1
+Text GLabel 22000 20550 0    51   Input ~ 0
+QA2
+Text GLabel 22000 20650 0    51   Input ~ 0
+QA3
+Text GLabel 22000 20750 0    51   Input ~ 0
+QA4
+Text GLabel 22000 20850 0    51   Input ~ 0
+QA5
+Text GLabel 22000 20950 0    51   Input ~ 0
+QA6
+Text GLabel 22000 21050 0    51   Input ~ 0
+QA7
+Text GLabel 22000 21150 0    51   Input ~ 0
+QA8
+Text GLabel 22000 21250 0    51   Input ~ 0
+QA9
+Text GLabel 22000 21350 0    51   Input ~ 0
+QA10
+Text GLabel 22000 21450 0    51   Input ~ 0
+QA11
+Text GLabel 22000 21550 0    51   Input ~ 0
+QA12
+Text GLabel 22000 21650 0    51   Input ~ 0
+QA13
+Text GLabel 22000 21750 0    51   Input ~ 0
+QA14
+Text GLabel 22000 21950 0    51   Input ~ 0
+Q_WE
+Text GLabel 22000 22050 0    51   Input ~ 0
+Q_OE
+Wire Wire Line
+	22400 20150 21400 20150
+Wire Wire Line
+	21400 20150 21400 22150
+Wire Wire Line
+	21400 22150 22000 22150
+$Comp
+L Memory_EEPROM:28C256 U189
+U 1 1 5F69AB2D
+P 19250 12400
+F 0 "U189" H 19250 13678 50  0000 C CNN
+F 1 "28C256" H 19250 13587 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 19250 12400 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 19250 12400 50  0001 C CNN
+	1    19250 12400
+	1    0    0    -1  
+$EndComp
+Text GLabel 18850 11500 0    51   Input ~ 0
+QA0
+Text GLabel 18850 11600 0    51   Input ~ 0
+QA1
+Text GLabel 18850 11700 0    51   Input ~ 0
+QA2
+Text GLabel 18850 11800 0    51   Input ~ 0
+QA3
+Text GLabel 18850 11900 0    51   Input ~ 0
+QA4
+Text GLabel 18850 12000 0    51   Input ~ 0
+QA5
+Text GLabel 18850 12100 0    51   Input ~ 0
+QA6
+Text GLabel 18850 12200 0    51   Input ~ 0
+QA7
+Text GLabel 18850 12300 0    51   Input ~ 0
+QA8
+Text GLabel 18850 12400 0    51   Input ~ 0
+QA9
+Text GLabel 18850 12500 0    51   Input ~ 0
+QA10
+Text GLabel 18850 12600 0    51   Input ~ 0
+QA11
+Text GLabel 18850 12700 0    51   Input ~ 0
+QA12
+Text GLabel 18850 12800 0    51   Input ~ 0
+QA13
+Text GLabel 18850 12900 0    51   Input ~ 0
+QA14
+Text GLabel 18850 13100 0    51   Input ~ 0
+Q_WE
+Text GLabel 18850 13200 0    51   Input ~ 0
+Q_OE
+Wire Wire Line
+	19250 11300 18250 11300
+Wire Wire Line
+	18250 11300 18250 13300
+Wire Wire Line
+	18250 13300 18850 13300
+$Comp
+L Memory_EEPROM:28C256 U192
+U 1 1 5F69AB48
+P 21050 14650
+F 0 "U192" H 21050 15928 50  0000 C CNN
+F 1 "28C256" H 21050 15837 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 21050 14650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 21050 14650 50  0001 C CNN
+	1    21050 14650
+	1    0    0    -1  
+$EndComp
+Text GLabel 20650 13750 0    51   Input ~ 0
+QA0
+Text GLabel 20650 13850 0    51   Input ~ 0
+QA1
+Text GLabel 20650 13950 0    51   Input ~ 0
+QA2
+Text GLabel 20650 14050 0    51   Input ~ 0
+QA3
+Text GLabel 20650 14150 0    51   Input ~ 0
+QA4
+Text GLabel 20650 14250 0    51   Input ~ 0
+QA5
+Text GLabel 20650 14350 0    51   Input ~ 0
+QA6
+Text GLabel 20650 14450 0    51   Input ~ 0
+QA7
+Text GLabel 20650 14550 0    51   Input ~ 0
+QA8
+Text GLabel 20650 14650 0    51   Input ~ 0
+QA9
+Text GLabel 20650 14750 0    51   Input ~ 0
+QA10
+Text GLabel 20650 14850 0    51   Input ~ 0
+QA11
+Text GLabel 20650 14950 0    51   Input ~ 0
+QA12
+Text GLabel 20650 15050 0    51   Input ~ 0
+QA13
+Text GLabel 20650 15150 0    51   Input ~ 0
+QA14
+Text GLabel 20650 15350 0    51   Input ~ 0
+Q_WE
+Text GLabel 20650 15450 0    51   Input ~ 0
+Q_OE
+Wire Wire Line
+	21050 13550 20050 13550
+Wire Wire Line
+	20050 13550 20050 15550
+Wire Wire Line
+	20050 15550 20650 15550
+$Comp
+L Memory_EEPROM:28C256 U195
+U 1 1 5F69AB63
+P 22750 17050
+F 0 "U195" H 22750 18328 50  0000 C CNN
+F 1 "28C256" H 22750 18237 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 22750 17050 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 22750 17050 50  0001 C CNN
+	1    22750 17050
+	1    0    0    -1  
+$EndComp
+Text GLabel 22350 16150 0    51   Input ~ 0
+QA0
+Text GLabel 22350 16250 0    51   Input ~ 0
+QA1
+Text GLabel 22350 16350 0    51   Input ~ 0
+QA2
+Text GLabel 22350 16450 0    51   Input ~ 0
+QA3
+Text GLabel 22350 16550 0    51   Input ~ 0
+QA4
+Text GLabel 22350 16650 0    51   Input ~ 0
+QA5
+Text GLabel 22350 16750 0    51   Input ~ 0
+QA6
+Text GLabel 22350 16850 0    51   Input ~ 0
+QA7
+Text GLabel 22350 16950 0    51   Input ~ 0
+QA8
+Text GLabel 22350 17050 0    51   Input ~ 0
+QA9
+Text GLabel 22350 17150 0    51   Input ~ 0
+QA10
+Text GLabel 22350 17250 0    51   Input ~ 0
+QA11
+Text GLabel 22350 17350 0    51   Input ~ 0
+QA12
+Text GLabel 22350 17450 0    51   Input ~ 0
+QA13
+Text GLabel 22350 17550 0    51   Input ~ 0
+QA14
+Text GLabel 22350 17750 0    51   Input ~ 0
+Q_WE
+Text GLabel 22350 17850 0    51   Input ~ 0
+Q_OE
+Wire Wire Line
+	22750 15950 21750 15950
+Wire Wire Line
+	21750 15950 21750 17950
+Wire Wire Line
+	21750 17950 22350 17950
+$Comp
+L Memory_EEPROM:28C256 U199
+U 1 1 5F69AB7E
+P 24450 19100
+F 0 "U199" H 24450 20378 50  0000 C CNN
+F 1 "28C256" H 24450 20287 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 24450 19100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 24450 19100 50  0001 C CNN
+	1    24450 19100
+	1    0    0    -1  
+$EndComp
+Text GLabel 24050 18200 0    51   Input ~ 0
+QA0
+Text GLabel 24050 18300 0    51   Input ~ 0
+QA1
+Text GLabel 24050 18400 0    51   Input ~ 0
+QA2
+Text GLabel 24050 18500 0    51   Input ~ 0
+QA3
+Text GLabel 24050 18600 0    51   Input ~ 0
+QA4
+Text GLabel 24050 18700 0    51   Input ~ 0
+QA5
+Text GLabel 24050 18800 0    51   Input ~ 0
+QA6
+Text GLabel 24050 18900 0    51   Input ~ 0
+QA7
+Text GLabel 24050 19000 0    51   Input ~ 0
+QA8
+Text GLabel 24050 19100 0    51   Input ~ 0
+QA9
+Text GLabel 24050 19200 0    51   Input ~ 0
+QA10
+Text GLabel 24050 19300 0    51   Input ~ 0
+QA11
+Text GLabel 24050 19400 0    51   Input ~ 0
+QA12
+Text GLabel 24050 19500 0    51   Input ~ 0
+QA13
+Text GLabel 24050 19600 0    51   Input ~ 0
+QA14
+Text GLabel 24050 19800 0    51   Input ~ 0
+Q_WE
+Text GLabel 24050 19900 0    51   Input ~ 0
+Q_OE
+Wire Wire Line
+	24450 18000 23450 18000
+Wire Wire Line
+	23450 18000 23450 20000
+Wire Wire Line
+	23450 20000 24050 20000
+$Comp
+L Memory_EEPROM:28C256 U205
+U 1 1 5F6AD70F
+P 26000 21400
+F 0 "U205" H 26000 22678 50  0000 C CNN
+F 1 "28C256" H 26000 22587 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 26000 21400 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 26000 21400 50  0001 C CNN
+	1    26000 21400
+	1    0    0    -1  
+$EndComp
+Text GLabel 25600 20500 0    51   Input ~ 0
+QA0
+Text GLabel 25600 20600 0    51   Input ~ 0
+QA1
+Text GLabel 25600 20700 0    51   Input ~ 0
+QA2
+Text GLabel 25600 20800 0    51   Input ~ 0
+QA3
+Text GLabel 25600 20900 0    51   Input ~ 0
+QA4
+Text GLabel 25600 21000 0    51   Input ~ 0
+QA5
+Text GLabel 25600 21100 0    51   Input ~ 0
+QA6
+Text GLabel 25600 21200 0    51   Input ~ 0
+QA7
+Text GLabel 25600 21300 0    51   Input ~ 0
+QA8
+Text GLabel 25600 21400 0    51   Input ~ 0
+QA9
+Text GLabel 25600 21500 0    51   Input ~ 0
+QA10
+Text GLabel 25600 21600 0    51   Input ~ 0
+QA11
+Text GLabel 25600 21700 0    51   Input ~ 0
+QA12
+Text GLabel 25600 21800 0    51   Input ~ 0
+QA13
+Text GLabel 25600 21900 0    51   Input ~ 0
+QA14
+Text GLabel 25600 22100 0    51   Input ~ 0
+Q_WE
+Text GLabel 25600 22200 0    51   Input ~ 0
+Q_OE
+Wire Wire Line
+	26000 20300 25000 20300
+Wire Wire Line
+	25000 20300 25000 22300
+Wire Wire Line
+	25000 22300 25600 22300
+$Comp
+L Memory_EEPROM:28C256 U188
+U 1 1 5F6BFCEC
+P 16550 12350
+F 0 "U188" H 16550 13628 50  0000 C CNN
+F 1 "28C256" H 16550 13537 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 16550 12350 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 16550 12350 50  0001 C CNN
+	1    16550 12350
+	1    0    0    -1  
+$EndComp
+Text GLabel 16150 11450 0    51   Input ~ 0
+QA0
+Text GLabel 16150 11550 0    51   Input ~ 0
+QA1
+Text GLabel 16150 11650 0    51   Input ~ 0
+QA2
+Text GLabel 16150 11750 0    51   Input ~ 0
+QA3
+Text GLabel 16150 11850 0    51   Input ~ 0
+QA4
+Text GLabel 16150 11950 0    51   Input ~ 0
+QA5
+Text GLabel 16150 12050 0    51   Input ~ 0
+QA6
+Text GLabel 16150 12150 0    51   Input ~ 0
+QA7
+Text GLabel 16150 12250 0    51   Input ~ 0
+QA8
+Text GLabel 16150 12350 0    51   Input ~ 0
+QA9
+Text GLabel 16150 12450 0    51   Input ~ 0
+QA10
+Text GLabel 16150 12550 0    51   Input ~ 0
+QA11
+Text GLabel 16150 12650 0    51   Input ~ 0
+QA12
+Text GLabel 16150 12750 0    51   Input ~ 0
+QA13
+Text GLabel 16150 12850 0    51   Input ~ 0
+QA14
+Text GLabel 16150 13050 0    51   Input ~ 0
+Q_WE
+Text GLabel 16150 13150 0    51   Input ~ 0
+Q_OE
+Wire Wire Line
+	16550 11250 15550 11250
+Wire Wire Line
+	15550 11250 15550 13250
+Wire Wire Line
+	15550 13250 16150 13250
+Text GLabel 19700 4100 2    51   Input ~ 0
+QA0
+Text GLabel 19700 4200 2    51   Input ~ 0
+QA1
+Text GLabel 19700 4300 2    51   Input ~ 0
+QA2
+Text GLabel 19700 4400 2    51   Input ~ 0
+QA3
+Text GLabel 19700 4500 2    51   Input ~ 0
+QA4
+Text GLabel 19700 4600 2    51   Input ~ 0
+QA5
+Text GLabel 19700 4700 2    51   Input ~ 0
+QA6
+Text GLabel 19700 4800 2    51   Input ~ 0
+QA7
+Text GLabel 20500 5000 2    51   Input ~ 0
+QA8
+Text GLabel 20500 5100 2    51   Input ~ 0
+QA9
+Text GLabel 20500 5200 2    51   Input ~ 0
+QA10
+Text GLabel 20500 5300 2    51   Input ~ 0
+QA11
+Text GLabel 20500 5400 2    51   Input ~ 0
+QA12
+Text GLabel 20500 5500 2    51   Input ~ 0
+QA13
+Text GLabel 20500 5600 2    51   Input ~ 0
+QA14
+NoConn ~ 20500 5700
+$Sheet
+S 34150 700  6400 4150
+U 5F8FCE4B
+F0 "InstructionBus" 51
+F1 "instruction_bus.sch" 51
+$EndSheet
+Wire Bus Line
+	20100 17800 21700 17800
+Wire Bus Line
+	21700 19850 23400 19850
+Wire Bus Line
+	27000 19700 25450 19700
+Wire Bus Line
+	25450 17600 23750 17600
+Wire Bus Line
+	23750 15600 22050 15600
+Wire Bus Line
+	22050 13250 20250 13250
+Wire Bus Line
+	20100 15700 18600 15700
+Wire Bus Line
+	17550 13450 18600 13450
+Entry Wire Line
+	27000 20700 26900 20800
+Entry Wire Line
+	27000 20600 26900 20700
+Entry Wire Line
+	27000 20500 26900 20600
+Entry Wire Line
+	27000 20400 26900 20500
+Entry Wire Line
+	23750 16750 23650 16850
+Entry Wire Line
+	23750 16650 23650 16750
+Entry Wire Line
+	23750 16550 23650 16650
+Entry Wire Line
+	23750 16450 23650 16550
+Entry Wire Line
+	23750 16350 23650 16450
+Entry Wire Line
+	23750 16250 23650 16350
+Entry Wire Line
+	23750 16150 23650 16250
+Entry Wire Line
+	23750 16050 23650 16150
+Entry Wire Line
+	22050 14350 21950 14450
+Entry Wire Line
+	22050 14250 21950 14350
+Entry Wire Line
+	22050 14150 21950 14250
+Entry Wire Line
+	22050 14050 21950 14150
+Entry Wire Line
+	22050 13950 21950 14050
+Entry Wire Line
+	22050 13850 21950 13950
+Entry Wire Line
+	22050 13750 21950 13850
+Entry Wire Line
+	22050 13650 21950 13750
+Entry Wire Line
+	20250 12100 20150 12200
+Entry Wire Line
+	20250 12000 20150 12100
+Entry Wire Line
+	20250 11900 20150 12000
+Entry Wire Line
+	20250 11800 20150 11900
+Entry Wire Line
+	20250 11700 20150 11800
+Entry Wire Line
+	20250 11600 20150 11700
+Entry Wire Line
+	20250 11500 20150 11600
+Entry Wire Line
+	20250 11400 20150 11500
+Entry Wire Line
+	23400 20950 23300 21050
+Entry Wire Line
+	23400 20850 23300 20950
+Entry Wire Line
+	23400 20750 23300 20850
+Entry Wire Line
+	23400 20650 23300 20750
+Entry Wire Line
+	23400 20550 23300 20650
+Entry Wire Line
+	23400 20450 23300 20550
+Entry Wire Line
+	23400 20350 23300 20450
+Entry Wire Line
+	23400 20250 23300 20350
+Entry Wire Line
+	21700 18800 21600 18900
+Entry Wire Line
+	21700 18700 21600 18800
+Entry Wire Line
+	21700 18600 21600 18700
+Entry Wire Line
+	21700 18500 21600 18600
+Entry Wire Line
+	21700 18400 21600 18500
+Entry Wire Line
+	21700 18300 21600 18400
+Entry Wire Line
+	21700 18200 21600 18300
+Entry Wire Line
+	21700 18100 21600 18200
+Entry Wire Line
+	20100 16650 20000 16750
+Entry Wire Line
+	20100 16550 20000 16650
+Entry Wire Line
+	20100 16450 20000 16550
+Entry Wire Line
+	20100 16350 20000 16450
+Entry Wire Line
+	20100 16250 20000 16350
+Entry Wire Line
+	20100 16150 20000 16250
+Entry Wire Line
+	20100 16050 20000 16150
+Entry Wire Line
+	20100 15950 20000 16050
+Entry Wire Line
+	18600 14500 18500 14600
+Entry Wire Line
+	18600 14400 18500 14500
+Entry Wire Line
+	18600 14300 18500 14400
+Entry Wire Line
+	18600 14200 18500 14300
+Entry Wire Line
+	18600 14100 18500 14200
+Entry Wire Line
+	18600 14000 18500 14100
+Entry Wire Line
+	18600 13900 18500 14000
+Entry Wire Line
+	18600 13800 18500 13900
+Entry Wire Line
+	17550 12050 17450 12150
+Entry Wire Line
+	17550 11950 17450 12050
+Entry Wire Line
+	17550 11850 17450 11950
+Entry Wire Line
+	17550 11750 17450 11850
+Entry Wire Line
+	17550 11650 17450 11750
+Entry Wire Line
+	17550 11550 17450 11650
+Entry Wire Line
+	17550 11450 17450 11550
+Entry Wire Line
+	17550 11350 17450 11450
+Wire Wire Line
+	26400 20800 26900 20800
+Wire Wire Line
+	26900 20700 26400 20700
+Wire Wire Line
+	26400 20600 26900 20600
+Wire Wire Line
+	26900 20500 26400 20500
+Wire Wire Line
+	23150 16850 23650 16850
+Wire Wire Line
+	23650 16750 23150 16750
+Wire Wire Line
+	23150 16650 23650 16650
+Wire Wire Line
+	23650 16550 23150 16550
+Wire Wire Line
+	23150 16450 23650 16450
+Wire Wire Line
+	23650 16350 23150 16350
+Wire Wire Line
+	23150 16250 23650 16250
+Wire Wire Line
+	23650 16150 23150 16150
+Wire Wire Line
+	21450 14450 21950 14450
+Wire Wire Line
+	21950 14350 21450 14350
+Wire Wire Line
+	21450 14250 21950 14250
+Wire Wire Line
+	21950 14150 21450 14150
+Wire Wire Line
+	21450 14050 21950 14050
+Wire Wire Line
+	21950 13950 21450 13950
+Wire Wire Line
+	21450 13850 21950 13850
+Wire Wire Line
+	21950 13750 21450 13750
+Wire Wire Line
+	19650 12200 20150 12200
+Wire Wire Line
+	20150 12100 19650 12100
+Wire Wire Line
+	19650 12000 20150 12000
+Wire Wire Line
+	20150 11900 19650 11900
+Wire Wire Line
+	19650 11800 20150 11800
+Wire Wire Line
+	20150 11700 19650 11700
+Wire Wire Line
+	19650 11600 20150 11600
+Wire Wire Line
+	20150 11500 19650 11500
+Wire Wire Line
+	22800 21050 23300 21050
+Wire Wire Line
+	23300 20950 22800 20950
+Wire Wire Line
+	23300 20850 22800 20850
+Wire Wire Line
+	22800 20750 23300 20750
+Wire Wire Line
+	23300 20650 22800 20650
+Wire Wire Line
+	22800 20550 23300 20550
+Wire Wire Line
+	23300 20450 22800 20450
+Wire Wire Line
+	22800 20350 23300 20350
+Wire Wire Line
+	21600 18900 21100 18900
+Wire Wire Line
+	21100 18800 21600 18800
+Wire Wire Line
+	21600 18700 21100 18700
+Wire Wire Line
+	21100 18600 21600 18600
+Wire Wire Line
+	21600 18500 21100 18500
+Wire Wire Line
+	21100 18400 21600 18400
+Wire Wire Line
+	21600 18300 21100 18300
+Wire Wire Line
+	21100 18200 21600 18200
+Wire Wire Line
+	20000 16750 19500 16750
+Wire Wire Line
+	19500 16650 20000 16650
+Wire Wire Line
+	20000 16550 19500 16550
+Wire Wire Line
+	19500 16450 20000 16450
+Wire Wire Line
+	20000 16350 19500 16350
+Wire Wire Line
+	19500 16250 20000 16250
+Wire Wire Line
+	20000 16150 19500 16150
+Wire Wire Line
+	19500 16050 20000 16050
+Wire Wire Line
+	18500 14600 18000 14600
+Wire Wire Line
+	18000 14500 18500 14500
+Wire Wire Line
+	18500 14400 18000 14400
+Wire Wire Line
+	18000 14300 18500 14300
+Wire Wire Line
+	18500 14200 18000 14200
+Wire Wire Line
+	18000 14100 18500 14100
+Wire Wire Line
+	18500 14000 18000 14000
+Wire Wire Line
+	18000 13900 18500 13900
+Wire Wire Line
+	17450 12150 16950 12150
+Wire Wire Line
+	16950 12050 17450 12050
+Wire Wire Line
+	17450 11950 16950 11950
+Wire Wire Line
+	16950 11850 17450 11850
+Wire Wire Line
+	17450 11750 16950 11750
+Wire Wire Line
+	16950 11650 17450 11650
+Wire Wire Line
+	17450 11550 16950 11550
+Wire Wire Line
+	16950 11450 17450 11450
+Text Label 17300 11450 2    51   ~ 0
+CQ1D
+Text Label 17300 11550 2    51   ~ 0
+CQ2D
+Text Label 17300 11650 2    51   ~ 0
+CQ3D
+Text Label 17300 11750 2    51   ~ 0
+CCD
+Text Label 17300 11850 2    51   ~ 0
+Q4D
+Text Label 17300 11950 2    51   ~ 0
+Q3D
+Text Label 17300 12050 2    51   ~ 0
+Q2D
+Text Label 17300 12150 2    51   ~ 0
+Q1D
+Text Label 18350 13900 2    51   ~ 0
+Q1SR
+Text Label 18350 14000 2    51   ~ 0
+Q1T
+Text Label 18350 14100 2    51   ~ 0
+Q1X
+Text Label 18350 14200 2    51   ~ 0
+Q1Y
+Text Label 18350 14300 2    51   ~ 0
+Q1Z
+Text Label 18350 14400 2    51   ~ 0
+Q1M
+Text Label 18350 14500 2    51   ~ 0
+Q1C
+Text Label 18350 14600 2    51   ~ 0
+Q2SR
+Text Label 19850 16050 2    51   ~ 0
+Q2T
+Text Label 19850 16150 2    51   ~ 0
+Q2X
+Text Label 19850 16250 2    51   ~ 0
+Q2Y
+Text Label 19850 16350 2    51   ~ 0
+Q2Z
+Text Label 19850 16450 2    51   ~ 0
+Q2M
+Text Label 19850 16550 2    51   ~ 0
+Q2C
+Text Label 19850 16650 2    51   ~ 0
+Q3SR
+Text Label 19850 16750 2    51   ~ 0
+Q3T
+Text Label 21450 18200 2    51   ~ 0
+Q3X
+Text Label 21450 18300 2    51   ~ 0
+Q3Y
+Text Label 21450 18400 2    51   ~ 0
+Q3Z
+Text Label 21450 18500 2    51   ~ 0
+Q3M
+Text Label 21450 18600 2    51   ~ 0
+Q3C
+Text Label 21450 18700 2    51   ~ 0
+Q4SR
+Text Label 21450 18800 2    51   ~ 0
+Q4T
+Text Label 21450 18900 2    51   ~ 0
+Q4X
+Text Label 23150 20350 2    51   ~ 0
+Q4Y
+Text Label 23150 20450 2    51   ~ 0
+Q4Z
+Text Label 23150 20550 2    51   ~ 0
+Q4M
+Text Label 23150 20650 2    51   ~ 0
+Q4C
+Text Label 23150 20750 2    51   ~ 0
+CY
+Text Label 23150 20850 2    51   ~ 0
+CZ
+Text Label 23150 20950 2    51   ~ 0
+CH
+Text Label 23150 21050 2    51   ~ 0
+SWAP
+Text Label 20000 11500 2    51   ~ 0
+Q5SR
+Text Label 20000 11600 2    51   ~ 0
+Q5T
+Text Label 20000 11700 2    51   ~ 0
+Q5X
+Text Label 20000 11800 2    51   ~ 0
+Q5Y
+Text Label 20000 11900 2    51   ~ 0
+Q5Z
+Text Label 20000 12000 2    51   ~ 0
+Q5M
+Text Label 20000 12100 2    51   ~ 0
+Q5C
+Text Label 20000 12200 2    51   ~ 0
+Q6SR
+Text Label 21800 13750 2    51   ~ 0
+Q6T
+Text Label 21800 13850 2    51   ~ 0
+Q6X
+Text Label 21800 13950 2    51   ~ 0
+Q6Y
+Text Label 21800 14050 2    51   ~ 0
+Q6Z
+Text Label 21800 14150 2    51   ~ 0
+Q6M
+Text Label 21800 14250 2    51   ~ 0
+Q6C
+Text Label 21800 14350 2    51   ~ 0
+Q7SR
+Text Label 21800 14450 2    51   ~ 0
+Q7T
+Text Label 23500 16150 2    51   ~ 0
+Q7X
+Text Label 23500 16250 2    51   ~ 0
+Q7Y
+Text Label 23500 16350 2    51   ~ 0
+Q7Z
+Text Label 23500 16450 2    51   ~ 0
+Q7M
+Text Label 23500 16550 2    51   ~ 0
+Q7C
+Text Label 23500 16650 2    51   ~ 0
+Q8SR
+Text Label 23500 16750 2    51   ~ 0
+Q8T
+Text Label 23500 16850 2    51   ~ 0
+Q8X
+Text Label 26750 20500 2    51   ~ 0
+CTD
+Text Label 26750 20600 2    51   ~ 0
+TQ5
+Text Label 26750 20700 2    51   ~ 0
+TQ6
+Text Label 26750 20800 2    51   ~ 0
+TQ7
+Entry Wire Line
+	25450 18800 25350 18900
+Entry Wire Line
+	25450 18700 25350 18800
+Entry Wire Line
+	25450 18600 25350 18700
+Entry Wire Line
+	25450 18500 25350 18600
+Entry Wire Line
+	25450 18400 25350 18500
+Entry Wire Line
+	25450 18300 25350 18400
+Entry Wire Line
+	25450 18200 25350 18300
+Entry Wire Line
+	25450 18100 25350 18200
+Wire Wire Line
+	24850 18900 25350 18900
+Wire Wire Line
+	25350 18800 24850 18800
+Wire Wire Line
+	24850 18700 25350 18700
+Wire Wire Line
+	25350 18600 24850 18600
+Wire Wire Line
+	24850 18500 25350 18500
+Wire Wire Line
+	25350 18400 24850 18400
+Wire Wire Line
+	24850 18300 25350 18300
+Wire Wire Line
+	25350 18200 24850 18200
+Text Label 25200 18200 2    51   ~ 0
+Q8Y
+Text Label 25200 18300 2    51   ~ 0
+Q8Z
+Text Label 25050 18400 0    51   ~ 0
+Q8M
+Text Label 25050 18500 0    51   ~ 0
+Q8C
+Text Label 25050 18600 0    51   ~ 0
+Q5D
+Text Label 25050 18700 0    51   ~ 0
+Q6D
+Text Label 25050 18800 0    51   ~ 0
+Q7D
+Text Label 25050 18900 0    51   ~ 0
+Q8D
+Wire Wire Line
+	19300 5200 19300 6100
+Wire Wire Line
+	19300 6100 20100 6100
+Wire Wire Line
+	16550 13450 16550 15900
+Wire Wire Line
+	16550 15900 17600 15900
+Wire Wire Line
+	17600 15900 17600 18050
+Wire Wire Line
+	17600 18050 19100 18050
+Connection ~ 17600 15900
+Wire Wire Line
+	19100 18050 19100 20200
+Wire Wire Line
+	19100 20200 20700 20200
+Connection ~ 19100 18050
+Wire Wire Line
+	20700 20200 20700 22350
+Wire Wire Line
+	20700 22350 22400 22350
+Connection ~ 20700 20200
+Wire Wire Line
+	26000 22500 24450 22500
+Wire Wire Line
+	24450 22500 24450 20200
+Wire Wire Line
+	24450 20200 24450 20100
+Wire Wire Line
+	24450 20100 22750 20100
+Wire Wire Line
+	22750 20100 22750 18150
+Connection ~ 24450 20200
+Wire Wire Line
+	22750 18150 21050 18150
+Wire Wire Line
+	21050 18150 21050 15750
+Connection ~ 22750 18150
+Wire Wire Line
+	21050 15750 19250 15750
+Wire Wire Line
+	19250 15750 19250 13500
+Connection ~ 21050 15750
+Wire Wire Line
+	20100 4800 20100 3900
+Wire Wire Line
+	20100 3900 19300 3900
+$Comp
+L power:+5V #PWR0178
+U 1 1 642A38BB
+P 15550 11250
+F 0 "#PWR0178" H 15550 11100 50  0001 C CNN
+F 1 "+5V" H 15565 11423 50  0000 C CNN
+F 2 "" H 15550 11250 50  0001 C CNN
+F 3 "" H 15550 11250 50  0001 C CNN
+	1    15550 11250
+	1    0    0    -1  
+$EndComp
+Connection ~ 15550 11250
+$Comp
+L power:+5V #PWR0179
+U 1 1 642A3A8F
+P 18250 11300
+F 0 "#PWR0179" H 18250 11150 50  0001 C CNN
+F 1 "+5V" H 18265 11473 50  0000 C CNN
+F 2 "" H 18250 11300 50  0001 C CNN
+F 3 "" H 18250 11300 50  0001 C CNN
+	1    18250 11300
+	1    0    0    -1  
+$EndComp
+Connection ~ 18250 11300
+$Comp
+L power:+5V #PWR0181
+U 1 1 642A3B12
+P 16600 13700
+F 0 "#PWR0181" H 16600 13550 50  0001 C CNN
+F 1 "+5V" H 16615 13873 50  0000 C CNN
+F 2 "" H 16600 13700 50  0001 C CNN
+F 3 "" H 16600 13700 50  0001 C CNN
+	1    16600 13700
+	1    0    0    -1  
+$EndComp
+Connection ~ 16600 13700
+$Comp
+L power:+5V #PWR0182
+U 1 1 642A3B95
+P 18100 15850
+F 0 "#PWR0182" H 18100 15700 50  0001 C CNN
+F 1 "+5V" H 18115 16023 50  0000 C CNN
+F 2 "" H 18100 15850 50  0001 C CNN
+F 3 "" H 18100 15850 50  0001 C CNN
+	1    18100 15850
+	1    0    0    -1  
+$EndComp
+Connection ~ 18100 15850
+$Comp
+L power:+5V #PWR0180
+U 1 1 642A3C54
+P 20050 13550
+F 0 "#PWR0180" H 20050 13400 50  0001 C CNN
+F 1 "+5V" H 20065 13723 50  0000 C CNN
+F 2 "" H 20050 13550 50  0001 C CNN
+F 3 "" H 20050 13550 50  0001 C CNN
+	1    20050 13550
+	1    0    0    -1  
+$EndComp
+Connection ~ 20050 13550
+$Comp
+L power:+5V #PWR0183
+U 1 1 642A3CB9
+P 21750 15950
+F 0 "#PWR0183" H 21750 15800 50  0001 C CNN
+F 1 "+5V" H 21765 16123 50  0000 C CNN
+F 2 "" H 21750 15950 50  0001 C CNN
+F 3 "" H 21750 15950 50  0001 C CNN
+	1    21750 15950
+	1    0    0    -1  
+$EndComp
+Connection ~ 21750 15950
+$Comp
+L power:+5V #PWR0186
+U 1 1 642A3D1E
+P 21400 20150
+F 0 "#PWR0186" H 21400 20000 50  0001 C CNN
+F 1 "+5V" H 21415 20323 50  0000 C CNN
+F 2 "" H 21400 20150 50  0001 C CNN
+F 3 "" H 21400 20150 50  0001 C CNN
+	1    21400 20150
+	1    0    0    -1  
+$EndComp
+Connection ~ 21400 20150
+$Comp
+L power:+5V #PWR0187
+U 1 1 642A3DFB
+P 25000 20300
+F 0 "#PWR0187" H 25000 20150 50  0001 C CNN
+F 1 "+5V" H 25015 20473 50  0000 C CNN
+F 2 "" H 25000 20300 50  0001 C CNN
+F 3 "" H 25000 20300 50  0001 C CNN
+	1    25000 20300
+	1    0    0    -1  
+$EndComp
+Connection ~ 25000 20300
+$Comp
+L power:+5V #PWR0184
+U 1 1 642A3E60
+P 23450 18000
+F 0 "#PWR0184" H 23450 17850 50  0001 C CNN
+F 1 "+5V" H 23465 18173 50  0000 C CNN
+F 2 "" H 23450 18000 50  0001 C CNN
+F 3 "" H 23450 18000 50  0001 C CNN
+	1    23450 18000
+	1    0    0    -1  
+$EndComp
+Connection ~ 23450 18000
+$Comp
+L power:+5V #PWR0185
+U 1 1 642A3EC5
+P 19700 18050
+F 0 "#PWR0185" H 19700 17900 50  0001 C CNN
+F 1 "+5V" H 19715 18223 50  0000 C CNN
+F 2 "" H 19700 18050 50  0001 C CNN
+F 3 "" H 19700 18050 50  0001 C CNN
+	1    19700 18050
+	1    0    0    -1  
+$EndComp
+Connection ~ 19700 18050
+Wire Wire Line
+	19700 18050 19700 20000
+Wire Bus Line
+	20250 11050 17550 11050
+Wire Bus Line
+	20250 11050 21750 11050
+Connection ~ 20250 11050
+Text GLabel 21750 11050 2    51   BiDi ~ 0
+QDataBus
+Wire Bus Line
+	5200 3000 5150 3000
+Text GLabel 5200 3000 2    51   Input ~ 0
+ResultAddrBus
+Text Label 4650 3850 0    51   ~ 0
+RA0
+Text Label 4650 3950 0    51   ~ 0
+RA1
+Text Label 4650 4050 0    51   ~ 0
+RA2
+Text Label 4650 4150 0    51   ~ 0
+RA3
+Text Label 4650 4250 0    51   ~ 0
+RA4
+Text Label 4650 4350 0    51   ~ 0
+RA5
+Text Label 4650 4450 0    51   ~ 0
+RA6
+Text Label 4650 4550 0    51   ~ 0
+RA7
+Text Label 4650 4650 0    51   ~ 0
+RA8
+Text Label 4650 4750 0    51   ~ 0
+RA9
+Text Label 4650 4850 0    51   ~ 0
+RA10
+Text Label 4650 4950 0    51   ~ 0
+RA11
+Text Label 4650 5050 0    51   ~ 0
+RA12
+Entry Wire Line
+	5050 3850 5150 3950
+Entry Wire Line
+	5050 3950 5150 4050
+Entry Wire Line
+	5050 4050 5150 4150
+Entry Wire Line
+	5050 4150 5150 4250
+Entry Wire Line
+	5050 4250 5150 4350
+Entry Wire Line
+	5050 4350 5150 4450
+Entry Wire Line
+	5050 4450 5150 4550
+Entry Wire Line
+	5050 4550 5150 4650
+Entry Wire Line
+	5050 4650 5150 4750
+Entry Wire Line
+	5050 4750 5150 4850
+Entry Wire Line
+	5050 4850 5150 4950
+Entry Wire Line
+	5050 4950 5150 5050
+Entry Wire Line
+	5050 5050 5150 5150
+$Comp
+L 74xx:74LS590 U?
+U 1 1 6E7465DD
+P 2650 4350
+F 0 "U?" H 2650 5228 50  0000 C CNN
+F 1 "74LS590" H 2650 5137 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2650 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls590" H 2650 4400 50  0001 C CNN
+	1    2650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS590 U?
+U 1 1 6E7465E4
+P 3450 5250
+F 0 "U?" H 3450 6128 50  0000 C CNN
+F 1 "74LS590" H 3450 6037 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 3450 5300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls590" H 3450 5300 50  0001 C CNN
+	1    3450 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4950 2650 5850
+Wire Wire Line
+	2650 5850 3450 5850
+Wire Wire Line
+	3450 4550 3450 3650
+Wire Wire Line
+	3450 3650 2650 3650
+Wire Wire Line
+	3050 3850 5050 3850
+Wire Wire Line
+	3050 3950 5050 3950
+Wire Wire Line
+	3050 4050 5050 4050
+Wire Wire Line
+	3050 4150 5050 4150
+Wire Wire Line
+	3050 4250 5050 4250
+Wire Wire Line
+	3050 4350 5050 4350
+Wire Wire Line
+	3050 4450 5050 4450
+Wire Wire Line
+	3500 4550 3500 4500
+Wire Wire Line
+	3500 4500 3400 4500
+Wire Wire Line
+	3400 4500 3400 4550
+Wire Wire Line
+	3400 4550 3050 4550
+Wire Wire Line
+	3500 4550 5050 4550
+Wire Wire Line
+	3850 4650 3850 4750
+Wire Wire Line
+	3850 4650 5050 4650
+Wire Wire Line
+	3900 4750 3900 4850
+Wire Wire Line
+	3900 4850 3850 4850
+Wire Wire Line
+	3900 4750 5050 4750
+Wire Wire Line
+	3950 4850 3950 4950
+Wire Wire Line
+	3950 4950 3850 4950
+Wire Wire Line
+	3950 4850 5050 4850
+Wire Wire Line
+	4000 4950 4000 5050
+Wire Wire Line
+	4000 5050 3850 5050
+Wire Wire Line
+	4000 4950 5050 4950
+Wire Wire Line
+	4050 5050 4050 5150
+Wire Wire Line
+	4050 5150 3850 5150
+Wire Wire Line
+	4050 5050 5050 5050
+Wire Bus Line
+	27000 19700 27000 22800
+Wire Bus Line
+	23750 15600 23750 17600
+Wire Bus Line
+	22050 13250 22050 15600
+Wire Bus Line
+	20250 11050 20250 13250
+Wire Bus Line
+	23400 19850 23400 22800
+Wire Bus Line
+	21700 17800 21700 19850
+Wire Bus Line
+	20100 15700 20100 17800
+Wire Bus Line
+	18600 13450 18600 15700
+Wire Bus Line
+	17550 11050 17550 13450
+Wire Bus Line
+	25450 17600 25450 19700
+Wire Bus Line
+	5150 3000 5150 5650
+$EndSCHEMATC
