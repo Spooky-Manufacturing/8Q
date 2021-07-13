@@ -10,10 +10,24 @@ Computer with built-in General Purpose 8 Qubit Optical Quantum Processor
 [Thank you to all the contributors who make this possible](./CONTRIBUTORS.md)
 
 # Status
-The 8Q processor is currently in development
+
+### Development Board
+
+To speed up R&D, we've decided to replace the ARM CPU with a QSeven2.0 spec'd "computer on module". There are a variety of benefits to doing this, one major benefit being that we can switch between a variety of x86 and ARM processors.
+
+The current design effort utilizes the Congatech A50 CoM.
+
+![Devboard Schematic](./docs/source/imgs/cpu.png)
+
+### Quantum Processing Unit
 ![Quantum Processor Schematic](./docs/source/imgs/qpu.png)
 
+### QController
+
+The QController acts as a bridge between the main (digital) computer and the quantum processor. It is responsible for storing/executing instructions, and for transferring data to/from the host and QPU.
+
 ## Features
+
 ![Feature List](./docs/source/imgs/8q.png)
 
 * Quad-Core Cortex-A53
