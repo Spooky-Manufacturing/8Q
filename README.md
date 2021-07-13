@@ -9,7 +9,9 @@ Computer with built-in General Purpose 8 Qubit Optical Quantum Processor
 # Contributors
 [Thank you to all the contributors who make this possible](./CONTRIBUTORS.md)
 
-# Status
+# Status: Moving Towards PCB!
+
+We're beginning to layout the components and finalize the design of our quantum computer! As we continue to design the PCB, we are also working with optical engineers to make our logic gates more compact which will enable us to shrink the design even further than we already have!
 
 ### Development Board
 
