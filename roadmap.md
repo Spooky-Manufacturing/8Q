@@ -21,8 +21,9 @@ Quantum Computing is an incredibly powerful tool that has the potential to funda
 
 Our two primary goals are to:
 
-1. Creating an all-in-one development system tailored for Quantum Computing via the KLM Protocol
-2. Integrate an 8-Qubit QPU based on the KLM Protocol
+* [ ] Develop an all-in-one development system tailored for Quantum Computing via the KLM Protocol
+
+* [ ] Integrate an 8-Qubit QPU based on the KLM Protocol
 
 The reason for the separation of the goals is that while we are optimistic the QPU will be successful, until we have it fully tested, we have no way of knowing for certain if it will work. The overall purpose of this device is to bring quantum computing into the hackersphere. We have the known-good KLM Protocol which is perfect for application-specific circuits that we can develop and test for, and we have our Quantum Processor Unit which is based on the same protocol (but not yet tested). In the event the QPU development is unsuccessful, all the development and testing work surrounding both the processor and the framework can still be put to use for its' intended purpose: experimenting with quantum computing. In that case, the user will have to implement their own circuit for each algorithm, and with the [QEDA](github.com/Spooky-Manufacturing/QEDA) project (in development) this won't introduce a significant hurdle for beginners.
 
