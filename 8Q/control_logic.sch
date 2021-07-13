@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:8Q-cache
+LIBS:Laptop-cache
 EELAYER 26 0
 EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
-Sheet 10 13
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -1313,10 +1314,10 @@ Entry Wire Line
 Entry Wire Line
 	5050 5050 5150 5150
 $Comp
-L 74xx:74LS590 U?
+L 74xx:74LS590 U196
 U 1 1 6E7465DD
 P 2650 4350
-F 0 "U?" H 2650 5228 50  0000 C CNN
+F 0 "U196" H 2650 5228 50  0000 C CNN
 F 1 "74LS590" H 2650 5137 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm" H 2650 4400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls590" H 2650 4400 50  0001 C CNN
@@ -1324,10 +1325,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74ls590" H 2650 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS590 U?
+L 74xx:74LS590 U197
 U 1 1 6E7465E4
 P 3450 5250
-F 0 "U?" H 3450 6128 50  0000 C CNN
+F 0 "U197" H 3450 6128 50  0000 C CNN
 F 1 "74LS590" H 3450 6037 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm" H 3450 5300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls590" H 3450 5300 50  0001 C CNN

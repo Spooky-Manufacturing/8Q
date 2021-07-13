@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:8Q-cache
+LIBS:Laptop-cache
 EELAYER 26 0
 EELAYER END
 $Descr User 47992 35433
 encoding utf-8
-Sheet 5 13
+Sheet 3 11
 Title "8Q Quantum Computer"
 Date "2020-06-29"
 Rev ""
@@ -27,144 +28,170 @@ F0 "qpower" 50
 F1 "qpower.sch" 50
 $EndSheet
 $Comp
-L Quantum:Macro-Measure M8
+L 8Q-rescue:Macro-Measure-Quantum M8
 U 1 1 5E66F2C0
 P 5100 12200
+AR Path="/5E66F2C0" Ref="M8"  Part="1" 
+AR Path="/5EFAA353/5E66F2C0" Ref="M8"  Part="1" 
 F 0 "M8" V 4900 12200 50  0000 C CNN
 F 1 "Macro-Measure" V 4950 12200 50  0000 C CNN
-F 2 "Quantum:Macro-Photon-Source" V 5050 12450 50  0001 C CNN
+F 2 "QGates:Measure" V 5050 12450 50  0001 C CNN
 F 3 "" V 5050 12450 50  0001 C CNN
 	1    5100 12200
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate X8
+L 8Q-rescue:Macro-X-Gate-Quantum X8
 U 1 1 5E66F3E3
 P 4100 9100
+AR Path="/5E66F3E3" Ref="X8"  Part="1" 
+AR Path="/5EFAA353/5E66F3E3" Ref="X8"  Part="1" 
 F 0 "X8" H 4100 9525 50  0000 C CNN
 F 1 "Macro-X-Gate" H 4100 9434 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 5250 9200 50  0001 C CNN
+F 2 "QGates:X-Gate" H 5250 9200 50  0001 C CNN
 F 3 "" H 5250 9200 50  0001 C CNN
 	1    4100 9100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Y-Gate Y8
+L 8Q-rescue:Macro-Y-Gate-Quantum Y8
 U 1 1 5E66F56D
 P 4850 9100
+AR Path="/5E66F56D" Ref="Y8"  Part="1" 
+AR Path="/5EFAA353/5E66F56D" Ref="Y8"  Part="1" 
 F 0 "Y8" H 4850 9525 50  0000 C CNN
 F 1 "Macro-Y-Gate" H 4850 9434 50  0000 C CNN
-F 2 "Quantum:Macro-Y-Gate" H 6000 9200 50  0001 C CNN
+F 2 "QGates:Y-Gate" H 6000 9200 50  0001 C CNN
 F 3 "" H 6000 9200 50  0001 C CNN
 	1    4850 9100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Z-Gate Z8
+L 8Q-rescue:Macro-Z-Gate-Quantum Z8
 U 1 1 5E66F65A
 P 5600 9100
+AR Path="/5E66F65A" Ref="Z8"  Part="1" 
+AR Path="/5EFAA353/5E66F65A" Ref="Z8"  Part="1" 
 F 0 "Z8" H 5600 9525 50  0000 C CNN
 F 1 "Macro-Z-Gate" H 5600 9434 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 6750 9200 50  0001 C CNN
+F 2 "QGates:Z-Gate" H 6750 9200 50  0001 C CNN
 F 3 "" H 6750 9200 50  0001 C CNN
 	1    5600 9100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-CX-Gate CZ1
+L 8Q-rescue:Macro-CX-Gate-Quantum CZ1
 U 1 1 5E66F8FD
 P 21950 7250
+AR Path="/5E66F8FD" Ref="CZ1"  Part="1" 
+AR Path="/5EFAA353/5E66F8FD" Ref="CZ1"  Part="1" 
 F 0 "CZ1" H 21950 7450 118 0000 C CNN
 F 1 "Macro-CZ-Gate" H 22000 7100 118 0000 C CNN
-F 2 "Quantum:Macro-CZ-Gate" H 26350 7250 118 0001 C CNN
+F 2 "QGates:CZ-Gate" H 26350 7250 118 0001 C CNN
 F 3 "" H 26350 7250 118 0001 C CNN
 	1    21950 7250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate H8
+L 8Q-rescue:Macro-X-Gate-Quantum H8
 U 1 1 5E680E89
 P 6350 9100
+AR Path="/5E680E89" Ref="H8"  Part="1" 
+AR Path="/5EFAA353/5E680E89" Ref="H8"  Part="1" 
 F 0 "H8" H 6350 9525 50  0000 C CNN
 F 1 "Macro-H-Gate" H 6350 9434 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 7500 9200 50  0001 C CNN
+F 2 "QGates:H-Gate" H 7500 9200 50  0001 C CNN
 F 3 "" H 7500 9200 50  0001 C CNN
 	1    6350 9100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-CX-Gate CX1
+L 8Q-rescue:Macro-CX-Gate-Quantum CX1
 U 1 1 5E6AB7E7
 P 28550 7250
+AR Path="/5E6AB7E7" Ref="CX1"  Part="1" 
+AR Path="/5EFAA353/5E6AB7E7" Ref="CX1"  Part="1" 
 F 0 "CX1" H 28550 7950 118 0000 C CNN
 F 1 "Macro-CX-Gate" H 28550 7350 118 0000 C CNN
-F 2 "Quantum:Macro-CX-Gate" H 32950 7250 118 0001 C CNN
+F 2 "QGates:CX-Gate" H 32950 7250 118 0001 C CNN
 F 3 "" H 32950 7250 118 0001 C CNN
 	1    28550 7250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-CX-Gate CY1
+L 8Q-rescue:Macro-CX-Gate-Quantum CY1
 U 1 1 5E717043
 P 18650 7250
+AR Path="/5E717043" Ref="CY1"  Part="1" 
+AR Path="/5EFAA353/5E717043" Ref="CY1"  Part="1" 
 F 0 "CY1" H 18700 7350 118 0000 C CNN
 F 1 "Macro-CY-Gate" H 18700 7100 118 0000 C CNN
-F 2 "Quantum:Macro-CY-Gate" H 23050 7250 118 0001 C CNN
+F 2 "QGates:CY-Gate" H 23050 7250 118 0001 C CNN
 F 3 "" H 23050 7250 118 0001 C CNN
 	1    18650 7250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate X6
+L 8Q-rescue:Macro-X-Gate-Quantum X6
 U 1 1 5EE1B04F
 P 7600 8300
+AR Path="/5EE1B04F" Ref="X6"  Part="1" 
+AR Path="/5EFAA353/5EE1B04F" Ref="X6"  Part="1" 
 F 0 "X6" H 7600 8725 50  0000 C CNN
 F 1 "Macro-X-Gate" H 7600 8634 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 8750 8400 50  0001 C CNN
+F 2 "QGates:X-Gate" H 8750 8400 50  0001 C CNN
 F 3 "" H 8750 8400 50  0001 C CNN
 	1    7600 8300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Y-Gate Y6
+L 8Q-rescue:Macro-Y-Gate-Quantum Y6
 U 1 1 5EE1B056
 P 8350 8300
+AR Path="/5EE1B056" Ref="Y6"  Part="1" 
+AR Path="/5EFAA353/5EE1B056" Ref="Y6"  Part="1" 
 F 0 "Y6" H 8350 8725 50  0000 C CNN
 F 1 "Macro-Y-Gate" H 8350 8634 50  0000 C CNN
-F 2 "Quantum:Macro-Y-Gate" H 9500 8400 50  0001 C CNN
+F 2 "QGates:Y-Gate" H 9500 8400 50  0001 C CNN
 F 3 "" H 9500 8400 50  0001 C CNN
 	1    8350 8300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Z-Gate Z6
+L 8Q-rescue:Macro-Z-Gate-Quantum Z6
 U 1 1 5EE1B05D
 P 9100 8300
+AR Path="/5EE1B05D" Ref="Z6"  Part="1" 
+AR Path="/5EFAA353/5EE1B05D" Ref="Z6"  Part="1" 
 F 0 "Z6" H 9100 8725 50  0000 C CNN
 F 1 "Macro-Z-Gate" H 9100 8634 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 10250 8400 50  0001 C CNN
+F 2 "QGates:Z-Gate" H 10250 8400 50  0001 C CNN
 F 3 "" H 10250 8400 50  0001 C CNN
 	1    9100 8300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate H6
+L 8Q-rescue:Macro-X-Gate-Quantum H6
 U 1 1 5EE1B066
 P 9850 8300
+AR Path="/5EE1B066" Ref="H6"  Part="1" 
+AR Path="/5EFAA353/5EE1B066" Ref="H6"  Part="1" 
 F 0 "H6" H 9850 8725 50  0000 C CNN
 F 1 "Macro-H-Gate" H 9850 8634 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 11000 8400 50  0001 C CNN
+F 2 "QGates:H-Gate" H 11000 8400 50  0001 C CNN
 F 3 "" H 11000 8400 50  0001 C CNN
 	1    9850 8300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-CX-Gate CH1
+L 8Q-rescue:Macro-CX-Gate-Quantum CH1
 U 1 1 5EE1EB24
 P 25250 7250
+AR Path="/5EE1EB24" Ref="CH1"  Part="1" 
+AR Path="/5EFAA353/5EE1EB24" Ref="CH1"  Part="1" 
 F 0 "CH1" H 25250 7450 118 0000 C CNN
 F 1 "Macro-CH-Gate" H 25300 7100 118 0000 C CNN
-F 2 "Quantum:Macro-CZX-Gate" H 29650 7250 118 0001 C CNN
+F 2 "QGates:CH-Gate" H 29650 7250 118 0001 C CNN
 F 3 "" H 29650 7250 118 0001 C CNN
 	1    25250 7250
 	0    -1   -1   0   
@@ -274,9 +301,11 @@ Wire Wire Line
 Wire Wire Line
 	19700 4750 19700 5450
 $Comp
-L Quantum:Switch-1x2 U37
+L 8Q-rescue:Switch-1x2-Quantum U37
 U 1 1 5EF95FA9
 P 4650 11450
+AR Path="/5EF95FA9" Ref="U37"  Part="1" 
+AR Path="/5EFAA353/5EF95FA9" Ref="U37"  Part="1" 
 F 0 "U37" V 4696 10959 50  0000 R CNN
 F 1 "Switch-1x2" H 4850 11150 50  0000 R CNN
 F 2 "" V 4700 11700 50  0001 C CNN
@@ -285,9 +314,11 @@ F 3 "" V 4700 11700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U26
+L 8Q-rescue:Switch-1x4-Quantum U26
 U 1 1 5F017CF3
 P 5700 10400
+AR Path="/5F017CF3" Ref="U26"  Part="1" 
+AR Path="/5EFAA353/5F017CF3" Ref="U26"  Part="1" 
 F 0 "U26" H 5650 10250 50  0000 L CNN
 F 1 "Switch-1x4" H 5450 9850 50  0000 L CNN
 F 2 "" H 5700 10400 50  0001 C CNN
@@ -296,9 +327,11 @@ F 3 "" H 5700 10400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U25
+L 8Q-rescue:Switch-1x4-Quantum U25
 U 1 1 5F017CFA
 P 4500 10400
+AR Path="/5F017CFA" Ref="U25"  Part="1" 
+AR Path="/5EFAA353/5F017CFA" Ref="U25"  Part="1" 
 F 0 "U25" H 4450 10250 50  0000 L CNN
 F 1 "Switch-1x4" H 4250 9850 50  0000 L CNN
 F 2 "" H 4500 10400 50  0001 C CNN
@@ -335,9 +368,11 @@ Wire Wire Line
 Wire Wire Line
 	3900 10050 4350 10050
 $Comp
-L Quantum:Switch-1x2 U40
+L 8Q-rescue:Switch-1x2-Quantum U40
 U 1 1 5F337784
 P 2550 11550
+AR Path="/5F337784" Ref="U40"  Part="1" 
+AR Path="/5EFAA353/5F337784" Ref="U40"  Part="1" 
 F 0 "U40" V 2550 11700 50  0000 R CNN
 F 1 "Switch-1x2" V 2950 11700 50  0000 R CNN
 F 2 "" V 2600 11800 50  0001 C CNN
@@ -346,9 +381,11 @@ F 3 "" V 2600 11800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U28
+L 8Q-rescue:Collator-5x1-Quantum U28
 U 1 1 5F3FDE0F
 P 1350 10500
+AR Path="/5F3FDE0F" Ref="U28"  Part="1" 
+AR Path="/5EFAA353/5F3FDE0F" Ref="U28"  Part="1" 
 F 0 "U28" V 1815 10350 50  0000 C CNN
 F 1 "Collator-5x1" V 1724 10350 50  0000 C CNN
 F 2 "" H 1350 10500 50  0001 C CNN
@@ -357,9 +394,11 @@ F 3 "" H 1350 10500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U34
+L 8Q-rescue:Delay-Loop-Quantum U34
 U 1 1 5F47F3F2
 P 2000 10850
+AR Path="/5F47F3F2" Ref="U34"  Part="1" 
+AR Path="/5EFAA353/5F47F3F2" Ref="U34"  Part="1" 
 F 0 "U34" H 2000 10750 50  0000 L CNN
 F 1 "Delay-Loop" H 1800 10700 50  0000 L CNN
 F 2 "" H 2000 10850 50  0001 C CNN
@@ -368,9 +407,11 @@ F 3 "" H 2000 10850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Delay-Loop U45
+L 8Q-rescue:Delay-Loop-Quantum U45
 U 1 1 5F47F50B
 P 1800 12100
+AR Path="/5F47F50B" Ref="U45"  Part="1" 
+AR Path="/5EFAA353/5F47F50B" Ref="U45"  Part="1" 
 F 0 "U45" H 1750 12050 50  0000 L CNN
 F 1 "Delay-Loop" H 1600 11900 50  0000 L CNN
 F 2 "" H 1800 12100 50  0001 C CNN
@@ -379,9 +420,11 @@ F 3 "" H 1800 12100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U53
+L 8Q-rescue:Switch-1x2-Quantum U53
 U 1 1 5F4A0587
 P 2350 12800
+AR Path="/5F4A0587" Ref="U53"  Part="1" 
+AR Path="/5EFAA353/5F4A0587" Ref="U53"  Part="1" 
 F 0 "U53" V 2350 13100 50  0000 R CNN
 F 1 "Switch-1x2" V 2750 12950 50  0000 R CNN
 F 2 "" V 2400 13050 50  0001 C CNN
@@ -390,9 +433,11 @@ F 3 "" V 2400 13050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U43
+L 8Q-rescue:Collator-5x1-Quantum U43
 U 1 1 5F4F24C5
 P 1150 11750
+AR Path="/5F4F24C5" Ref="U43"  Part="1" 
+AR Path="/5EFAA353/5F4F24C5" Ref="U43"  Part="1" 
 F 0 "U43" V 1615 11600 50  0000 C CNN
 F 1 "Collator-5x1" V 1524 11600 50  0000 C CNN
 F 2 "" H 1150 11750 50  0001 C CNN
@@ -451,9 +496,11 @@ Wire Wire Line
 Wire Wire Line
 	600  11950 800  11950
 $Comp
-L Quantum:Switch-1x2 U74
+L 8Q-rescue:Switch-1x2-Quantum U74
 U 1 1 5F635754
 P 1850 14200
+AR Path="/5F635754" Ref="U74"  Part="1" 
+AR Path="/5EFAA353/5F635754" Ref="U74"  Part="1" 
 F 0 "U74" V 1850 14500 50  0000 R CNN
 F 1 "Switch-1x2" V 2250 14350 50  0000 R CNN
 F 2 "" V 1900 14450 50  0001 C CNN
@@ -462,9 +509,11 @@ F 3 "" V 1900 14450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U56
+L 8Q-rescue:Collator-5x1-Quantum U56
 U 1 1 5F63575B
 P 650 13150
+AR Path="/5F63575B" Ref="U56"  Part="1" 
+AR Path="/5EFAA353/5F63575B" Ref="U56"  Part="1" 
 F 0 "U56" V 1115 13000 50  0000 C CNN
 F 1 "Collator-5x1" V 1024 13000 50  0000 C CNN
 F 2 "" H 650 13150 50  0001 C CNN
@@ -473,9 +522,11 @@ F 3 "" H 650 13150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U68
+L 8Q-rescue:Delay-Loop-Quantum U68
 U 1 1 5F635762
 P 1300 13500
+AR Path="/5F635762" Ref="U68"  Part="1" 
+AR Path="/5EFAA353/5F635762" Ref="U68"  Part="1" 
 F 0 "U68" H 1300 13450 50  0000 L CNN
 F 1 "Delay-Loop" H 1100 13350 50  0000 L CNN
 F 2 "" H 1300 13500 50  0001 C CNN
@@ -484,9 +535,11 @@ F 3 "" H 1300 13500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Delay-Loop U85
+L 8Q-rescue:Delay-Loop-Quantum U85
 U 1 1 5F635769
 P 1100 14750
+AR Path="/5F635769" Ref="U85"  Part="1" 
+AR Path="/5EFAA353/5F635769" Ref="U85"  Part="1" 
 F 0 "U85" H 1100 14650 50  0000 L CNN
 F 1 "Delay-Loop" H 900 14550 50  0000 L CNN
 F 2 "" H 1100 14750 50  0001 C CNN
@@ -495,9 +548,11 @@ F 3 "" H 1100 14750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U91
+L 8Q-rescue:Switch-1x2-Quantum U91
 U 1 1 5F635770
 P 1650 15450
+AR Path="/5F635770" Ref="U91"  Part="1" 
+AR Path="/5EFAA353/5F635770" Ref="U91"  Part="1" 
 F 0 "U91" V 1650 15750 50  0000 R CNN
 F 1 "Switch-1x2" V 2050 15600 50  0000 R CNN
 F 2 "" V 1700 15700 50  0001 C CNN
@@ -506,9 +561,11 @@ F 3 "" V 1700 15700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U77
+L 8Q-rescue:Collator-5x1-Quantum U77
 U 1 1 5F635777
 P 450 14400
+AR Path="/5F635777" Ref="U77"  Part="1" 
+AR Path="/5EFAA353/5F635777" Ref="U77"  Part="1" 
 F 0 "U77" V 915 14250 50  0000 C CNN
 F 1 "Collator-5x1" V 824 14250 50  0000 C CNN
 F 2 "" H 450 14400 50  0001 C CNN
@@ -561,9 +618,11 @@ Wire Wire Line
 Wire Wire Line
 	300  12700 300  12950
 $Comp
-L Quantum:Switch-1x2 U106
+L 8Q-rescue:Switch-1x2-Quantum U106
 U 1 1 5F6A92B0
 P 1150 16850
+AR Path="/5F6A92B0" Ref="U106"  Part="1" 
+AR Path="/5EFAA353/5F6A92B0" Ref="U106"  Part="1" 
 F 0 "U106" V 1150 17150 50  0000 R CNN
 F 1 "Switch-1x2" V 1550 17000 50  0000 R CNN
 F 2 "" V 1200 17100 50  0001 C CNN
@@ -572,9 +631,11 @@ F 3 "" V 1200 17100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U96
+L 8Q-rescue:Collator-5x1-Quantum U96
 U 1 1 5F6A92B7
 P -50 15800
+AR Path="/5F6A92B7" Ref="U96"  Part="1" 
+AR Path="/5EFAA353/5F6A92B7" Ref="U96"  Part="1" 
 F 0 "U96" V 415 15650 50  0000 C CNN
 F 1 "Collator-5x1" V 324 15650 50  0000 C CNN
 F 2 "" H -50 15800 50  0001 C CNN
@@ -583,9 +644,11 @@ F 3 "" H -50 15800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U118
+L 8Q-rescue:Delay-Loop-Quantum U118
 U 1 1 5F6A92C5
 P 400 17400
+AR Path="/5F6A92C5" Ref="U118"  Part="1" 
+AR Path="/5EFAA353/5F6A92C5" Ref="U118"  Part="1" 
 F 0 "U118" H 350 17300 50  0000 L CNN
 F 1 "Delay-Loop" H 200 17200 50  0000 L CNN
 F 2 "" H 400 17400 50  0001 C CNN
@@ -594,9 +657,11 @@ F 3 "" H 400 17400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U124
+L 8Q-rescue:Switch-1x2-Quantum U124
 U 1 1 5F6A92CC
 P 950 18100
+AR Path="/5F6A92CC" Ref="U124"  Part="1" 
+AR Path="/5EFAA353/5F6A92CC" Ref="U124"  Part="1" 
 F 0 "U124" V 950 18400 50  0000 R CNN
 F 1 "Switch-1x2" V 1350 18250 50  0000 R CNN
 F 2 "" V 1000 18350 50  0001 C CNN
@@ -605,9 +670,11 @@ F 3 "" V 1000 18350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U114
+L 8Q-rescue:Collator-5x1-Quantum U114
 U 1 1 5F6A92D3
 P -250 17050
+AR Path="/5F6A92D3" Ref="U114"  Part="1" 
+AR Path="/5EFAA353/5F6A92D3" Ref="U114"  Part="1" 
 F 0 "U114" V 215 16900 50  0000 C CNN
 F 1 "Collator-5x1" V 124 16900 50  0000 C CNN
 F 2 "" H -250 17050 50  0001 C CNN
@@ -676,9 +743,11 @@ Wire Wire Line
 Wire Wire Line
 	4000 10750 4000 11050
 $Comp
-L Quantum:Switch-1x2 U38
+L 8Q-rescue:Switch-1x2-Quantum U38
 U 1 1 5FA78C1A
 P 5550 11450
+AR Path="/5FA78C1A" Ref="U38"  Part="1" 
+AR Path="/5EFAA353/5FA78C1A" Ref="U38"  Part="1" 
 F 0 "U38" V 5596 10959 50  0000 R CNN
 F 1 "Switch-1x2" H 5800 11150 50  0000 R CNN
 F 2 "" V 5600 11700 50  0001 C CNN
@@ -831,9 +900,11 @@ F 3 "" H 1050 16400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U102
+L 8Q-rescue:Delay-Loop-Quantum U102
 U 1 1 6022483D
 P 600 16150
+AR Path="/6022483D" Ref="U102"  Part="1" 
+AR Path="/5EFAA353/6022483D" Ref="U102"  Part="1" 
 F 0 "U102" H 550 16050 50  0000 L CNN
 F 1 "Delay-Loop" H 400 15950 50  0000 L CNN
 F 2 "" H 600 16150 50  0001 C CNN
@@ -972,9 +1043,11 @@ F 3 "" H 1900 16550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U112
+L 8Q-rescue:Switch-1x2-Quantum U112
 U 1 1 607AE7EE
 P 2000 17000
+AR Path="/607AE7EE" Ref="U112"  Part="1" 
+AR Path="/5EFAA353/607AE7EE" Ref="U112"  Part="1" 
 F 0 "U112" V 2046 16509 50  0000 R CNN
 F 1 "Switch-1x2" V 1250 17100 50  0000 R CNN
 F 2 "" V 2050 17250 50  0001 C CNN
@@ -1005,9 +1078,11 @@ F 3 "" H 1700 17800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U126
+L 8Q-rescue:Switch-1x2-Quantum U126
 U 1 1 607D08A7
 P 1800 18250
+AR Path="/607D08A7" Ref="U126"  Part="1" 
+AR Path="/5EFAA353/607D08A7" Ref="U126"  Part="1" 
 F 0 "U126" V 1846 17759 50  0000 R CNN
 F 1 "Switch-1x2" V 1050 18350 50  0000 R CNN
 F 2 "" V 1850 18500 50  0001 C CNN
@@ -1020,45 +1095,53 @@ Wire Wire Line
 Wire Wire Line
 	3600 17450 2000 17450
 $Comp
-L Quantum:Macro-X-Gate X4
+L 8Q-rescue:Macro-X-Gate-Quantum X4
 U 1 1 60D61604
 P 11100 7500
+AR Path="/60D61604" Ref="X4"  Part="1" 
+AR Path="/5EFAA353/60D61604" Ref="X4"  Part="1" 
 F 0 "X4" H 11100 7925 50  0000 C CNN
 F 1 "Macro-X-Gate" H 11100 7834 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 12250 7600 50  0001 C CNN
+F 2 "QGates:X-Gate" H 12250 7600 50  0001 C CNN
 F 3 "" H 12250 7600 50  0001 C CNN
 	1    11100 7500
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Y-Gate Y4
+L 8Q-rescue:Macro-Y-Gate-Quantum Y4
 U 1 1 60D6160B
 P 11850 7500
+AR Path="/60D6160B" Ref="Y4"  Part="1" 
+AR Path="/5EFAA353/60D6160B" Ref="Y4"  Part="1" 
 F 0 "Y4" H 11850 7925 50  0000 C CNN
 F 1 "Macro-Y-Gate" H 11850 7834 50  0000 C CNN
-F 2 "Quantum:Macro-Y-Gate" H 13000 7600 50  0001 C CNN
+F 2 "QGates:Y-Gate" H 13000 7600 50  0001 C CNN
 F 3 "" H 13000 7600 50  0001 C CNN
 	1    11850 7500
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Z-Gate Z4
+L 8Q-rescue:Macro-Z-Gate-Quantum Z4
 U 1 1 60D61612
 P 12600 7500
+AR Path="/60D61612" Ref="Z4"  Part="1" 
+AR Path="/5EFAA353/60D61612" Ref="Z4"  Part="1" 
 F 0 "Z4" H 12600 7925 50  0000 C CNN
 F 1 "Macro-Z-Gate" H 12600 7834 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 13750 7600 50  0001 C CNN
+F 2 "QGates:Z-Gate" H 13750 7600 50  0001 C CNN
 F 3 "" H 13750 7600 50  0001 C CNN
 	1    12600 7500
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate H4
+L 8Q-rescue:Macro-X-Gate-Quantum H4
 U 1 1 60D61619
 P 13350 7500
+AR Path="/60D61619" Ref="H4"  Part="1" 
+AR Path="/5EFAA353/60D61619" Ref="H4"  Part="1" 
 F 0 "H4" H 13350 7925 50  0000 C CNN
 F 1 "Macro-H-Gate" H 13350 7834 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 14500 7600 50  0001 C CNN
+F 2 "QGates:H-Gate" H 14500 7600 50  0001 C CNN
 F 3 "" H 14500 7600 50  0001 C CNN
 	1    13350 7500
 	0    -1   -1   0   
@@ -1078,45 +1161,53 @@ Wire Wire Line
 Wire Wire Line
 	13550 6700 13550 7050
 $Comp
-L Quantum:Macro-X-Gate X2
+L 8Q-rescue:Macro-X-Gate-Quantum X2
 U 1 1 60D8D770
 P 14600 6700
+AR Path="/60D8D770" Ref="X2"  Part="1" 
+AR Path="/5EFAA353/60D8D770" Ref="X2"  Part="1" 
 F 0 "X2" H 14600 7125 50  0000 C CNN
 F 1 "Macro-X-Gate" H 14600 7034 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 15750 6800 50  0001 C CNN
+F 2 "QGates:X-Gate" H 15750 6800 50  0001 C CNN
 F 3 "" H 15750 6800 50  0001 C CNN
 	1    14600 6700
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Y-Gate Y2
+L 8Q-rescue:Macro-Y-Gate-Quantum Y2
 U 1 1 60D8D777
 P 15350 6700
+AR Path="/60D8D777" Ref="Y2"  Part="1" 
+AR Path="/5EFAA353/60D8D777" Ref="Y2"  Part="1" 
 F 0 "Y2" H 15350 7125 50  0000 C CNN
 F 1 "Macro-Y-Gate" H 15350 7034 50  0000 C CNN
-F 2 "Quantum:Macro-Y-Gate" H 16500 6800 50  0001 C CNN
+F 2 "QGates:Y-Gate" H 16500 6800 50  0001 C CNN
 F 3 "" H 16500 6800 50  0001 C CNN
 	1    15350 6700
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Z-Gate Z2
+L 8Q-rescue:Macro-Z-Gate-Quantum Z2
 U 1 1 60D8D77E
 P 16100 6700
+AR Path="/60D8D77E" Ref="Z2"  Part="1" 
+AR Path="/5EFAA353/60D8D77E" Ref="Z2"  Part="1" 
 F 0 "Z2" H 16100 7125 50  0000 C CNN
 F 1 "Macro-Z-Gate" H 16100 7034 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 17250 6800 50  0001 C CNN
+F 2 "QGates:Z-Gate" H 17250 6800 50  0001 C CNN
 F 3 "" H 17250 6800 50  0001 C CNN
 	1    16100 6700
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate H2
+L 8Q-rescue:Macro-X-Gate-Quantum H2
 U 1 1 60D8D785
 P 16850 6700
+AR Path="/60D8D785" Ref="H2"  Part="1" 
+AR Path="/5EFAA353/60D8D785" Ref="H2"  Part="1" 
 F 0 "H2" H 16850 7125 50  0000 C CNN
 F 1 "Macro-H-Gate" H 16850 7034 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 18000 6800 50  0001 C CNN
+F 2 "QGates:H-Gate" H 18000 6800 50  0001 C CNN
 F 3 "" H 18000 6800 50  0001 C CNN
 	1    16850 6700
 	0    -1   -1   0   
@@ -1148,9 +1239,11 @@ Wire Wire Line
 Wire Wire Line
 	1400 14200 1300 14200
 $Comp
-L Quantum:Switch-1x2 U136
+L 8Q-rescue:Switch-1x2-Quantum U136
 U 1 1 6115334F
 P 450 19500
+AR Path="/6115334F" Ref="U136"  Part="1" 
+AR Path="/5EFAA353/6115334F" Ref="U136"  Part="1" 
 F 0 "U136" V 450 19800 50  0000 R CNN
 F 1 "Switch-1x2" V 850 19650 50  0000 R CNN
 F 2 "" V 500 19750 50  0001 C CNN
@@ -1159,9 +1252,11 @@ F 3 "" V 500 19750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U128
+L 8Q-rescue:Collator-5x1-Quantum U128
 U 1 1 61153356
 P -750 18450
+AR Path="/61153356" Ref="U128"  Part="1" 
+AR Path="/5EFAA353/61153356" Ref="U128"  Part="1" 
 F 0 "U128" V -285 18300 50  0000 C CNN
 F 1 "Collator-5x1" V -376 18300 50  0000 C CNN
 F 2 "" H -750 18450 50  0001 C CNN
@@ -1170,9 +1265,11 @@ F 3 "" H -750 18450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U146
+L 8Q-rescue:Delay-Loop-Quantum U146
 U 1 1 6115335D
 P -300 20050
+AR Path="/6115335D" Ref="U146"  Part="1" 
+AR Path="/5EFAA353/6115335D" Ref="U146"  Part="1" 
 F 0 "U146" H -350 19950 50  0000 L CNN
 F 1 "Delay-Loop" H -500 19850 50  0000 L CNN
 F 2 "" H -300 20050 50  0001 C CNN
@@ -1181,9 +1278,11 @@ F 3 "" H -300 20050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U148
+L 8Q-rescue:Switch-1x2-Quantum U148
 U 1 1 61153364
 P 250 20750
+AR Path="/61153364" Ref="U148"  Part="1" 
+AR Path="/5EFAA353/61153364" Ref="U148"  Part="1" 
 F 0 "U148" V 250 21050 50  0000 R CNN
 F 1 "Switch-1x2" V 650 20900 50  0000 R CNN
 F 2 "" V 300 21000 50  0001 C CNN
@@ -1192,9 +1291,11 @@ F 3 "" V 300 21000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U144
+L 8Q-rescue:Collator-5x1-Quantum U144
 U 1 1 6115336B
 P -950 19700
+AR Path="/6115336B" Ref="U144"  Part="1" 
+AR Path="/5EFAA353/6115336B" Ref="U144"  Part="1" 
 F 0 "U144" V -485 19550 50  0000 C CNN
 F 1 "Collator-5x1" V -576 19550 50  0000 C CNN
 F 2 "" H -950 19700 50  0001 C CNN
@@ -1263,9 +1364,11 @@ F 3 "" H 350 19050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U130
+L 8Q-rescue:Delay-Loop-Quantum U130
 U 1 1 61153399
 P -100 18800
+AR Path="/61153399" Ref="U130"  Part="1" 
+AR Path="/5EFAA353/61153399" Ref="U130"  Part="1" 
 F 0 "U130" H -150 18700 50  0000 L CNN
 F 1 "Delay-Loop" H -300 18600 50  0000 L CNN
 F 2 "" H -100 18800 50  0001 C CNN
@@ -1320,9 +1423,11 @@ F 3 "" H 1200 19200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U141
+L 8Q-rescue:Switch-1x2-Quantum U141
 U 1 1 611533B9
 P 1300 19650
+AR Path="/611533B9" Ref="U141"  Part="1" 
+AR Path="/5EFAA353/611533B9" Ref="U141"  Part="1" 
 F 0 "U141" V 1346 19159 50  0000 R CNN
 F 1 "Switch-1x2" V 550 19750 50  0000 R CNN
 F 2 "" V 1350 19900 50  0001 C CNN
@@ -1353,9 +1458,11 @@ F 3 "" H 1000 20450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U152
+L 8Q-rescue:Switch-1x2-Quantum U152
 U 1 1 611533CC
 P 1100 20900
+AR Path="/611533CC" Ref="U152"  Part="1" 
+AR Path="/5EFAA353/611533CC" Ref="U152"  Part="1" 
 F 0 "U152" V 1146 20409 50  0000 R CNN
 F 1 "Switch-1x2" V 350 21000 50  0000 R CNN
 F 2 "" V 1150 21150 50  0001 C CNN
@@ -1364,9 +1471,11 @@ F 3 "" V 1150 21150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U160
+L 8Q-rescue:Switch-1x2-Quantum U160
 U 1 1 6119840C
 P -300 22250
+AR Path="/6119840C" Ref="U160"  Part="1" 
+AR Path="/5EFAA353/6119840C" Ref="U160"  Part="1" 
 F 0 "U160" V -300 22550 50  0000 R CNN
 F 1 "Switch-1x2" V 100 22400 50  0000 R CNN
 F 2 "" V -250 22500 50  0001 C CNN
@@ -1375,9 +1484,11 @@ F 3 "" V -250 22500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U154
+L 8Q-rescue:Collator-5x1-Quantum U154
 U 1 1 61198413
 P -1500 21200
+AR Path="/61198413" Ref="U154"  Part="1" 
+AR Path="/5EFAA353/61198413" Ref="U154"  Part="1" 
 F 0 "U154" V -1035 21050 50  0000 C CNN
 F 1 "Collator-5x1" V -1126 21050 50  0000 C CNN
 F 2 "" H -1500 21200 50  0001 C CNN
@@ -1386,9 +1497,11 @@ F 3 "" H -1500 21200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U166
+L 8Q-rescue:Delay-Loop-Quantum U166
 U 1 1 6119841A
 P -1050 22800
+AR Path="/6119841A" Ref="U166"  Part="1" 
+AR Path="/5EFAA353/6119841A" Ref="U166"  Part="1" 
 F 0 "U166" H -1100 22700 50  0000 L CNN
 F 1 "Delay-Loop" H -1250 22600 50  0000 L CNN
 F 2 "" H -1050 22800 50  0001 C CNN
@@ -1397,9 +1510,11 @@ F 3 "" H -1050 22800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U168
+L 8Q-rescue:Switch-1x2-Quantum U168
 U 1 1 61198421
 P -500 23500
+AR Path="/61198421" Ref="U168"  Part="1" 
+AR Path="/5EFAA353/61198421" Ref="U168"  Part="1" 
 F 0 "U168" V -500 23800 50  0000 R CNN
 F 1 "Switch-1x2" V -100 23650 50  0000 R CNN
 F 2 "" V -450 23750 50  0001 C CNN
@@ -1408,9 +1523,11 @@ F 3 "" V -450 23750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U164
+L 8Q-rescue:Collator-5x1-Quantum U164
 U 1 1 61198428
 P -1700 22450
+AR Path="/61198428" Ref="U164"  Part="1" 
+AR Path="/5EFAA353/61198428" Ref="U164"  Part="1" 
 F 0 "U164" V -1235 22300 50  0000 C CNN
 F 1 "Collator-5x1" V -1326 22300 50  0000 C CNN
 F 2 "" H -1700 22450 50  0001 C CNN
@@ -1479,9 +1596,11 @@ F 3 "" H -400 21800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U158
+L 8Q-rescue:Delay-Loop-Quantum U158
 U 1 1 61198456
 P -850 21550
+AR Path="/61198456" Ref="U158"  Part="1" 
+AR Path="/5EFAA353/61198456" Ref="U158"  Part="1" 
 F 0 "U158" H -900 21450 50  0000 L CNN
 F 1 "Delay-Loop" H -1050 21350 50  0000 L CNN
 F 2 "" H -850 21550 50  0001 C CNN
@@ -1536,9 +1655,11 @@ F 3 "" H 450 21950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U162
+L 8Q-rescue:Switch-1x2-Quantum U162
 U 1 1 61198476
 P 550 22400
+AR Path="/61198476" Ref="U162"  Part="1" 
+AR Path="/5EFAA353/61198476" Ref="U162"  Part="1" 
 F 0 "U162" V 596 21909 50  0000 R CNN
 F 1 "Switch-1x2" V -200 22500 50  0000 R CNN
 F 2 "" V 600 22650 50  0001 C CNN
@@ -1569,9 +1690,11 @@ F 3 "" H 250 23200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U170
+L 8Q-rescue:Switch-1x2-Quantum U170
 U 1 1 61198489
 P 350 23650
+AR Path="/61198489" Ref="U170"  Part="1" 
+AR Path="/5EFAA353/61198489" Ref="U170"  Part="1" 
 F 0 "U170" V 396 23159 50  0000 R CNN
 F 1 "Switch-1x2" V -400 23750 50  0000 R CNN
 F 2 "" V 400 23900 50  0001 C CNN
@@ -1692,20 +1815,24 @@ Wire Wire Line
 Wire Wire Line
 	600  8300 6550 8300
 $Comp
-L Quantum:Macro-Measure M6
+L 8Q-rescue:Macro-Measure-Quantum M6
 U 1 1 61DFBAFF
 P 8600 11400
+AR Path="/61DFBAFF" Ref="M6"  Part="1" 
+AR Path="/5EFAA353/61DFBAFF" Ref="M6"  Part="1" 
 F 0 "M6" V 8400 11400 50  0000 C CNN
 F 1 "Macro-Measure" V 8450 11400 50  0000 C CNN
-F 2 "Quantum:Macro-Measure" V 8550 11650 50  0001 C CNN
+F 2 "QGates:Measure" V 8550 11650 50  0001 C CNN
 F 3 "" V 8550 11650 50  0001 C CNN
 	1    8600 11400
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U31
+L 8Q-rescue:Switch-1x2-Quantum U31
 U 1 1 61DFBB06
 P 8150 10650
+AR Path="/61DFBB06" Ref="U31"  Part="1" 
+AR Path="/5EFAA353/61DFBB06" Ref="U31"  Part="1" 
 F 0 "U31" V 8196 10159 50  0000 R CNN
 F 1 "Switch-1x2" H 8350 10350 50  0000 R CNN
 F 2 "" V 8200 10900 50  0001 C CNN
@@ -1714,9 +1841,11 @@ F 3 "" V 8200 10900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U18
+L 8Q-rescue:Switch-1x4-Quantum U18
 U 1 1 61DFBB0D
 P 9200 9600
+AR Path="/61DFBB0D" Ref="U18"  Part="1" 
+AR Path="/5EFAA353/61DFBB0D" Ref="U18"  Part="1" 
 F 0 "U18" H 9150 9450 50  0000 L CNN
 F 1 "Switch-1x4" H 8950 9050 50  0000 L CNN
 F 2 "" H 9200 9600 50  0001 C CNN
@@ -1725,9 +1854,11 @@ F 3 "" H 9200 9600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U17
+L 8Q-rescue:Switch-1x4-Quantum U17
 U 1 1 61DFBB14
 P 8000 9600
+AR Path="/61DFBB14" Ref="U17"  Part="1" 
+AR Path="/5EFAA353/61DFBB14" Ref="U17"  Part="1" 
 F 0 "U17" H 7950 9450 50  0000 L CNN
 F 1 "Switch-1x4" H 7750 9050 50  0000 L CNN
 F 2 "" H 8000 9600 50  0001 C CNN
@@ -1784,9 +1915,11 @@ Wire Wire Line
 Wire Wire Line
 	7500 9950 7500 10250
 $Comp
-L Quantum:Switch-1x2 U32
+L 8Q-rescue:Switch-1x2-Quantum U32
 U 1 1 61DFBB33
 P 9050 10650
+AR Path="/61DFBB33" Ref="U32"  Part="1" 
+AR Path="/5EFAA353/61DFBB33" Ref="U32"  Part="1" 
 F 0 "U32" V 9096 10159 50  0000 R CNN
 F 1 "Switch-1x2" H 9300 10350 50  0000 R CNN
 F 2 "" V 9100 10900 50  0001 C CNN
@@ -1917,20 +2050,24 @@ Wire Wire Line
 Wire Wire Line
 	9050 11250 9050 11100
 $Comp
-L Quantum:Macro-Measure M4
+L 8Q-rescue:Macro-Measure-Quantum M4
 U 1 1 61E7F1D2
 P 12100 10600
+AR Path="/61E7F1D2" Ref="M4"  Part="1" 
+AR Path="/5EFAA353/61E7F1D2" Ref="M4"  Part="1" 
 F 0 "M4" V 11900 10600 50  0000 C CNN
 F 1 "Macro-Measure" V 11950 10600 50  0000 C CNN
-F 2 "Quantum:Macro-Measure" V 12050 10850 50  0001 C CNN
+F 2 "QGates:Measure" V 12050 10850 50  0001 C CNN
 F 3 "" V 12050 10850 50  0001 C CNN
 	1    12100 10600
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U21
+L 8Q-rescue:Switch-1x2-Quantum U21
 U 1 1 61E7F1D9
 P 11650 9850
+AR Path="/61E7F1D9" Ref="U21"  Part="1" 
+AR Path="/5EFAA353/61E7F1D9" Ref="U21"  Part="1" 
 F 0 "U21" V 11696 9359 50  0000 R CNN
 F 1 "Switch-1x2" H 11850 9550 50  0000 R CNN
 F 2 "" V 11700 10100 50  0001 C CNN
@@ -1939,9 +2076,11 @@ F 3 "" V 11700 10100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U10
+L 8Q-rescue:Switch-1x4-Quantum U10
 U 1 1 61E7F1E0
 P 12700 8800
+AR Path="/61E7F1E0" Ref="U10"  Part="1" 
+AR Path="/5EFAA353/61E7F1E0" Ref="U10"  Part="1" 
 F 0 "U10" H 12650 8650 50  0000 L CNN
 F 1 "Switch-1x4" H 12450 8250 50  0000 L CNN
 F 2 "" H 12700 8800 50  0001 C CNN
@@ -1950,9 +2089,11 @@ F 3 "" H 12700 8800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U9
+L 8Q-rescue:Switch-1x4-Quantum U9
 U 1 1 61E7F1E7
 P 11500 8800
+AR Path="/61E7F1E7" Ref="U9"  Part="1" 
+AR Path="/5EFAA353/61E7F1E7" Ref="U9"  Part="1" 
 F 0 "U9" H 11450 8650 50  0000 L CNN
 F 1 "Switch-1x4" H 11250 8250 50  0000 L CNN
 F 2 "" H 11500 8800 50  0001 C CNN
@@ -2009,9 +2150,11 @@ Wire Wire Line
 Wire Wire Line
 	11000 9150 11000 9450
 $Comp
-L Quantum:Switch-1x2 U22
+L 8Q-rescue:Switch-1x2-Quantum U22
 U 1 1 61E7F206
 P 12550 9850
+AR Path="/61E7F206" Ref="U22"  Part="1" 
+AR Path="/5EFAA353/61E7F206" Ref="U22"  Part="1" 
 F 0 "U22" V 12596 9359 50  0000 R CNN
 F 1 "Switch-1x2" H 12800 9550 50  0000 R CNN
 F 2 "" V 12600 10100 50  0001 C CNN
@@ -2142,20 +2285,24 @@ Wire Wire Line
 Wire Wire Line
 	12550 10450 12550 10300
 $Comp
-L Quantum:Macro-Measure M2
+L 8Q-rescue:Macro-Measure-Quantum M2
 U 1 1 61F1542D
 P 15600 9800
+AR Path="/61F1542D" Ref="M2"  Part="1" 
+AR Path="/5EFAA353/61F1542D" Ref="M2"  Part="1" 
 F 0 "M2" V 15400 9800 50  0000 C CNN
 F 1 "Macro-Measure" V 15450 9800 50  0000 C CNN
-F 2 "Quantum:Macro-Measure" V 15550 10050 50  0001 C CNN
+F 2 "QGates:Measure" V 15550 10050 50  0001 C CNN
 F 3 "" V 15550 10050 50  0001 C CNN
 	1    15600 9800
 	0    1    1    0   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U13
+L 8Q-rescue:Switch-1x2-Quantum U13
 U 1 1 61F15434
 P 15150 9050
+AR Path="/61F15434" Ref="U13"  Part="1" 
+AR Path="/5EFAA353/61F15434" Ref="U13"  Part="1" 
 F 0 "U13" V 15196 8559 50  0000 R CNN
 F 1 "Switch-1x2" H 15350 8750 50  0000 R CNN
 F 2 "" V 15200 9300 50  0001 C CNN
@@ -2164,9 +2311,11 @@ F 3 "" V 15200 9300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U6
+L 8Q-rescue:Switch-1x4-Quantum U6
 U 1 1 61F1543B
 P 16200 8000
+AR Path="/61F1543B" Ref="U6"  Part="1" 
+AR Path="/5EFAA353/61F1543B" Ref="U6"  Part="1" 
 F 0 "U6" H 16150 7850 50  0000 L CNN
 F 1 "Switch-1x4" H 15950 7450 50  0000 L CNN
 F 2 "" H 16200 8000 50  0001 C CNN
@@ -2175,9 +2324,11 @@ F 3 "" H 16200 8000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U5
+L 8Q-rescue:Switch-1x4-Quantum U5
 U 1 1 61F15442
 P 15000 8000
+AR Path="/61F15442" Ref="U5"  Part="1" 
+AR Path="/5EFAA353/61F15442" Ref="U5"  Part="1" 
 F 0 "U5" H 14950 7850 50  0000 L CNN
 F 1 "Switch-1x4" H 14750 7450 50  0000 L CNN
 F 2 "" H 15000 8000 50  0001 C CNN
@@ -2234,9 +2385,11 @@ Wire Wire Line
 Wire Wire Line
 	14500 8350 14500 8650
 $Comp
-L Quantum:Switch-1x2 U14
+L 8Q-rescue:Switch-1x2-Quantum U14
 U 1 1 61F15461
 P 16050 9050
+AR Path="/61F15461" Ref="U14"  Part="1" 
+AR Path="/5EFAA353/61F15461" Ref="U14"  Part="1" 
 F 0 "U14" V 16096 8559 50  0000 R CNN
 F 1 "Switch-1x2" H 16300 8750 50  0000 R CNN
 F 2 "" V 16100 9300 50  0001 C CNN
@@ -2383,9 +2536,11 @@ Wire Wire Line
 Wire Wire Line
 	16350 9650 16050 9650
 $Comp
-L Quantum:Switch-1x4 U59
+L 8Q-rescue:Switch-1x4-Quantum U59
 U 1 1 6427DDC7
 P 22400 13150
+AR Path="/6427DDC7" Ref="U59"  Part="1" 
+AR Path="/5EFAA353/6427DDC7" Ref="U59"  Part="1" 
 F 0 "U59" H 22350 13050 50  0000 L CNN
 F 1 "Switch-1x4" H 22150 12650 50  0000 L CNN
 F 2 "" H 22400 13150 50  0001 C CNN
@@ -2394,9 +2549,11 @@ F 3 "" H 22400 13150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U60
+L 8Q-rescue:Switch-1x4-Quantum U60
 U 1 1 6427DFFC
 P 23400 13150
+AR Path="/6427DFFC" Ref="U60"  Part="1" 
+AR Path="/5EFAA353/6427DFFC" Ref="U60"  Part="1" 
 F 0 "U60" H 23350 13050 50  0000 L CNN
 F 1 "Switch-1x4" H 23200 12650 50  0000 L CNN
 F 2 "" H 23400 13150 50  0001 C CNN
@@ -2405,9 +2562,11 @@ F 3 "" H 23400 13150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U61
+L 8Q-rescue:Switch-1x4-Quantum U61
 U 1 1 64515A53
 P 24850 13150
+AR Path="/64515A53" Ref="U61"  Part="1" 
+AR Path="/5EFAA353/64515A53" Ref="U61"  Part="1" 
 F 0 "U61" H 24800 13050 50  0000 L CNN
 F 1 "Switch-1x4" H 24600 12650 50  0000 L CNN
 F 2 "" H 24850 13150 50  0001 C CNN
@@ -2416,9 +2575,11 @@ F 3 "" H 24850 13150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U62
+L 8Q-rescue:Switch-1x4-Quantum U62
 U 1 1 64515A5A
 P 25850 13150
+AR Path="/64515A5A" Ref="U62"  Part="1" 
+AR Path="/5EFAA353/64515A5A" Ref="U62"  Part="1" 
 F 0 "U62" H 25800 13050 50  0000 L CNN
 F 1 "Switch-1x4" H 25650 12650 50  0000 L CNN
 F 2 "" H 25850 13150 50  0001 C CNN
@@ -2545,9 +2706,11 @@ Wire Wire Line
 Wire Wire Line
 	26350 13200 26500 13200
 $Comp
-L Quantum:Switch-1x2 U97
+L 8Q-rescue:Switch-1x2-Quantum U97
 U 1 1 65DE743E
 P 22450 15800
+AR Path="/65DE743E" Ref="U97"  Part="1" 
+AR Path="/5EFAA353/65DE743E" Ref="U97"  Part="1" 
 F 0 "U97" H 22450 15800 50  0000 L CNN
 F 1 "Switch-1x2" H 22200 15500 50  0000 L CNN
 F 2 "" V 22500 16050 50  0001 C CNN
@@ -2646,9 +2809,11 @@ F 3 "" H 22000 15800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U98
+L 8Q-rescue:Switch-1x2-Quantum U98
 U 1 1 6669BB8C
 P 23450 15800
+AR Path="/6669BB8C" Ref="U98"  Part="1" 
+AR Path="/5EFAA353/6669BB8C" Ref="U98"  Part="1" 
 F 0 "U98" H 23450 15800 50  0000 L CNN
 F 1 "Switch-1x2" H 23200 15500 50  0000 L CNN
 F 2 "" V 23500 16050 50  0001 C CNN
@@ -2679,9 +2844,11 @@ F 3 "" H 23000 15800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U100
+L 8Q-rescue:Switch-1x2-Quantum U100
 U 1 1 66821731
 P 25800 15800
+AR Path="/66821731" Ref="U100"  Part="1" 
+AR Path="/5EFAA353/66821731" Ref="U100"  Part="1" 
 F 0 "U100" H 25800 15800 50  0000 L CNN
 F 1 "Switch-1x2" H 25550 15500 50  0000 L CNN
 F 2 "" V 25850 16050 50  0001 C CNN
@@ -2712,9 +2879,11 @@ F 3 "" H 26250 15800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U99
+L 8Q-rescue:Switch-1x2-Quantum U99
 U 1 1 66821744
 P 24800 15800
+AR Path="/66821744" Ref="U99"  Part="1" 
+AR Path="/5EFAA353/66821744" Ref="U99"  Part="1" 
 F 0 "U99" H 24800 15800 50  0000 L CNN
 F 1 "Switch-1x2" H 24550 15500 50  0000 L CNN
 F 2 "" V 24850 16050 50  0001 C CNN
@@ -2745,9 +2914,11 @@ F 3 "" H 25250 15800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U78
+L 8Q-rescue:Collator-2x1-Quantum U78
 U 1 1 66CB3475
 P 22400 14450
+AR Path="/66CB3475" Ref="U78"  Part="1" 
+AR Path="/5EFAA353/66CB3475" Ref="U78"  Part="1" 
 F 0 "U78" H 22400 14300 50  0000 R CNN
 F 1 "Collator-2x1" H 22600 14400 50  0000 R CNN
 F 2 "" H 22400 14450 50  0001 C CNN
@@ -2756,9 +2927,11 @@ F 3 "" H 22400 14450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U79
+L 8Q-rescue:Collator-2x1-Quantum U79
 U 1 1 66CB3B88
 P 23400 14450
+AR Path="/66CB3B88" Ref="U79"  Part="1" 
+AR Path="/5EFAA353/66CB3B88" Ref="U79"  Part="1" 
 F 0 "U79" H 23400 14300 50  0000 R CNN
 F 1 "Collator-2x1" H 23600 14400 50  0000 R CNN
 F 2 "" H 23400 14450 50  0001 C CNN
@@ -2767,9 +2940,11 @@ F 3 "" H 23400 14450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U80
+L 8Q-rescue:Collator-2x1-Quantum U80
 U 1 1 66D35D74
 P 24850 14450
+AR Path="/66D35D74" Ref="U80"  Part="1" 
+AR Path="/5EFAA353/66D35D74" Ref="U80"  Part="1" 
 F 0 "U80" H 24850 14300 50  0000 R CNN
 F 1 "Collator-2x1" H 25050 14400 50  0000 R CNN
 F 2 "" H 24850 14450 50  0001 C CNN
@@ -2778,9 +2953,11 @@ F 3 "" H 24850 14450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U81
+L 8Q-rescue:Collator-2x1-Quantum U81
 U 1 1 66DB7FCA
 P 25850 14450
+AR Path="/66DB7FCA" Ref="U81"  Part="1" 
+AR Path="/5EFAA353/66DB7FCA" Ref="U81"  Part="1" 
 F 0 "U81" H 25850 14300 50  0000 R CNN
 F 1 "Collator-2x1" H 26050 14400 50  0000 R CNN
 F 2 "" H 25850 14450 50  0001 C CNN
@@ -2847,9 +3024,11 @@ Wire Wire Line
 Wire Wire Line
 	5800 12050 5800 12650
 $Comp
-L Quantum:Collator-2x1 U89
+L 8Q-rescue:Collator-2x1-Quantum U89
 U 1 1 679E9D92
 P 9150 15350
+AR Path="/679E9D92" Ref="U89"  Part="1" 
+AR Path="/5EFAA353/679E9D92" Ref="U89"  Part="1" 
 F 0 "U89" H 9150 15300 50  0000 R CNN
 F 1 "Collator-2x1" H 9350 15200 50  0000 R CNN
 F 2 "" H 9150 15350 50  0001 C CNN
@@ -2858,9 +3037,11 @@ F 3 "" H 9150 15350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U87
+L 8Q-rescue:Collator-2x1-Quantum U87
 U 1 1 679E9D9A
 P 8150 14850
+AR Path="/679E9D9A" Ref="U87"  Part="1" 
+AR Path="/5EFAA353/679E9D9A" Ref="U87"  Part="1" 
 F 0 "U87" H 8150 14800 50  0000 R CNN
 F 1 "Collator-2x1" H 8350 14700 50  0000 R CNN
 F 2 "" H 8150 14850 50  0001 C CNN
@@ -2877,9 +3058,11 @@ Wire Wire Line
 Wire Wire Line
 	6850 15700 9100 15700
 $Comp
-L Quantum:Collator-5x1 U107
+L 8Q-rescue:Collator-5x1-Quantum U107
 U 1 1 67EEBA02
 P 22450 16900
+AR Path="/67EEBA02" Ref="U107"  Part="1" 
+AR Path="/5EFAA353/67EEBA02" Ref="U107"  Part="1" 
 F 0 "U107" H 22500 16700 50  0000 R CNN
 F 1 "Collator-5x1" H 22700 16800 50  0000 R CNN
 F 2 "" H 22450 16900 50  0001 C CNN
@@ -2888,9 +3071,11 @@ F 3 "" H 22450 16900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U108
+L 8Q-rescue:Collator-5x1-Quantum U108
 U 1 1 67EEBF84
 P 23450 16900
+AR Path="/67EEBF84" Ref="U108"  Part="1" 
+AR Path="/5EFAA353/67EEBF84" Ref="U108"  Part="1" 
 F 0 "U108" H 23500 16700 50  0000 R CNN
 F 1 "Collator-5x1" H 23700 16800 50  0000 R CNN
 F 2 "" H 23450 16900 50  0001 C CNN
@@ -2899,9 +3084,11 @@ F 3 "" H 23450 16900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U109
+L 8Q-rescue:Collator-5x1-Quantum U109
 U 1 1 67EEC0B6
 P 24800 16900
+AR Path="/67EEC0B6" Ref="U109"  Part="1" 
+AR Path="/5EFAA353/67EEC0B6" Ref="U109"  Part="1" 
 F 0 "U109" H 24850 16700 50  0000 R CNN
 F 1 "Collator-5x1" H 25050 16800 50  0000 R CNN
 F 2 "" H 24800 16900 50  0001 C CNN
@@ -2910,9 +3097,11 @@ F 3 "" H 24800 16900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U110
+L 8Q-rescue:Collator-5x1-Quantum U110
 U 1 1 67EEC1E4
 P 25800 16900
+AR Path="/67EEC1E4" Ref="U110"  Part="1" 
+AR Path="/5EFAA353/67EEC1E4" Ref="U110"  Part="1" 
 F 0 "U110" H 25850 16700 50  0000 R CNN
 F 1 "Collator-5x1" H 26050 16800 50  0000 R CNN
 F 2 "" H 25800 16900 50  0001 C CNN
@@ -2961,9 +3150,11 @@ CG6H
 Text GLabel 25600 17250 3    50   Input ~ 0
 CG5H
 $Comp
-L Quantum:Collator-2x1 U122
+L 8Q-rescue:Collator-2x1-Quantum U122
 U 1 1 681FBF8F
 P 12650 17750
+AR Path="/681FBF8F" Ref="U122"  Part="1" 
+AR Path="/5EFAA353/681FBF8F" Ref="U122"  Part="1" 
 F 0 "U122" H 12650 17700 50  0000 R CNN
 F 1 "Collator-2x1" H 12850 17600 50  0000 R CNN
 F 2 "" H 12650 17750 50  0001 C CNN
@@ -2972,9 +3163,11 @@ F 3 "" H 12650 17750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U116
+L 8Q-rescue:Collator-2x1-Quantum U116
 U 1 1 681FBF97
 P 11650 17250
+AR Path="/681FBF97" Ref="U116"  Part="1" 
+AR Path="/5EFAA353/681FBF97" Ref="U116"  Part="1" 
 F 0 "U116" H 11650 17200 50  0000 R CNN
 F 1 "Collator-2x1" H 11850 17100 50  0000 R CNN
 F 2 "" H 11650 17250 50  0001 C CNN
@@ -2987,9 +3180,11 @@ Wire Wire Line
 Wire Wire Line
 	10350 16850 10350 17600
 $Comp
-L Quantum:Collator-2x1 U142
+L 8Q-rescue:Collator-2x1-Quantum U142
 U 1 1 686D956D
 P 16150 19650
+AR Path="/686D956D" Ref="U142"  Part="1" 
+AR Path="/5EFAA353/686D956D" Ref="U142"  Part="1" 
 F 0 "U142" H 16150 19600 50  0000 R CNN
 F 1 "Collator-2x1" H 16350 19500 50  0000 R CNN
 F 2 "" H 16150 19650 50  0001 C CNN
@@ -2998,9 +3193,11 @@ F 3 "" H 16150 19650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U134
+L 8Q-rescue:Collator-2x1-Quantum U134
 U 1 1 686D9575
 P 15150 19150
+AR Path="/686D9575" Ref="U134"  Part="1" 
+AR Path="/5EFAA353/686D9575" Ref="U134"  Part="1" 
 F 0 "U134" H 15150 19100 50  0000 R CNN
 F 1 "Collator-2x1" H 15350 19000 50  0000 R CNN
 F 2 "" H 15150 19150 50  0001 C CNN
@@ -3015,9 +3212,11 @@ Wire Wire Line
 Wire Wire Line
 	13850 20000 13850 20750
 $Comp
-L Quantum:Switch-1x4 U173
+L 8Q-rescue:Switch-1x4-Quantum U173
 U 1 1 68982F01
 P 10600 26800
+AR Path="/68982F01" Ref="U173"  Part="1" 
+AR Path="/5EFAA353/68982F01" Ref="U173"  Part="1" 
 F 0 "U173" H 10600 26650 50  0000 L CNN
 F 1 "Switch-1x4" H 10350 26300 50  0000 L CNN
 F 2 "" H 10600 26800 50  0001 C CNN
@@ -3026,9 +3225,11 @@ F 3 "" H 10600 26800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U174
+L 8Q-rescue:Switch-1x4-Quantum U174
 U 1 1 68983B1C
 P 11600 26800
+AR Path="/68983B1C" Ref="U174"  Part="1" 
+AR Path="/5EFAA353/68983B1C" Ref="U174"  Part="1" 
 F 0 "U174" H 11600 26650 50  0000 L CNN
 F 1 "Switch-1x4" H 11350 26300 50  0000 L CNN
 F 2 "" H 11600 26800 50  0001 C CNN
@@ -3169,100 +3370,118 @@ Wire Wire Line
 Wire Wire Line
 	-2350 22650 -2050 22650
 $Comp
-L Quantum:Macro-Measure M7
+L 8Q-rescue:Macro-Measure-Quantum M7
 U 1 1 6B2770CA
 P 42200 12150
+AR Path="/6B2770CA" Ref="M7"  Part="1" 
+AR Path="/5EFAA353/6B2770CA" Ref="M7"  Part="1" 
 F 0 "M7" V 42000 12150 50  0000 C CNN
 F 1 "Macro-Measure" V 42050 12150 50  0000 C CNN
-F 2 "Quantum:Macro-Measure" V 42150 12400 50  0001 C CNN
+F 2 "QGates:Measure" V 42150 12400 50  0001 C CNN
 F 3 "" V 42150 12400 50  0001 C CNN
 	1    42200 12150
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate X7
+L 8Q-rescue:Macro-X-Gate-Quantum X7
 U 1 1 6B2770D1
 P 43200 9050
+AR Path="/6B2770D1" Ref="X7"  Part="1" 
+AR Path="/5EFAA353/6B2770D1" Ref="X7"  Part="1" 
 F 0 "X7" H 43200 9475 50  0000 C CNN
 F 1 "Macro-X-Gate" H 43200 9384 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 44350 9150 50  0001 C CNN
+F 2 "QGates:X-Gate" H 44350 9150 50  0001 C CNN
 F 3 "" H 44350 9150 50  0001 C CNN
 	1    43200 9050
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Y-Gate Y7
+L 8Q-rescue:Macro-Y-Gate-Quantum Y7
 U 1 1 6B2770D8
 P 42450 9050
+AR Path="/6B2770D8" Ref="Y7"  Part="1" 
+AR Path="/5EFAA353/6B2770D8" Ref="Y7"  Part="1" 
 F 0 "Y7" H 42450 9475 50  0000 C CNN
 F 1 "Macro-Y-Gate" H 42450 9384 50  0000 C CNN
-F 2 "Quantum:Macro-Y-Gate" H 43600 9150 50  0001 C CNN
+F 2 "QGates:Y-Gate" H 43600 9150 50  0001 C CNN
 F 3 "" H 43600 9150 50  0001 C CNN
 	1    42450 9050
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Z-Gate Z7
+L 8Q-rescue:Macro-Z-Gate-Quantum Z7
 U 1 1 6B2770DF
 P 41700 9050
+AR Path="/6B2770DF" Ref="Z7"  Part="1" 
+AR Path="/5EFAA353/6B2770DF" Ref="Z7"  Part="1" 
 F 0 "Z7" H 41700 9475 50  0000 C CNN
 F 1 "Macro-Z-Gate" H 41700 9384 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 42850 9150 50  0001 C CNN
+F 2 "QGates:Z-Gate" H 42850 9150 50  0001 C CNN
 F 3 "" H 42850 9150 50  0001 C CNN
 	1    41700 9050
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate H7
+L 8Q-rescue:Macro-X-Gate-Quantum H7
 U 1 1 6B2770E6
 P 40950 9050
+AR Path="/6B2770E6" Ref="H7"  Part="1" 
+AR Path="/5EFAA353/6B2770E6" Ref="H7"  Part="1" 
 F 0 "H7" H 40950 9475 50  0000 C CNN
 F 1 "Macro-H-Gate" H 40950 9384 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 42100 9150 50  0001 C CNN
+F 2 "QGates:H-Gate" H 42100 9150 50  0001 C CNN
 F 3 "" H 42100 9150 50  0001 C CNN
 	1    40950 9050
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate X5
+L 8Q-rescue:Macro-X-Gate-Quantum X5
 U 1 1 6B2770ED
 P 39700 8250
+AR Path="/6B2770ED" Ref="X5"  Part="1" 
+AR Path="/5EFAA353/6B2770ED" Ref="X5"  Part="1" 
 F 0 "X5" H 39700 8675 50  0000 C CNN
 F 1 "Macro-X-Gate" H 39700 8584 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 40850 8350 50  0001 C CNN
+F 2 "QGates:X-Gate" H 40850 8350 50  0001 C CNN
 F 3 "" H 40850 8350 50  0001 C CNN
 	1    39700 8250
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Y-Gate Y5
+L 8Q-rescue:Macro-Y-Gate-Quantum Y5
 U 1 1 6B2770F4
 P 38950 8250
+AR Path="/6B2770F4" Ref="Y5"  Part="1" 
+AR Path="/5EFAA353/6B2770F4" Ref="Y5"  Part="1" 
 F 0 "Y5" H 38950 8675 50  0000 C CNN
 F 1 "Macro-Y-Gate" H 38950 8584 50  0000 C CNN
-F 2 "Quantum:Macro-Y-Gate" H 40100 8350 50  0001 C CNN
+F 2 "QGates:Y-Gate" H 40100 8350 50  0001 C CNN
 F 3 "" H 40100 8350 50  0001 C CNN
 	1    38950 8250
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Z-Gate Z5
+L 8Q-rescue:Macro-Z-Gate-Quantum Z5
 U 1 1 6B2770FB
 P 38200 8250
+AR Path="/6B2770FB" Ref="Z5"  Part="1" 
+AR Path="/5EFAA353/6B2770FB" Ref="Z5"  Part="1" 
 F 0 "Z5" H 38200 8675 50  0000 C CNN
 F 1 "Macro-Z-Gate" H 38200 8584 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 39350 8350 50  0001 C CNN
+F 2 "QGates:Z-Gate" H 39350 8350 50  0001 C CNN
 F 3 "" H 39350 8350 50  0001 C CNN
 	1    38200 8250
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate H5
+L 8Q-rescue:Macro-X-Gate-Quantum H5
 U 1 1 6B277102
 P 37450 8250
+AR Path="/6B277102" Ref="H5"  Part="1" 
+AR Path="/5EFAA353/6B277102" Ref="H5"  Part="1" 
 F 0 "H5" H 37450 8675 50  0000 C CNN
 F 1 "Macro-H-Gate" H 37450 8584 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 38600 8350 50  0001 C CNN
+F 2 "QGates:H-Gate" H 38600 8350 50  0001 C CNN
 F 3 "" H 38600 8350 50  0001 C CNN
 	1    37450 8250
 	0    1    -1   0   
@@ -3344,9 +3563,11 @@ Wire Wire Line
 Wire Wire Line
 	37250 7450 37250 7800
 $Comp
-L Quantum:Switch-1x2 U36
+L 8Q-rescue:Switch-1x2-Quantum U36
 U 1 1 6B27712F
 P 42650 11400
+AR Path="/6B27712F" Ref="U36"  Part="1" 
+AR Path="/5EFAA353/6B27712F" Ref="U36"  Part="1" 
 F 0 "U36" V 42696 10909 50  0000 R CNN
 F 1 "Switch-1x2" H 42850 11100 50  0000 R CNN
 F 2 "" V 42700 11650 50  0001 C CNN
@@ -3355,9 +3576,11 @@ F 3 "" V 42700 11650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U23
+L 8Q-rescue:Switch-1x4-Quantum U23
 U 1 1 6B277136
 P 41600 10350
+AR Path="/6B277136" Ref="U23"  Part="1" 
+AR Path="/5EFAA353/6B277136" Ref="U23"  Part="1" 
 F 0 "U23" H 41550 10200 50  0000 L CNN
 F 1 "Switch-1x4" H 41350 9800 50  0000 L CNN
 F 2 "" H 41600 10350 50  0001 C CNN
@@ -3366,9 +3589,11 @@ F 3 "" H 41600 10350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U24
+L 8Q-rescue:Switch-1x4-Quantum U24
 U 1 1 6B27713D
 P 42800 10350
+AR Path="/6B27713D" Ref="U24"  Part="1" 
+AR Path="/5EFAA353/6B27713D" Ref="U24"  Part="1" 
 F 0 "U24" H 42750 10200 50  0000 L CNN
 F 1 "Switch-1x4" H 42550 9800 50  0000 L CNN
 F 2 "" H 42800 10350 50  0001 C CNN
@@ -3405,9 +3630,11 @@ Wire Wire Line
 Wire Wire Line
 	43400 10000 42950 10000
 $Comp
-L Quantum:Switch-1x2 U39
+L 8Q-rescue:Switch-1x2-Quantum U39
 U 1 1 6B277152
 P 44750 11500
+AR Path="/6B277152" Ref="U39"  Part="1" 
+AR Path="/5EFAA353/6B277152" Ref="U39"  Part="1" 
 F 0 "U39" V 44750 11800 50  0000 R CNN
 F 1 "Switch-1x2" V 45150 11650 50  0000 R CNN
 F 2 "" V 44800 11750 50  0001 C CNN
@@ -3416,9 +3643,11 @@ F 3 "" V 44800 11750 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U27
+L 8Q-rescue:Collator-5x1-Quantum U27
 U 1 1 6B277159
 P 45950 10450
+AR Path="/6B277159" Ref="U27"  Part="1" 
+AR Path="/5EFAA353/6B277159" Ref="U27"  Part="1" 
 F 0 "U27" V 46415 10300 50  0000 C CNN
 F 1 "Collator-5x1" V 46324 10300 50  0000 C CNN
 F 2 "" H 45950 10450 50  0001 C CNN
@@ -3427,9 +3656,11 @@ F 3 "" H 45950 10450 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U33
+L 8Q-rescue:Delay-Loop-Quantum U33
 U 1 1 6B277160
 P 45300 10800
+AR Path="/6B277160" Ref="U33"  Part="1" 
+AR Path="/5EFAA353/6B277160" Ref="U33"  Part="1" 
 F 0 "U33" H 45300 10700 50  0000 L CNN
 F 1 "Delay-Loop" H 45100 10650 50  0000 L CNN
 F 2 "" H 45300 10800 50  0001 C CNN
@@ -3438,9 +3669,11 @@ F 3 "" H 45300 10800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Delay-Loop U44
+L 8Q-rescue:Delay-Loop-Quantum U44
 U 1 1 6B277167
 P 45500 12050
+AR Path="/6B277167" Ref="U44"  Part="1" 
+AR Path="/5EFAA353/6B277167" Ref="U44"  Part="1" 
 F 0 "U44" H 45450 12000 50  0000 L CNN
 F 1 "Delay-Loop" H 45300 11850 50  0000 L CNN
 F 2 "" H 45500 12050 50  0001 C CNN
@@ -3449,9 +3682,11 @@ F 3 "" H 45500 12050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U52
+L 8Q-rescue:Switch-1x2-Quantum U52
 U 1 1 6B27716E
 P 44950 12750
+AR Path="/6B27716E" Ref="U52"  Part="1" 
+AR Path="/5EFAA353/6B27716E" Ref="U52"  Part="1" 
 F 0 "U52" V 44950 13050 50  0000 R CNN
 F 1 "Switch-1x2" V 45350 12900 50  0000 R CNN
 F 2 "" V 45000 13000 50  0001 C CNN
@@ -3460,9 +3695,11 @@ F 3 "" V 45000 13000 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U42
+L 8Q-rescue:Collator-5x1-Quantum U42
 U 1 1 6B277175
 P 46150 11700
+AR Path="/6B277175" Ref="U42"  Part="1" 
+AR Path="/5EFAA353/6B277175" Ref="U42"  Part="1" 
 F 0 "U42" V 46615 11550 50  0000 C CNN
 F 1 "Collator-5x1" V 46524 11550 50  0000 C CNN
 F 2 "" H 46150 11700 50  0001 C CNN
@@ -3521,9 +3758,11 @@ Wire Wire Line
 Wire Wire Line
 	46700 11900 46500 11900
 $Comp
-L Quantum:Switch-1x2 U73
+L 8Q-rescue:Switch-1x2-Quantum U73
 U 1 1 6B277195
 P 45450 14150
+AR Path="/6B277195" Ref="U73"  Part="1" 
+AR Path="/5EFAA353/6B277195" Ref="U73"  Part="1" 
 F 0 "U73" V 45450 14450 50  0000 R CNN
 F 1 "Switch-1x2" V 45850 14300 50  0000 R CNN
 F 2 "" V 45500 14400 50  0001 C CNN
@@ -3532,9 +3771,11 @@ F 3 "" V 45500 14400 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U55
+L 8Q-rescue:Collator-5x1-Quantum U55
 U 1 1 6B27719C
 P 46650 13100
+AR Path="/6B27719C" Ref="U55"  Part="1" 
+AR Path="/5EFAA353/6B27719C" Ref="U55"  Part="1" 
 F 0 "U55" V 47115 12950 50  0000 C CNN
 F 1 "Collator-5x1" V 47024 12950 50  0000 C CNN
 F 2 "" H 46650 13100 50  0001 C CNN
@@ -3543,9 +3784,11 @@ F 3 "" H 46650 13100 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U67
+L 8Q-rescue:Delay-Loop-Quantum U67
 U 1 1 6B2771A3
 P 46000 13450
+AR Path="/6B2771A3" Ref="U67"  Part="1" 
+AR Path="/5EFAA353/6B2771A3" Ref="U67"  Part="1" 
 F 0 "U67" H 46000 13400 50  0000 L CNN
 F 1 "Delay-Loop" H 45800 13300 50  0000 L CNN
 F 2 "" H 46000 13450 50  0001 C CNN
@@ -3554,9 +3797,11 @@ F 3 "" H 46000 13450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Delay-Loop U84
+L 8Q-rescue:Delay-Loop-Quantum U84
 U 1 1 6B2771AA
 P 46200 14700
+AR Path="/6B2771AA" Ref="U84"  Part="1" 
+AR Path="/5EFAA353/6B2771AA" Ref="U84"  Part="1" 
 F 0 "U84" H 46200 14600 50  0000 L CNN
 F 1 "Delay-Loop" H 46000 14500 50  0000 L CNN
 F 2 "" H 46200 14700 50  0001 C CNN
@@ -3565,9 +3810,11 @@ F 3 "" H 46200 14700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U90
+L 8Q-rescue:Switch-1x2-Quantum U90
 U 1 1 6B2771B1
 P 45650 15400
+AR Path="/6B2771B1" Ref="U90"  Part="1" 
+AR Path="/5EFAA353/6B2771B1" Ref="U90"  Part="1" 
 F 0 "U90" V 45650 15700 50  0000 R CNN
 F 1 "Switch-1x2" V 46050 15550 50  0000 R CNN
 F 2 "" V 45700 15650 50  0001 C CNN
@@ -3576,9 +3823,11 @@ F 3 "" V 45700 15650 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U76
+L 8Q-rescue:Collator-5x1-Quantum U76
 U 1 1 6B2771B8
 P 46850 14350
+AR Path="/6B2771B8" Ref="U76"  Part="1" 
+AR Path="/5EFAA353/6B2771B8" Ref="U76"  Part="1" 
 F 0 "U76" V 47315 14200 50  0000 C CNN
 F 1 "Collator-5x1" V 47224 14200 50  0000 C CNN
 F 2 "" H 46850 14350 50  0001 C CNN
@@ -3631,9 +3880,11 @@ Wire Wire Line
 Wire Wire Line
 	47000 12650 47000 12900
 $Comp
-L Quantum:Switch-1x2 U105
+L 8Q-rescue:Switch-1x2-Quantum U105
 U 1 1 6B2771D5
 P 46150 16800
+AR Path="/6B2771D5" Ref="U105"  Part="1" 
+AR Path="/5EFAA353/6B2771D5" Ref="U105"  Part="1" 
 F 0 "U105" V 46150 17100 50  0000 R CNN
 F 1 "Switch-1x2" V 46550 16950 50  0000 R CNN
 F 2 "" V 46200 17050 50  0001 C CNN
@@ -3642,9 +3893,11 @@ F 3 "" V 46200 17050 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U95
+L 8Q-rescue:Collator-5x1-Quantum U95
 U 1 1 6B2771DC
 P 47350 15750
+AR Path="/6B2771DC" Ref="U95"  Part="1" 
+AR Path="/5EFAA353/6B2771DC" Ref="U95"  Part="1" 
 F 0 "U95" V 47815 15600 50  0000 C CNN
 F 1 "Collator-5x1" V 47724 15600 50  0000 C CNN
 F 2 "" H 47350 15750 50  0001 C CNN
@@ -3653,9 +3906,11 @@ F 3 "" H 47350 15750 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U117
+L 8Q-rescue:Delay-Loop-Quantum U117
 U 1 1 6B2771E3
 P 46900 17350
+AR Path="/6B2771E3" Ref="U117"  Part="1" 
+AR Path="/5EFAA353/6B2771E3" Ref="U117"  Part="1" 
 F 0 "U117" H 46850 17250 50  0000 L CNN
 F 1 "Delay-Loop" H 46700 17150 50  0000 L CNN
 F 2 "" H 46900 17350 50  0001 C CNN
@@ -3664,9 +3919,11 @@ F 3 "" H 46900 17350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U123
+L 8Q-rescue:Switch-1x2-Quantum U123
 U 1 1 6B2771EA
 P 46350 18050
+AR Path="/6B2771EA" Ref="U123"  Part="1" 
+AR Path="/5EFAA353/6B2771EA" Ref="U123"  Part="1" 
 F 0 "U123" V 46350 18350 50  0000 R CNN
 F 1 "Switch-1x2" V 46750 18200 50  0000 R CNN
 F 2 "" V 46400 18300 50  0001 C CNN
@@ -3675,9 +3932,11 @@ F 3 "" V 46400 18300 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U113
+L 8Q-rescue:Collator-5x1-Quantum U113
 U 1 1 6B2771F1
 P 47550 17000
+AR Path="/6B2771F1" Ref="U113"  Part="1" 
+AR Path="/5EFAA353/6B2771F1" Ref="U113"  Part="1" 
 F 0 "U113" V 48015 16850 50  0000 C CNN
 F 1 "Collator-5x1" V 47924 16850 50  0000 C CNN
 F 2 "" H 47550 17000 50  0001 C CNN
@@ -3746,9 +4005,11 @@ Wire Wire Line
 Wire Wire Line
 	43300 10700 43300 11000
 $Comp
-L Quantum:Switch-1x2 U35
+L 8Q-rescue:Switch-1x2-Quantum U35
 U 1 1 6B277216
 P 41750 11400
+AR Path="/6B277216" Ref="U35"  Part="1" 
+AR Path="/5EFAA353/6B277216" Ref="U35"  Part="1" 
 F 0 "U35" V 41796 10909 50  0000 R CNN
 F 1 "Switch-1x2" H 42000 11100 50  0000 R CNN
 F 2 "" V 41800 11650 50  0001 C CNN
@@ -3901,9 +4162,11 @@ F 3 "" H 46250 16350 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U101
+L 8Q-rescue:Delay-Loop-Quantum U101
 U 1 1 6B27726A
 P 46700 16100
+AR Path="/6B27726A" Ref="U101"  Part="1" 
+AR Path="/5EFAA353/6B27726A" Ref="U101"  Part="1" 
 F 0 "U101" H 46650 16000 50  0000 L CNN
 F 1 "Delay-Loop" H 46500 15900 50  0000 L CNN
 F 2 "" H 46700 16100 50  0001 C CNN
@@ -4012,9 +4275,11 @@ F 3 "" H 42600 12200 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U54
+L 8Q-rescue:Switch-1x2-Quantum U54
 U 1 1 6B2772A7
 P 44100 12900
+AR Path="/6B2772A7" Ref="U54"  Part="1" 
+AR Path="/5EFAA353/6B2772A7" Ref="U54"  Part="1" 
 F 0 "U54" V 44100 13200 50  0000 R CNN
 F 1 "Switch-1x2" V 44500 13050 50  0000 R CNN
 F 2 "" V 44150 13150 50  0001 C CNN
@@ -4077,9 +4342,11 @@ F 3 "" H 44000 11200 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U41
+L 8Q-rescue:Switch-1x2-Quantum U41
 U 1 1 6B2772CB
 P 43900 11650
+AR Path="/6B2772CB" Ref="U41"  Part="1" 
+AR Path="/5EFAA353/6B2772CB" Ref="U41"  Part="1" 
 F 0 "U41" V 43946 11159 50  0000 R CNN
 F 1 "Switch-1x2" V 43150 11750 50  0000 R CNN
 F 2 "" V 43950 11900 50  0001 C CNN
@@ -4110,9 +4377,11 @@ F 3 "" H 44700 13850 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U75
+L 8Q-rescue:Switch-1x2-Quantum U75
 U 1 1 6B2772DE
 P 44600 14300
+AR Path="/6B2772DE" Ref="U75"  Part="1" 
+AR Path="/5EFAA353/6B2772DE" Ref="U75"  Part="1" 
 F 0 "U75" V 44646 13809 50  0000 R CNN
 F 1 "Switch-1x2" V 43850 14400 50  0000 R CNN
 F 2 "" V 44650 14550 50  0001 C CNN
@@ -4143,9 +4412,11 @@ F 3 "" H 44900 15100 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U92
+L 8Q-rescue:Switch-1x2-Quantum U92
 U 1 1 6B2772F1
 P 44800 15550
+AR Path="/6B2772F1" Ref="U92"  Part="1" 
+AR Path="/5EFAA353/6B2772F1" Ref="U92"  Part="1" 
 F 0 "U92" V 44846 15059 50  0000 R CNN
 F 1 "Switch-1x2" V 44050 15650 50  0000 R CNN
 F 2 "" V 44850 15800 50  0001 C CNN
@@ -4176,9 +4447,11 @@ F 3 "" H 45400 16500 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U111
+L 8Q-rescue:Switch-1x2-Quantum U111
 U 1 1 6B277304
 P 45300 16950
+AR Path="/6B277304" Ref="U111"  Part="1" 
+AR Path="/5EFAA353/6B277304" Ref="U111"  Part="1" 
 F 0 "U111" V 45346 16459 50  0000 R CNN
 F 1 "Switch-1x2" V 44550 17050 50  0000 R CNN
 F 2 "" V 45350 17200 50  0001 C CNN
@@ -4209,9 +4482,11 @@ F 3 "" H 45600 17750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U125
+L 8Q-rescue:Switch-1x2-Quantum U125
 U 1 1 6B277317
 P 45500 18200
+AR Path="/6B277317" Ref="U125"  Part="1" 
+AR Path="/5EFAA353/6B277317" Ref="U125"  Part="1" 
 F 0 "U125" V 45546 17709 50  0000 R CNN
 F 1 "Switch-1x2" V 44750 18300 50  0000 R CNN
 F 2 "" V 45550 18450 50  0001 C CNN
@@ -4262,45 +4537,53 @@ Wire Wire Line
 	45500 18650 43750 18650
 Connection ~ 45500 18650
 $Comp
-L Quantum:Macro-X-Gate X3
+L 8Q-rescue:Macro-X-Gate-Quantum X3
 U 1 1 6B277337
 P 36200 7450
+AR Path="/6B277337" Ref="X3"  Part="1" 
+AR Path="/5EFAA353/6B277337" Ref="X3"  Part="1" 
 F 0 "X3" H 36200 7875 50  0000 C CNN
 F 1 "Macro-X-Gate" H 36200 7784 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 37350 7550 50  0001 C CNN
+F 2 "QGates:X-Gate" H 37350 7550 50  0001 C CNN
 F 3 "" H 37350 7550 50  0001 C CNN
 	1    36200 7450
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Y-Gate Y3
+L 8Q-rescue:Macro-Y-Gate-Quantum Y3
 U 1 1 6B27733E
 P 35450 7450
+AR Path="/6B27733E" Ref="Y3"  Part="1" 
+AR Path="/5EFAA353/6B27733E" Ref="Y3"  Part="1" 
 F 0 "Y3" H 35450 7875 50  0000 C CNN
 F 1 "Macro-Y-Gate" H 35450 7784 50  0000 C CNN
-F 2 "Quantum:Macro-Y-Gate" H 36600 7550 50  0001 C CNN
+F 2 "QGates:Y-Gate" H 36600 7550 50  0001 C CNN
 F 3 "" H 36600 7550 50  0001 C CNN
 	1    35450 7450
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Z-Gate Z3
+L 8Q-rescue:Macro-Z-Gate-Quantum Z3
 U 1 1 6B277345
 P 34700 7450
+AR Path="/6B277345" Ref="Z3"  Part="1" 
+AR Path="/5EFAA353/6B277345" Ref="Z3"  Part="1" 
 F 0 "Z3" H 34700 7875 50  0000 C CNN
 F 1 "Macro-Z-Gate" H 34700 7784 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 35850 7550 50  0001 C CNN
+F 2 "QGates:Z-Gate" H 35850 7550 50  0001 C CNN
 F 3 "" H 35850 7550 50  0001 C CNN
 	1    34700 7450
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate H3
+L 8Q-rescue:Macro-X-Gate-Quantum H3
 U 1 1 6B27734C
 P 33950 7450
+AR Path="/6B27734C" Ref="H3"  Part="1" 
+AR Path="/5EFAA353/6B27734C" Ref="H3"  Part="1" 
 F 0 "H3" H 33950 7875 50  0000 C CNN
 F 1 "Macro-H-Gate" H 33950 7784 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 35100 7550 50  0001 C CNN
+F 2 "QGates:H-Gate" H 35100 7550 50  0001 C CNN
 F 3 "" H 35100 7550 50  0001 C CNN
 	1    33950 7450
 	0    1    -1   0   
@@ -4320,45 +4603,53 @@ Wire Wire Line
 Wire Wire Line
 	33750 6650 33750 7000
 $Comp
-L Quantum:Macro-X-Gate X1
+L 8Q-rescue:Macro-X-Gate-Quantum X1
 U 1 1 6B27735A
 P 32700 6650
+AR Path="/6B27735A" Ref="X1"  Part="1" 
+AR Path="/5EFAA353/6B27735A" Ref="X1"  Part="1" 
 F 0 "X1" H 32700 7075 50  0000 C CNN
 F 1 "Macro-X-Gate" H 32700 6984 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 33850 6750 50  0001 C CNN
+F 2 "QGates:X-Gate" H 33850 6750 50  0001 C CNN
 F 3 "" H 33850 6750 50  0001 C CNN
 	1    32700 6650
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Y-Gate Y1
+L 8Q-rescue:Macro-Y-Gate-Quantum Y1
 U 1 1 6B277361
 P 31950 6650
+AR Path="/6B277361" Ref="Y1"  Part="1" 
+AR Path="/5EFAA353/6B277361" Ref="Y1"  Part="1" 
 F 0 "Y1" H 31950 7075 50  0000 C CNN
 F 1 "Macro-Y-Gate" H 31950 6984 50  0000 C CNN
-F 2 "Quantum:Macro-Y-Gate" H 33100 6750 50  0001 C CNN
+F 2 "QGates:Y-Gate" H 33100 6750 50  0001 C CNN
 F 3 "" H 33100 6750 50  0001 C CNN
 	1    31950 6650
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-Z-Gate Z1
+L 8Q-rescue:Macro-Z-Gate-Quantum Z1
 U 1 1 6B277368
 P 31200 6650
+AR Path="/6B277368" Ref="Z1"  Part="1" 
+AR Path="/5EFAA353/6B277368" Ref="Z1"  Part="1" 
 F 0 "Z1" H 31200 7075 50  0000 C CNN
 F 1 "Macro-Z-Gate" H 31200 6984 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 32350 6750 50  0001 C CNN
+F 2 "QGates:Z-Gate" H 32350 6750 50  0001 C CNN
 F 3 "" H 32350 6750 50  0001 C CNN
 	1    31200 6650
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Macro-X-Gate H1
+L 8Q-rescue:Macro-X-Gate-Quantum H1
 U 1 1 6B27736F
 P 30450 6650
+AR Path="/6B27736F" Ref="H1"  Part="1" 
+AR Path="/5EFAA353/6B27736F" Ref="H1"  Part="1" 
 F 0 "H1" H 30450 7075 50  0000 C CNN
 F 1 "Macro-H-Gate" H 30450 6984 50  0000 C CNN
-F 2 "Quantum:Macro-X-Gate" H 31600 6750 50  0001 C CNN
+F 2 "QGates:H-Gate" H 31600 6750 50  0001 C CNN
 F 3 "" H 31600 6750 50  0001 C CNN
 	1    30450 6650
 	0    1    -1   0   
@@ -4390,9 +4681,11 @@ Wire Wire Line
 Wire Wire Line
 	45900 14150 46000 14150
 $Comp
-L Quantum:Switch-1x2 U135
+L 8Q-rescue:Switch-1x2-Quantum U135
 U 1 1 6B277383
 P 46850 19450
+AR Path="/6B277383" Ref="U135"  Part="1" 
+AR Path="/5EFAA353/6B277383" Ref="U135"  Part="1" 
 F 0 "U135" V 46850 19750 50  0000 R CNN
 F 1 "Switch-1x2" V 47250 19600 50  0000 R CNN
 F 2 "" V 46900 19700 50  0001 C CNN
@@ -4401,9 +4694,11 @@ F 3 "" V 46900 19700 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U127
+L 8Q-rescue:Collator-5x1-Quantum U127
 U 1 1 6B27738A
 P 48050 18400
+AR Path="/6B27738A" Ref="U127"  Part="1" 
+AR Path="/5EFAA353/6B27738A" Ref="U127"  Part="1" 
 F 0 "U127" V 48515 18250 50  0000 C CNN
 F 1 "Collator-5x1" V 48424 18250 50  0000 C CNN
 F 2 "" H 48050 18400 50  0001 C CNN
@@ -4412,9 +4707,11 @@ F 3 "" H 48050 18400 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U145
+L 8Q-rescue:Delay-Loop-Quantum U145
 U 1 1 6B277391
 P 47600 20000
+AR Path="/6B277391" Ref="U145"  Part="1" 
+AR Path="/5EFAA353/6B277391" Ref="U145"  Part="1" 
 F 0 "U145" H 47550 19900 50  0000 L CNN
 F 1 "Delay-Loop" H 47400 19800 50  0000 L CNN
 F 2 "" H 47600 20000 50  0001 C CNN
@@ -4423,9 +4720,11 @@ F 3 "" H 47600 20000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U147
+L 8Q-rescue:Switch-1x2-Quantum U147
 U 1 1 6B277398
 P 47050 20700
+AR Path="/6B277398" Ref="U147"  Part="1" 
+AR Path="/5EFAA353/6B277398" Ref="U147"  Part="1" 
 F 0 "U147" V 47050 21000 50  0000 R CNN
 F 1 "Switch-1x2" V 47450 20850 50  0000 R CNN
 F 2 "" V 47100 20950 50  0001 C CNN
@@ -4434,9 +4733,11 @@ F 3 "" V 47100 20950 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U143
+L 8Q-rescue:Collator-5x1-Quantum U143
 U 1 1 6B27739F
 P 48250 19650
+AR Path="/6B27739F" Ref="U143"  Part="1" 
+AR Path="/5EFAA353/6B27739F" Ref="U143"  Part="1" 
 F 0 "U143" V 48715 19500 50  0000 C CNN
 F 1 "Collator-5x1" V 48624 19500 50  0000 C CNN
 F 2 "" H 48250 19650 50  0001 C CNN
@@ -4505,9 +4806,11 @@ F 3 "" H 46950 19000 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U129
+L 8Q-rescue:Delay-Loop-Quantum U129
 U 1 1 6B2773C5
 P 47400 18750
+AR Path="/6B2773C5" Ref="U129"  Part="1" 
+AR Path="/5EFAA353/6B2773C5" Ref="U129"  Part="1" 
 F 0 "U129" H 47350 18650 50  0000 L CNN
 F 1 "Delay-Loop" H 47200 18550 50  0000 L CNN
 F 2 "" H 47400 18750 50  0001 C CNN
@@ -4562,9 +4865,11 @@ F 3 "" H 46100 19150 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U140
+L 8Q-rescue:Switch-1x2-Quantum U140
 U 1 1 6B2773E5
 P 46000 19600
+AR Path="/6B2773E5" Ref="U140"  Part="1" 
+AR Path="/5EFAA353/6B2773E5" Ref="U140"  Part="1" 
 F 0 "U140" V 46046 19109 50  0000 R CNN
 F 1 "Switch-1x2" V 45250 19700 50  0000 R CNN
 F 2 "" V 46050 19850 50  0001 C CNN
@@ -4595,9 +4900,11 @@ F 3 "" H 46300 20400 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U151
+L 8Q-rescue:Switch-1x2-Quantum U151
 U 1 1 6B2773F8
 P 46200 20850
+AR Path="/6B2773F8" Ref="U151"  Part="1" 
+AR Path="/5EFAA353/6B2773F8" Ref="U151"  Part="1" 
 F 0 "U151" V 46246 20359 50  0000 R CNN
 F 1 "Switch-1x2" V 45450 20950 50  0000 R CNN
 F 2 "" V 46250 21100 50  0001 C CNN
@@ -4616,9 +4923,11 @@ Wire Wire Line
 	47050 21300 46200 21300
 Connection ~ 46200 21300
 $Comp
-L Quantum:Switch-1x2 U159
+L 8Q-rescue:Switch-1x2-Quantum U159
 U 1 1 6B277405
 P 47600 22200
+AR Path="/6B277405" Ref="U159"  Part="1" 
+AR Path="/5EFAA353/6B277405" Ref="U159"  Part="1" 
 F 0 "U159" V 47600 22500 50  0000 R CNN
 F 1 "Switch-1x2" V 48000 22350 50  0000 R CNN
 F 2 "" V 47650 22450 50  0001 C CNN
@@ -4627,9 +4936,11 @@ F 3 "" V 47650 22450 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U153
+L 8Q-rescue:Collator-5x1-Quantum U153
 U 1 1 6B27740C
 P 48800 21150
+AR Path="/6B27740C" Ref="U153"  Part="1" 
+AR Path="/5EFAA353/6B27740C" Ref="U153"  Part="1" 
 F 0 "U153" V 49265 21000 50  0000 C CNN
 F 1 "Collator-5x1" V 49174 21000 50  0000 C CNN
 F 2 "" H 48800 21150 50  0001 C CNN
@@ -4638,9 +4949,11 @@ F 3 "" H 48800 21150 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U165
+L 8Q-rescue:Delay-Loop-Quantum U165
 U 1 1 6B277413
 P 48350 22750
+AR Path="/6B277413" Ref="U165"  Part="1" 
+AR Path="/5EFAA353/6B277413" Ref="U165"  Part="1" 
 F 0 "U165" H 48300 22650 50  0000 L CNN
 F 1 "Delay-Loop" H 48150 22550 50  0000 L CNN
 F 2 "" H 48350 22750 50  0001 C CNN
@@ -4649,9 +4962,11 @@ F 3 "" H 48350 22750 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U167
+L 8Q-rescue:Switch-1x2-Quantum U167
 U 1 1 6B27741A
 P 47800 23450
+AR Path="/6B27741A" Ref="U167"  Part="1" 
+AR Path="/5EFAA353/6B27741A" Ref="U167"  Part="1" 
 F 0 "U167" V 47800 23750 50  0000 R CNN
 F 1 "Switch-1x2" V 48200 23600 50  0000 R CNN
 F 2 "" V 47850 23700 50  0001 C CNN
@@ -4660,9 +4975,11 @@ F 3 "" V 47850 23700 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Collator-5x1 U163
+L 8Q-rescue:Collator-5x1-Quantum U163
 U 1 1 6B277421
 P 49000 22400
+AR Path="/6B277421" Ref="U163"  Part="1" 
+AR Path="/5EFAA353/6B277421" Ref="U163"  Part="1" 
 F 0 "U163" V 49465 22250 50  0000 C CNN
 F 1 "Collator-5x1" V 49374 22250 50  0000 C CNN
 F 2 "" H 49000 22400 50  0001 C CNN
@@ -4731,9 +5048,11 @@ F 3 "" H 47700 21750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Delay-Loop U157
+L 8Q-rescue:Delay-Loop-Quantum U157
 U 1 1 6B277447
 P 48150 21500
+AR Path="/6B277447" Ref="U157"  Part="1" 
+AR Path="/5EFAA353/6B277447" Ref="U157"  Part="1" 
 F 0 "U157" H 48100 21400 50  0000 L CNN
 F 1 "Delay-Loop" H 47950 21300 50  0000 L CNN
 F 2 "" H 48150 21500 50  0001 C CNN
@@ -4788,9 +5107,11 @@ F 3 "" H 46850 21900 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U161
+L 8Q-rescue:Switch-1x2-Quantum U161
 U 1 1 6B277467
 P 46750 22350
+AR Path="/6B277467" Ref="U161"  Part="1" 
+AR Path="/5EFAA353/6B277467" Ref="U161"  Part="1" 
 F 0 "U161" V 46796 21859 50  0000 R CNN
 F 1 "Switch-1x2" V 46000 22450 50  0000 R CNN
 F 2 "" V 46800 22600 50  0001 C CNN
@@ -4821,9 +5142,11 @@ F 3 "" H 47050 23150 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U169
+L 8Q-rescue:Switch-1x2-Quantum U169
 U 1 1 6B27747A
 P 46950 23600
+AR Path="/6B27747A" Ref="U169"  Part="1" 
+AR Path="/5EFAA353/6B27747A" Ref="U169"  Part="1" 
 F 0 "U169" V 46996 23109 50  0000 R CNN
 F 1 "Switch-1x2" V 46200 23700 50  0000 R CNN
 F 2 "" V 47000 23850 50  0001 C CNN
@@ -4954,20 +5277,24 @@ Wire Wire Line
 Wire Wire Line
 	46700 8250 40750 8250
 $Comp
-L Quantum:Macro-Measure M5
+L 8Q-rescue:Macro-Measure-Quantum M5
 U 1 1 6B2774BF
 P 38700 11350
+AR Path="/6B2774BF" Ref="M5"  Part="1" 
+AR Path="/5EFAA353/6B2774BF" Ref="M5"  Part="1" 
 F 0 "M5" V 38500 11350 50  0000 C CNN
 F 1 "Macro-Measure" V 38550 11350 50  0000 C CNN
-F 2 "Quantum:Macro-Measure" V 38650 11600 50  0001 C CNN
+F 2 "QGates:Measure" V 38650 11600 50  0001 C CNN
 F 3 "" V 38650 11600 50  0001 C CNN
 	1    38700 11350
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U30
+L 8Q-rescue:Switch-1x2-Quantum U30
 U 1 1 6B2774C6
 P 39150 10600
+AR Path="/6B2774C6" Ref="U30"  Part="1" 
+AR Path="/5EFAA353/6B2774C6" Ref="U30"  Part="1" 
 F 0 "U30" V 39196 10109 50  0000 R CNN
 F 1 "Switch-1x2" H 39350 10300 50  0000 R CNN
 F 2 "" V 39200 10850 50  0001 C CNN
@@ -4976,9 +5303,11 @@ F 3 "" V 39200 10850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U15
+L 8Q-rescue:Switch-1x4-Quantum U15
 U 1 1 6B2774CD
 P 38100 9550
+AR Path="/6B2774CD" Ref="U15"  Part="1" 
+AR Path="/5EFAA353/6B2774CD" Ref="U15"  Part="1" 
 F 0 "U15" H 38050 9400 50  0000 L CNN
 F 1 "Switch-1x4" H 37850 9000 50  0000 L CNN
 F 2 "" H 38100 9550 50  0001 C CNN
@@ -4987,9 +5316,11 @@ F 3 "" H 38100 9550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U16
+L 8Q-rescue:Switch-1x4-Quantum U16
 U 1 1 6B2774D4
 P 39300 9550
+AR Path="/6B2774D4" Ref="U16"  Part="1" 
+AR Path="/5EFAA353/6B2774D4" Ref="U16"  Part="1" 
 F 0 "U16" H 39250 9400 50  0000 L CNN
 F 1 "Switch-1x4" H 39050 9000 50  0000 L CNN
 F 2 "" H 39300 9550 50  0001 C CNN
@@ -5046,9 +5377,11 @@ Wire Wire Line
 Wire Wire Line
 	39800 9900 39800 10200
 $Comp
-L Quantum:Switch-1x2 U29
+L 8Q-rescue:Switch-1x2-Quantum U29
 U 1 1 6B2774F3
 P 38250 10600
+AR Path="/6B2774F3" Ref="U29"  Part="1" 
+AR Path="/5EFAA353/6B2774F3" Ref="U29"  Part="1" 
 F 0 "U29" V 38296 10109 50  0000 R CNN
 F 1 "Switch-1x2" H 38500 10300 50  0000 R CNN
 F 2 "" V 38300 10850 50  0001 C CNN
@@ -5179,20 +5512,24 @@ Wire Wire Line
 Wire Wire Line
 	38250 11200 38250 11050
 $Comp
-L Quantum:Macro-Measure M3
+L 8Q-rescue:Macro-Measure-Quantum M3
 U 1 1 6B27753A
 P 35200 10550
+AR Path="/6B27753A" Ref="M3"  Part="1" 
+AR Path="/5EFAA353/6B27753A" Ref="M3"  Part="1" 
 F 0 "M3" V 35000 10550 50  0000 C CNN
 F 1 "Macro-Measure" V 35050 10550 50  0000 C CNN
-F 2 "Quantum:Macro-Measure" V 35150 10800 50  0001 C CNN
+F 2 "QGates:Measure" V 35150 10800 50  0001 C CNN
 F 3 "" V 35150 10800 50  0001 C CNN
 	1    35200 10550
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U20
+L 8Q-rescue:Switch-1x2-Quantum U20
 U 1 1 6B277541
 P 35650 9800
+AR Path="/6B277541" Ref="U20"  Part="1" 
+AR Path="/5EFAA353/6B277541" Ref="U20"  Part="1" 
 F 0 "U20" V 35696 9309 50  0000 R CNN
 F 1 "Switch-1x2" H 35850 9500 50  0000 R CNN
 F 2 "" V 35700 10050 50  0001 C CNN
@@ -5201,9 +5538,11 @@ F 3 "" V 35700 10050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U7
+L 8Q-rescue:Switch-1x4-Quantum U7
 U 1 1 6B277548
 P 34600 8750
+AR Path="/6B277548" Ref="U7"  Part="1" 
+AR Path="/5EFAA353/6B277548" Ref="U7"  Part="1" 
 F 0 "U7" H 34550 8600 50  0000 L CNN
 F 1 "Switch-1x4" H 34350 8200 50  0000 L CNN
 F 2 "" H 34600 8750 50  0001 C CNN
@@ -5212,9 +5551,11 @@ F 3 "" H 34600 8750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U8
+L 8Q-rescue:Switch-1x4-Quantum U8
 U 1 1 6B27754F
 P 35800 8750
+AR Path="/6B27754F" Ref="U8"  Part="1" 
+AR Path="/5EFAA353/6B27754F" Ref="U8"  Part="1" 
 F 0 "U8" H 35750 8600 50  0000 L CNN
 F 1 "Switch-1x4" H 35550 8200 50  0000 L CNN
 F 2 "" H 35800 8750 50  0001 C CNN
@@ -5271,9 +5612,11 @@ Wire Wire Line
 Wire Wire Line
 	36300 9100 36300 9400
 $Comp
-L Quantum:Switch-1x2 U19
+L 8Q-rescue:Switch-1x2-Quantum U19
 U 1 1 6B27756E
 P 34750 9800
+AR Path="/6B27756E" Ref="U19"  Part="1" 
+AR Path="/5EFAA353/6B27756E" Ref="U19"  Part="1" 
 F 0 "U19" V 34796 9309 50  0000 R CNN
 F 1 "Switch-1x2" H 35000 9500 50  0000 R CNN
 F 2 "" V 34800 10050 50  0001 C CNN
@@ -5404,20 +5747,24 @@ Wire Wire Line
 Wire Wire Line
 	34750 10400 34750 10250
 $Comp
-L Quantum:Macro-Measure M1
+L 8Q-rescue:Macro-Measure-Quantum M1
 U 1 1 6B2775B5
 P 31700 9750
+AR Path="/6B2775B5" Ref="M1"  Part="1" 
+AR Path="/5EFAA353/6B2775B5" Ref="M1"  Part="1" 
 F 0 "M1" V 31500 9750 50  0000 C CNN
 F 1 "Macro-Measure" V 31550 9750 50  0000 C CNN
-F 2 "Quantum:Macro-Measure" V 31650 10000 50  0001 C CNN
+F 2 "QGates:Measure" V 31650 10000 50  0001 C CNN
 F 3 "" V 31650 10000 50  0001 C CNN
 	1    31700 9750
 	0    -1   1    0   
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U12
+L 8Q-rescue:Switch-1x2-Quantum U12
 U 1 1 6B2775BC
 P 32150 9000
+AR Path="/6B2775BC" Ref="U12"  Part="1" 
+AR Path="/5EFAA353/6B2775BC" Ref="U12"  Part="1" 
 F 0 "U12" V 32196 8509 50  0000 R CNN
 F 1 "Switch-1x2" H 32350 8700 50  0000 R CNN
 F 2 "" V 32200 9250 50  0001 C CNN
@@ -5426,9 +5773,11 @@ F 3 "" V 32200 9250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U3
+L 8Q-rescue:Switch-1x4-Quantum U3
 U 1 1 6B2775C3
 P 31100 7950
+AR Path="/6B2775C3" Ref="U3"  Part="1" 
+AR Path="/5EFAA353/6B2775C3" Ref="U3"  Part="1" 
 F 0 "U3" H 31050 7800 50  0000 L CNN
 F 1 "Switch-1x4" H 30850 7400 50  0000 L CNN
 F 2 "" H 31100 7950 50  0001 C CNN
@@ -5437,9 +5786,11 @@ F 3 "" H 31100 7950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U4
+L 8Q-rescue:Switch-1x4-Quantum U4
 U 1 1 6B2775CA
 P 32300 7950
+AR Path="/6B2775CA" Ref="U4"  Part="1" 
+AR Path="/5EFAA353/6B2775CA" Ref="U4"  Part="1" 
 F 0 "U4" H 32250 7800 50  0000 L CNN
 F 1 "Switch-1x4" H 32050 7400 50  0000 L CNN
 F 2 "" H 32300 7950 50  0001 C CNN
@@ -5496,9 +5847,11 @@ Wire Wire Line
 Wire Wire Line
 	32800 8300 32800 8600
 $Comp
-L Quantum:Switch-1x2 U11
+L 8Q-rescue:Switch-1x2-Quantum U11
 U 1 1 6B2775E9
 P 31250 9000
+AR Path="/6B2775E9" Ref="U11"  Part="1" 
+AR Path="/5EFAA353/6B2775E9" Ref="U11"  Part="1" 
 F 0 "U11" V 31296 8509 50  0000 R CNN
 F 1 "Switch-1x2" H 31500 8700 50  0000 R CNN
 F 2 "" V 31300 9250 50  0001 C CNN
@@ -5659,9 +6012,11 @@ Wire Wire Line
 Wire Wire Line
 	43500 11500 43350 11500
 $Comp
-L Quantum:Collator-2x1 U88
+L 8Q-rescue:Collator-2x1-Quantum U88
 U 1 1 6B27765E
 P 38150 15300
+AR Path="/6B27765E" Ref="U88"  Part="1" 
+AR Path="/5EFAA353/6B27765E" Ref="U88"  Part="1" 
 F 0 "U88" H 38150 15250 50  0000 R CNN
 F 1 "Collator-2x1" H 38350 15150 50  0000 R CNN
 F 2 "" H 38150 15300 50  0001 C CNN
@@ -5670,9 +6025,11 @@ F 3 "" H 38150 15300 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U86
+L 8Q-rescue:Collator-2x1-Quantum U86
 U 1 1 6B277666
 P 39150 14800
+AR Path="/6B277666" Ref="U86"  Part="1" 
+AR Path="/5EFAA353/6B277666" Ref="U86"  Part="1" 
 F 0 "U86" H 39150 14750 50  0000 R CNN
 F 1 "Collator-2x1" H 39350 14650 50  0000 R CNN
 F 2 "" H 39150 14800 50  0001 C CNN
@@ -5691,9 +6048,11 @@ Wire Wire Line
 Wire Wire Line
 	40450 15650 38200 15650
 $Comp
-L Quantum:Collator-2x1 U121
+L 8Q-rescue:Collator-2x1-Quantum U121
 U 1 1 6B277675
 P 34650 17700
+AR Path="/6B277675" Ref="U121"  Part="1" 
+AR Path="/5EFAA353/6B277675" Ref="U121"  Part="1" 
 F 0 "U121" H 34650 17650 50  0000 R CNN
 F 1 "Collator-2x1" H 34850 17550 50  0000 R CNN
 F 2 "" H 34650 17700 50  0001 C CNN
@@ -5702,9 +6061,11 @@ F 3 "" H 34650 17700 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U115
+L 8Q-rescue:Collator-2x1-Quantum U115
 U 1 1 6B27767D
 P 35650 17200
+AR Path="/6B27767D" Ref="U115"  Part="1" 
+AR Path="/5EFAA353/6B27767D" Ref="U115"  Part="1" 
 F 0 "U115" H 35650 17150 50  0000 R CNN
 F 1 "Collator-2x1" H 35850 17050 50  0000 R CNN
 F 2 "" H 35650 17200 50  0001 C CNN
@@ -5721,9 +6082,11 @@ Wire Wire Line
 Wire Wire Line
 	36950 16800 44900 16800
 $Comp
-L Quantum:Collator-2x1 U137
+L 8Q-rescue:Collator-2x1-Quantum U137
 U 1 1 6B27768B
 P 31150 19600
+AR Path="/6B27768B" Ref="U137"  Part="1" 
+AR Path="/5EFAA353/6B27768B" Ref="U137"  Part="1" 
 F 0 "U137" H 31150 19550 50  0000 R CNN
 F 1 "Collator-2x1" H 31350 19450 50  0000 R CNN
 F 2 "" H 31150 19600 50  0001 C CNN
@@ -5732,9 +6095,11 @@ F 3 "" H 31150 19600 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U133
+L 8Q-rescue:Collator-2x1-Quantum U133
 U 1 1 6B277693
 P 32150 19100
+AR Path="/6B277693" Ref="U133"  Part="1" 
+AR Path="/5EFAA353/6B277693" Ref="U133"  Part="1" 
 F 0 "U133" H 32150 19050 50  0000 R CNN
 F 1 "Collator-2x1" H 32350 18950 50  0000 R CNN
 F 2 "" H 32150 19100 50  0001 C CNN
@@ -5747,9 +6112,11 @@ Wire Wire Line
 Wire Wire Line
 	33450 19950 33450 20700
 $Comp
-L Quantum:Switch-1x4 U172
+L 8Q-rescue:Switch-1x4-Quantum U172
 U 1 1 6B27769E
 P 36700 26750
+AR Path="/6B27769E" Ref="U172"  Part="1" 
+AR Path="/5EFAA353/6B27769E" Ref="U172"  Part="1" 
 F 0 "U172" H 36700 26600 50  0000 L CNN
 F 1 "Switch-1x4" H 36450 26250 50  0000 L CNN
 F 2 "" H 36700 26750 50  0001 C CNN
@@ -5758,9 +6125,11 @@ F 3 "" H 36700 26750 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x4 U171
+L 8Q-rescue:Switch-1x4-Quantum U171
 U 1 1 6B2776A5
 P 35700 26750
+AR Path="/6B2776A5" Ref="U171"  Part="1" 
+AR Path="/5EFAA353/6B2776A5" Ref="U171"  Part="1" 
 F 0 "U171" H 35700 26600 50  0000 L CNN
 F 1 "Switch-1x4" H 35450 26250 50  0000 L CNN
 F 2 "" H 35700 26750 50  0001 C CNN
@@ -6930,12 +7299,14 @@ Connection ~ 38650 28550
 Wire Wire Line
 	38650 28550 39700 28550
 $Comp
-L Quantum:Macro-Photon-Source SPE1
+L 8Q-rescue:Macro-Photon-Source-Quantum SPE1
 U 1 1 5ED9CC01
 P 5150 16100
+AR Path="/5ED9CC01" Ref="SPE1"  Part="1" 
+AR Path="/5EFAA353/5ED9CC01" Ref="SPE1"  Part="1" 
 F 0 "SPE1" V 5146 15409 50  0000 R CNN
 F 1 "Macro-Photon-Source" V 5055 15409 50  0000 R CNN
-F 2 "Quantum:Macro-Photon-Source" V 4850 16300 50  0001 C CNN
+F 2 "QGates:Photon-Source" V 4850 16300 50  0001 C CNN
 F 3 "" V 4850 16300 50  0001 C CNN
 	1    5150 16100
 	0    -1   -1   0   
@@ -6989,20 +7360,24 @@ Wire Wire Line
 Wire Wire Line
 	10350 16850 2400 16850
 $Comp
-L Quantum:Macro-Photon-Source SPE3
+L 8Q-rescue:Macro-Photon-Source-Quantum SPE3
 U 1 1 6392B18B
 P 8650 17650
+AR Path="/6392B18B" Ref="SPE3"  Part="1" 
+AR Path="/5EFAA353/6392B18B" Ref="SPE3"  Part="1" 
 F 0 "SPE3" V 8646 16959 50  0000 R CNN
 F 1 "Macro-Photon-Source" V 8555 16959 50  0000 R CNN
-F 2 "Quantum:Macro-Photon-Source" V 8350 17850 50  0001 C CNN
+F 2 "QGates:Photon-Source" V 8350 17850 50  0001 C CNN
 F 3 "" V 8350 17850 50  0001 C CNN
 	1    8650 17650
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U104
+L 8Q-rescue:Collator-2x1-Quantum U104
 U 1 1 6392B192
 P 9150 16450
+AR Path="/6392B192" Ref="U104"  Part="1" 
+AR Path="/5EFAA353/6392B192" Ref="U104"  Part="1" 
 F 0 "U104" H 9150 16400 50  0000 R CNN
 F 1 "Collator-2x1" H 9350 16300 50  0000 R CNN
 F 2 "" H 9150 16450 50  0001 C CNN
@@ -7015,9 +7390,11 @@ Wire Wire Line
 Wire Wire Line
 	8850 16800 9100 16800
 $Comp
-L Quantum:Collator-2x1 U103
+L 8Q-rescue:Collator-2x1-Quantum U103
 U 1 1 6392B19D
 P 8150 16450
+AR Path="/6392B19D" Ref="U103"  Part="1" 
+AR Path="/5EFAA353/6392B19D" Ref="U103"  Part="1" 
 F 0 "U103" H 8150 16400 50  0000 R CNN
 F 1 "Collator-2x1" H 8350 16300 50  0000 R CNN
 F 2 "" H 8150 16450 50  0001 C CNN
@@ -7078,12 +7455,14 @@ Wire Wire Line
 Wire Wire Line
 	9200 16800 9200 26350
 $Comp
-L Quantum:Macro-Photon-Source SPE5
+L 8Q-rescue:Macro-Photon-Source-Quantum SPE5
 U 1 1 64D26B3B
 P 12150 20250
+AR Path="/64D26B3B" Ref="SPE5"  Part="1" 
+AR Path="/5EFAA353/64D26B3B" Ref="SPE5"  Part="1" 
 F 0 "SPE5" V 12146 19559 50  0000 R CNN
 F 1 "Macro-Photon-Source" V 12055 19559 50  0000 R CNN
-F 2 "Quantum:Macro-Photon-Source" V 11850 20450 50  0001 C CNN
+F 2 "QGates:Photon-Source" V 11850 20450 50  0001 C CNN
 F 3 "" V 11850 20450 50  0001 C CNN
 	1    12150 20250
 	0    -1   -1   0   
@@ -7095,9 +7474,11 @@ Wire Wire Line
 Wire Wire Line
 	12350 19400 12600 19400
 $Comp
-L Quantum:Collator-2x1 U131
+L 8Q-rescue:Collator-2x1-Quantum U131
 U 1 1 64D26B4D
 P 11650 19050
+AR Path="/64D26B4D" Ref="U131"  Part="1" 
+AR Path="/5EFAA353/64D26B4D" Ref="U131"  Part="1" 
 F 0 "U131" H 11650 19000 50  0000 R CNN
 F 1 "Collator-2x1" H 11850 18900 50  0000 R CNN
 F 2 "" H 11650 19050 50  0001 C CNN
@@ -7154,9 +7535,11 @@ Wire Wire Line
 Wire Wire Line
 	11650 18400 11700 18400
 $Comp
-L Quantum:Collator-2x1 U132
+L 8Q-rescue:Collator-2x1-Quantum U132
 U 1 1 64D26B42
 P 12650 19050
+AR Path="/64D26B42" Ref="U132"  Part="1" 
+AR Path="/5EFAA353/64D26B42" Ref="U132"  Part="1" 
 F 0 "U132" H 12650 19000 50  0000 R CNN
 F 1 "Collator-2x1" H 12850 18900 50  0000 R CNN
 F 2 "" H 12650 19050 50  0001 C CNN
@@ -7165,20 +7548,24 @@ F 3 "" H 12650 19050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Quantum:Macro-Photon-Source SPE7
+L 8Q-rescue:Macro-Photon-Source-Quantum SPE7
 U 1 1 66437B6B
 P 15650 22000
+AR Path="/66437B6B" Ref="SPE7"  Part="1" 
+AR Path="/5EFAA353/66437B6B" Ref="SPE7"  Part="1" 
 F 0 "SPE7" V 15646 21309 50  0000 R CNN
 F 1 "Macro-Photon-Source" V 15555 21309 50  0000 R CNN
-F 2 "Quantum:Macro-Photon-Source" V 15350 22200 50  0001 C CNN
+F 2 "QGates:Photon-Source" V 15350 22200 50  0001 C CNN
 F 3 "" V 15350 22200 50  0001 C CNN
 	1    15650 22000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U150
+L 8Q-rescue:Collator-2x1-Quantum U150
 U 1 1 66437B72
 P 16150 20800
+AR Path="/66437B72" Ref="U150"  Part="1" 
+AR Path="/5EFAA353/66437B72" Ref="U150"  Part="1" 
 F 0 "U150" H 16150 20750 50  0000 R CNN
 F 1 "Collator-2x1" H 16350 20650 50  0000 R CNN
 F 2 "" H 16150 20800 50  0001 C CNN
@@ -7191,9 +7578,11 @@ Wire Wire Line
 Wire Wire Line
 	15850 21150 16100 21150
 $Comp
-L Quantum:Collator-2x1 U149
+L 8Q-rescue:Collator-2x1-Quantum U149
 U 1 1 66437B7D
 P 15150 20800
+AR Path="/66437B7D" Ref="U149"  Part="1" 
+AR Path="/5EFAA353/66437B7D" Ref="U149"  Part="1" 
 F 0 "U149" H 15150 20750 50  0000 R CNN
 F 1 "Collator-2x1" H 15350 20650 50  0000 R CNN
 F 2 "" H 15150 20800 50  0001 C CNN
@@ -7274,20 +7663,24 @@ Q4T
 Wire Wire Line
 	15350 29100 15350 23050
 $Comp
-L Quantum:Macro-Photon-Source SPE8
+L 8Q-rescue:Macro-Photon-Source-Quantum SPE8
 U 1 1 6A0DCF4E
 P 31650 22450
+AR Path="/6A0DCF4E" Ref="SPE8"  Part="1" 
+AR Path="/5EFAA353/6A0DCF4E" Ref="SPE8"  Part="1" 
 F 0 "SPE8" V 31646 21759 50  0000 R CNN
 F 1 "Macro-Photon-Source" V 31555 21759 50  0000 R CNN
-F 2 "Quantum:Macro-Photon-Source" V 31350 22650 50  0001 C CNN
+F 2 "QGates:Photon-Source" V 31350 22650 50  0001 C CNN
 F 3 "" V 31350 22650 50  0001 C CNN
 	1    31650 22450
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U156
+L 8Q-rescue:Collator-2x1-Quantum U156
 U 1 1 6A0DCF55
 P 32150 21250
+AR Path="/6A0DCF55" Ref="U156"  Part="1" 
+AR Path="/5EFAA353/6A0DCF55" Ref="U156"  Part="1" 
 F 0 "U156" H 32150 21200 50  0000 R CNN
 F 1 "Collator-2x1" H 32350 21100 50  0000 R CNN
 F 2 "" H 32150 21250 50  0001 C CNN
@@ -7300,9 +7693,11 @@ Wire Wire Line
 Wire Wire Line
 	31850 21600 32100 21600
 $Comp
-L Quantum:Collator-2x1 U155
+L 8Q-rescue:Collator-2x1-Quantum U155
 U 1 1 6A0DCF5E
 P 31150 21250
+AR Path="/6A0DCF5E" Ref="U155"  Part="1" 
+AR Path="/5EFAA353/6A0DCF5E" Ref="U155"  Part="1" 
 F 0 "U155" H 31150 21200 50  0000 R CNN
 F 1 "Collator-2x1" H 31350 21100 50  0000 R CNN
 F 2 "" H 31150 21250 50  0001 C CNN
@@ -7365,20 +7760,24 @@ Wire Wire Line
 Wire Wire Line
 	31350 23400 31550 23400
 $Comp
-L Quantum:Macro-Photon-Source SPE6
+L 8Q-rescue:Macro-Photon-Source-Quantum SPE6
 U 1 1 6C68CD61
 P 35250 20800
+AR Path="/6C68CD61" Ref="SPE6"  Part="1" 
+AR Path="/5EFAA353/6C68CD61" Ref="SPE6"  Part="1" 
 F 0 "SPE6" V 35246 20109 50  0000 R CNN
 F 1 "Macro-Photon-Source" V 35155 20109 50  0000 R CNN
-F 2 "Quantum:Macro-Photon-Source" V 34950 21000 50  0001 C CNN
+F 2 "QGates:Photon-Source" V 34950 21000 50  0001 C CNN
 F 3 "" V 34950 21000 50  0001 C CNN
 	1    35250 20800
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U139
+L 8Q-rescue:Collator-2x1-Quantum U139
 U 1 1 6C68CD68
 P 35750 19600
+AR Path="/6C68CD68" Ref="U139"  Part="1" 
+AR Path="/5EFAA353/6C68CD68" Ref="U139"  Part="1" 
 F 0 "U139" H 35750 19550 50  0000 R CNN
 F 1 "Collator-2x1" H 35950 19450 50  0000 R CNN
 F 2 "" H 35750 19600 50  0001 C CNN
@@ -7391,9 +7790,11 @@ Wire Wire Line
 Wire Wire Line
 	35450 19950 35700 19950
 $Comp
-L Quantum:Collator-2x1 U138
+L 8Q-rescue:Collator-2x1-Quantum U138
 U 1 1 6C68CD71
 P 34750 19600
+AR Path="/6C68CD71" Ref="U138"  Part="1" 
+AR Path="/5EFAA353/6C68CD71" Ref="U138"  Part="1" 
 F 0 "U138" H 34750 19550 50  0000 R CNN
 F 1 "Collator-2x1" H 34950 19450 50  0000 R CNN
 F 2 "" H 34750 19600 50  0001 C CNN
@@ -7458,20 +7859,24 @@ Wire Wire Line
 Wire Wire Line
 	45600 19450 32200 19450
 $Comp
-L Quantum:Macro-Photon-Source SPE4
+L 8Q-rescue:Macro-Photon-Source-Quantum SPE4
 U 1 1 6EA14F5B
 P 38650 18750
+AR Path="/6EA14F5B" Ref="SPE4"  Part="1" 
+AR Path="/5EFAA353/6EA14F5B" Ref="SPE4"  Part="1" 
 F 0 "SPE4" V 38646 18059 50  0000 R CNN
 F 1 "Macro-Photon-Source" V 38555 18059 50  0000 R CNN
-F 2 "Quantum:Macro-Photon-Source" V 38350 18950 50  0001 C CNN
+F 2 "QGates:Photon-Source" V 38350 18950 50  0001 C CNN
 F 3 "" V 38350 18950 50  0001 C CNN
 	1    38650 18750
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Quantum:Collator-2x1 U120
+L 8Q-rescue:Collator-2x1-Quantum U120
 U 1 1 6EA14F62
 P 39150 17550
+AR Path="/6EA14F62" Ref="U120"  Part="1" 
+AR Path="/5EFAA353/6EA14F62" Ref="U120"  Part="1" 
 F 0 "U120" H 39150 17500 50  0000 R CNN
 F 1 "Collator-2x1" H 39350 17400 50  0000 R CNN
 F 2 "" H 39150 17550 50  0001 C CNN
@@ -7484,9 +7889,11 @@ Wire Wire Line
 Wire Wire Line
 	38850 17900 39100 17900
 $Comp
-L Quantum:Collator-2x1 U119
+L 8Q-rescue:Collator-2x1-Quantum U119
 U 1 1 6EA14F6B
 P 38150 17550
+AR Path="/6EA14F6B" Ref="U119"  Part="1" 
+AR Path="/5EFAA353/6EA14F6B" Ref="U119"  Part="1" 
 F 0 "U119" H 38150 17500 50  0000 R CNN
 F 1 "Collator-2x1" H 38350 17400 50  0000 R CNN
 F 2 "" H 38150 17550 50  0001 C CNN
@@ -7559,12 +7966,14 @@ Wire Wire Line
 Wire Wire Line
 	38350 19700 38350 28050
 $Comp
-L Quantum:Macro-Photon-Source SPE2
+L 8Q-rescue:Macro-Photon-Source-Quantum SPE2
 U 1 1 6FD8C4E3
 P 42150 16750
+AR Path="/6FD8C4E3" Ref="SPE2"  Part="1" 
+AR Path="/5EFAA353/6FD8C4E3" Ref="SPE2"  Part="1" 
 F 0 "SPE2" V 42146 16059 50  0000 R CNN
 F 1 "Macro-Photon-Source" V 42055 16059 50  0000 R CNN
-F 2 "Quantum:Macro-Photon-Source" V 41850 16950 50  0001 C CNN
+F 2 "QGates:Photon-Source" V 41850 16950 50  0001 C CNN
 F 3 "" V 41850 16950 50  0001 C CNN
 	1    42150 16750
 	0    -1   -1   0   
@@ -7713,9 +8122,11 @@ Wire Wire Line
 Wire Wire Line
 	5250 11950 5250 11050
 $Comp
-L Quantum:Switch-1x2 U57
+L 8Q-rescue:Switch-1x2-Quantum U57
 U 1 1 7CAC5957
 P 4650 13150
+AR Path="/7CAC5957" Ref="U57"  Part="1" 
+AR Path="/5EFAA353/7CAC5957" Ref="U57"  Part="1" 
 F 0 "U57" V 4696 12659 50  0000 R CNN
 F 1 "Switch-1x2" H 4900 12850 50  0000 R CNN
 F 2 "" V 4700 13400 50  0001 C CNN
@@ -7724,9 +8135,11 @@ F 3 "" V 4700 13400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U58
+L 8Q-rescue:Switch-1x2-Quantum U58
 U 1 1 7CDAB4B0
 P 5550 13150
+AR Path="/7CDAB4B0" Ref="U58"  Part="1" 
+AR Path="/5EFAA353/7CDAB4B0" Ref="U58"  Part="1" 
 F 0 "U58" V 5700 12700 50  0000 R CNN
 F 1 "Switch-1x2" H 5800 12850 50  0000 R CNN
 F 2 "" V 5600 13400 50  0001 C CNN
@@ -7753,9 +8166,11 @@ Wire Wire Line
 Wire Wire Line
 	2900 15600 2900 15450
 $Comp
-L Quantum:Collator-5x1 U82
+L 8Q-rescue:Collator-5x1-Quantum U82
 U 1 1 804AAD18
 P 4600 14700
+AR Path="/804AAD18" Ref="U82"  Part="1" 
+AR Path="/5EFAA353/804AAD18" Ref="U82"  Part="1" 
 F 0 "U82" H 4272 14504 50  0000 R CNN
 F 1 "Collator-5x1" H 4850 14550 50  0000 R CNN
 F 2 "" H 4600 14700 50  0001 C CNN
@@ -7786,9 +8201,11 @@ Wire Wire Line
 Wire Wire Line
 	3950 15050 4400 15050
 $Comp
-L Quantum:Collator-5x1 U83
+L 8Q-rescue:Collator-5x1-Quantum U83
 U 1 1 838E1383
 P 5600 14700
+AR Path="/838E1383" Ref="U83"  Part="1" 
+AR Path="/5EFAA353/838E1383" Ref="U83"  Part="1" 
 F 0 "U83" H 5272 14504 50  0000 R CNN
 F 1 "Collator-5x1" H 5850 14550 50  0000 R CNN
 F 2 "" H 5600 14700 50  0001 C CNN
@@ -7940,9 +8357,11 @@ CZ_TRIGGER
 Text GLabel 19950 6900 1    50   Input ~ 0
 CY_TRIGGER
 $Comp
-L Quantum:Switch-1x2 U63
+L 8Q-rescue:Switch-1x2-Quantum U63
 U 1 1 61A2A504
 P 8150 13350
+AR Path="/61A2A504" Ref="U63"  Part="1" 
+AR Path="/5EFAA353/61A2A504" Ref="U63"  Part="1" 
 F 0 "U63" V 8196 12859 50  0000 R CNN
 F 1 "Switch-1x2" H 8400 13050 50  0000 R CNN
 F 2 "" V 8200 13600 50  0001 C CNN
@@ -7951,9 +8370,11 @@ F 3 "" V 8200 13600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U64
+L 8Q-rescue:Switch-1x2-Quantum U64
 U 1 1 61A2A50B
 P 9050 13350
+AR Path="/61A2A50B" Ref="U64"  Part="1" 
+AR Path="/5EFAA353/61A2A50B" Ref="U64"  Part="1" 
 F 0 "U64" V 9200 12900 50  0000 R CNN
 F 1 "Switch-1x2" H 9300 13050 50  0000 R CNN
 F 2 "" V 9100 13600 50  0001 C CNN
@@ -8009,9 +8430,11 @@ Wire Wire Line
 Wire Wire Line
 	11150 9450 11150 28250
 $Comp
-L Quantum:Switch-1x2 U65
+L 8Q-rescue:Switch-1x2-Quantum U65
 U 1 1 65723693
 P 11650 13350
+AR Path="/65723693" Ref="U65"  Part="1" 
+AR Path="/5EFAA353/65723693" Ref="U65"  Part="1" 
 F 0 "U65" V 11696 12859 50  0000 R CNN
 F 1 "Switch-1x2" H 11900 13050 50  0000 R CNN
 F 2 "" V 11700 13600 50  0001 C CNN
@@ -8020,9 +8443,11 @@ F 3 "" V 11700 13600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U66
+L 8Q-rescue:Switch-1x2-Quantum U66
 U 1 1 6572369A
 P 12550 13350
+AR Path="/6572369A" Ref="U66"  Part="1" 
+AR Path="/5EFAA353/6572369A" Ref="U66"  Part="1" 
 F 0 "U66" V 12700 12900 50  0000 R CNN
 F 1 "Switch-1x2" H 12800 13050 50  0000 R CNN
 F 2 "" V 12600 13600 50  0001 C CNN
@@ -8082,9 +8507,11 @@ Wire Wire Line
 Wire Wire Line
 	11300 10450 11650 10450
 $Comp
-L Quantum:Switch-1x2 U69
+L 8Q-rescue:Switch-1x2-Quantum U69
 U 1 1 695698A0
 P 15150 13500
+AR Path="/695698A0" Ref="U69"  Part="1" 
+AR Path="/5EFAA353/695698A0" Ref="U69"  Part="1" 
 F 0 "U69" V 15196 13009 50  0000 R CNN
 F 1 "Switch-1x2" H 15400 13200 50  0000 R CNN
 F 2 "" V 15200 13750 50  0001 C CNN
@@ -8093,9 +8520,11 @@ F 3 "" V 15200 13750 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U70
+L 8Q-rescue:Switch-1x2-Quantum U70
 U 1 1 695698A7
 P 16050 13500
+AR Path="/695698A7" Ref="U70"  Part="1" 
+AR Path="/5EFAA353/695698A7" Ref="U70"  Part="1" 
 F 0 "U70" V 16200 13050 50  0000 R CNN
 F 1 "Switch-1x2" H 16300 13200 50  0000 R CNN
 F 2 "" V 16100 13750 50  0001 C CNN
@@ -8147,9 +8576,11 @@ Wire Wire Line
 Text GLabel 12350 29100 3    50   Input ~ 0
 Q3C
 $Comp
-L Quantum:Switch-1x2 U47
+L 8Q-rescue:Switch-1x2-Quantum U47
 U 1 1 6CB98300
 P 32150 12450
+AR Path="/6CB98300" Ref="U47"  Part="1" 
+AR Path="/5EFAA353/6CB98300" Ref="U47"  Part="1" 
 F 0 "U47" V 32196 11959 50  0000 R CNN
 F 1 "Switch-1x2" H 32400 12150 50  0000 R CNN
 F 2 "" V 32200 12700 50  0001 C CNN
@@ -8158,9 +8589,11 @@ F 3 "" V 32200 12700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U46
+L 8Q-rescue:Switch-1x2-Quantum U46
 U 1 1 6CB98307
 P 31250 12450
+AR Path="/6CB98307" Ref="U46"  Part="1" 
+AR Path="/5EFAA353/6CB98307" Ref="U46"  Part="1" 
 F 0 "U46" V 31400 12000 50  0000 R CNN
 F 1 "Switch-1x2" H 31500 12150 50  0000 R CNN
 F 2 "" V 31300 12700 50  0001 C CNN
@@ -8214,9 +8647,11 @@ Wire Wire Line
 Wire Wire Line
 	35050 27450 35050 26800
 $Comp
-L Quantum:Switch-1x2 U49
+L 8Q-rescue:Switch-1x2-Quantum U49
 U 1 1 6FCCB350
 P 35650 12450
+AR Path="/6FCCB350" Ref="U49"  Part="1" 
+AR Path="/5EFAA353/6FCCB350" Ref="U49"  Part="1" 
 F 0 "U49" V 35696 11959 50  0000 R CNN
 F 1 "Switch-1x2" H 35900 12150 50  0000 R CNN
 F 2 "" V 35700 12700 50  0001 C CNN
@@ -8225,9 +8660,11 @@ F 3 "" V 35700 12700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U48
+L 8Q-rescue:Switch-1x2-Quantum U48
 U 1 1 6FCCB357
 P 34750 12450
+AR Path="/6FCCB357" Ref="U48"  Part="1" 
+AR Path="/5EFAA353/6FCCB357" Ref="U48"  Part="1" 
 F 0 "U48" V 34900 12000 50  0000 R CNN
 F 1 "Switch-1x2" H 35000 12150 50  0000 R CNN
 F 2 "" V 34800 12700 50  0001 C CNN
@@ -8279,9 +8716,11 @@ Q6C
 Wire Wire Line
 	35650 29050 35650 28500
 $Comp
-L Quantum:Switch-1x2 U51
+L 8Q-rescue:Switch-1x2-Quantum U51
 U 1 1 72E91555
 P 39150 12450
+AR Path="/72E91555" Ref="U51"  Part="1" 
+AR Path="/5EFAA353/72E91555" Ref="U51"  Part="1" 
 F 0 "U51" V 39196 11959 50  0000 R CNN
 F 1 "Switch-1x2" H 39400 12150 50  0000 R CNN
 F 2 "" V 39200 12700 50  0001 C CNN
@@ -8290,9 +8729,11 @@ F 3 "" V 39200 12700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U50
+L 8Q-rescue:Switch-1x2-Quantum U50
 U 1 1 72E9155C
 P 38250 12450
+AR Path="/72E9155C" Ref="U50"  Part="1" 
+AR Path="/5EFAA353/72E9155C" Ref="U50"  Part="1" 
 F 0 "U50" V 38400 12000 50  0000 R CNN
 F 1 "Switch-1x2" H 38500 12150 50  0000 R CNN
 F 2 "" V 38300 12700 50  0001 C CNN
@@ -8352,9 +8793,11 @@ Wire Wire Line
 Text GLabel 39050 29050 3    50   Input ~ 0
 Q7C
 $Comp
-L Quantum:Collator-5x1 U93
+L 8Q-rescue:Collator-5x1-Quantum U93
 U 1 1 77BDAD24
 P 41750 15700
+AR Path="/77BDAD24" Ref="U93"  Part="1" 
+AR Path="/5EFAA353/77BDAD24" Ref="U93"  Part="1" 
 F 0 "U93" H 41750 15500 50  0000 R CNN
 F 1 "Collator-5x1" H 42000 15600 50  0000 R CNN
 F 2 "" H 41750 15700 50  0001 C CNN
@@ -8373,9 +8816,11 @@ Wire Wire Line
 Wire Wire Line
 	41650 16300 41950 16300
 $Comp
-L Quantum:Collator-5x1 U94
+L 8Q-rescue:Collator-5x1-Quantum U94
 U 1 1 79D4C683
 P 42650 15700
+AR Path="/79D4C683" Ref="U94"  Part="1" 
+AR Path="/5EFAA353/79D4C683" Ref="U94"  Part="1" 
 F 0 "U94" H 42750 15550 50  0000 R CNN
 F 1 "Collator-5x1" H 42850 15650 50  0000 R CNN
 F 2 "" H 42650 15700 50  0001 C CNN
@@ -8400,9 +8845,11 @@ Wire Wire Line
 Wire Wire Line
 	42650 16050 42650 16250
 $Comp
-L Quantum:Switch-1x2 U72
+L 8Q-rescue:Switch-1x2-Quantum U72
 U 1 1 7C59F336
 P 42650 14050
+AR Path="/7C59F336" Ref="U72"  Part="1" 
+AR Path="/5EFAA353/7C59F336" Ref="U72"  Part="1" 
 F 0 "U72" V 42696 13559 50  0000 R CNN
 F 1 "Switch-1x2" H 42900 13750 50  0000 R CNN
 F 2 "" V 42700 14300 50  0001 C CNN
@@ -8411,9 +8858,11 @@ F 3 "" V 42700 14300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Quantum:Switch-1x2 U71
+L 8Q-rescue:Switch-1x2-Quantum U71
 U 1 1 7C59F33D
 P 41750 14050
+AR Path="/7C59F33D" Ref="U71"  Part="1" 
+AR Path="/5EFAA353/7C59F33D" Ref="U71"  Part="1" 
 F 0 "U71" V 41900 13600 50  0000 R CNN
 F 1 "Switch-1x2" H 42000 13750 50  0000 R CNN
 F 2 "" V 41800 14300 50  0001 C CNN

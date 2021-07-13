@@ -1,0 +1,218 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Collator-2x1-Quantum
+#
+DEF Collator-2x1-Quantum U 0 40 Y Y 1 F N
+F0 "U" 0 -100 50 H V C CNN
+F1 "Collator-2x1-Quantum" -50 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 300 -450 -300 150 0 1 0 N
+X S1 1 -50 350 200 D 50 50 1 1 B
+X S2 2 50 350 200 D 50 50 1 1 B
+X Out 3 0 -650 200 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Collator-5x1-Quantum
+#
+DEF Collator-5x1-Quantum U 0 40 Y Y 1 F N
+F0 "U" 0 550 50 H V C CNN
+F1 "Collator-5x1-Quantum" -50 -700 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 300 -450 -300 150 0 1 0 N
+X S1 1 -200 350 200 D 50 50 1 1 B
+X S2 2 -100 350 200 D 50 50 1 1 B
+X S3 3 0 350 200 D 50 50 1 1 B
+X S4 4 100 350 200 D 50 50 1 1 B
+X S5 5 200 350 200 D 50 50 1 1 B
+X Out 6 0 -650 200 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Delay-Loop-Quantum
+#
+DEF Delay-Loop-Quantum U 0 40 Y Y 1 F N
+F0 "U" 0 550 50 H V C CNN
+F1 "Delay-Loop-Quantum" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 300 -450 -300 150 0 1 0 N
+X 01 ~ 0 350 200 D 50 50 1 1 E
+X Oin ~ 0 -650 200 U 50 50 1 1 C
+ENDDRAW
+ENDDEF
+#
+# Macro-CX-Gate-Quantum
+#
+DEF Macro-CX-Gate-Quantum CX 0 40 Y Y 1 F N
+F0 "CX" 50 400 118 H V C CNN
+F1 "Macro-CX-Gate-Quantum" 0 -50 118 H V C CNN
+F2 "" 4400 0 118 H I C CNN
+F3 "" 4400 0 118 H I C CNN
+$FPLIST
+ Quantum:Macro-CX-Gate
+$ENDFPLIST
+DRAW
+S -1650 -1150 1650 1150 0 0 0 N
+X CH-in 1 -1800 650 157 R 50 50 1 1 P
+X Vcc 10 -50 -1300 157 U 50 50 1 1 W
+X S 11 350 -1300 157 U 50 50 1 1 O
+X CH-in 2 -1800 250 157 R 50 50 1 1 P
+X TV-in 3 -1800 -650 157 R 50 50 1 1 P
+X TH-in 4 -1800 -1050 157 R 50 50 1 1 P
+X V-out 5 1800 650 157 L 50 50 1 1 P
+X H-out 6 1800 250 157 L 50 50 1 1 P
+X V-out 7 1800 -650 157 L 50 50 1 1 P
+X H-out 8 1800 -1050 157 L 50 50 1 1 P
+X GND 9 -400 -1300 157 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Macro-Measure-Quantum
+#
+DEF Macro-Measure-Quantum M 0 40 Y Y 1 F N
+F0 "M" 0 300 50 H V C CNN
+F1 "Macro-Measure-Quantum" 400 -150 50 H V C CNN
+F2 "" -50 250 50 V I C CNN
+F3 "" -50 250 50 V I C CNN
+$FPLIST
+ Quantum:Macro-Measure
+$ENDFPLIST
+DRAW
+S -100 250 100 -250 0 1 0 N
+X Hd 1 250 100 157 L 50 50 1 1 O
+X Vd 2 250 0 157 L 50 50 1 1 O
+X Vcc 3 50 -400 157 U 50 50 1 1 I
+X G 4 50 450 200 D 50 50 1 1 I
+X H 5 -250 200 157 R 50 50 1 1 I
+X V 6 -250 -200 157 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Macro-Photon-Source-Quantum
+#
+DEF Macro-Photon-Source-Quantum SPE 0 40 Y Y 1 F N
+F0 "SPE" 0 0 50 H V C CNN
+F1 "Macro-Photon-Source-Quantum" 750 100 50 H V C CNN
+F2 "" -300 200 50 V I C CNN
+F3 "" -300 200 50 V I C CNN
+$FPLIST
+ Quantum:Macro-Photon-Source
+$ENDFPLIST
+DRAW
+S 300 500 -350 -500 0 1 0 N
+X D 1 -500 100 157 R 50 50 1 1 I
+X Set/Reset 2 -550 -100 200 R 50 50 1 1 I
+X Vcc 3 -300 -650 157 U 50 50 1 1 W
+X GND 4 -200 -650 157 U 50 50 1 1 W
+X H 5 450 -200 157 L 50 50 1 1 E
+X V 6 450 200 157 L 50 50 1 1 E
+X GND 7 -200 650 157 D 50 50 1 1 w
+X Vcc 8 -300 650 157 D 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# Macro-X-Gate-Quantum
+#
+DEF Macro-X-Gate-Quantum X 0 40 Y Y 1 F N
+F0 "X" 0 0 50 H V C CNN
+F1 "Macro-X-Gate-Quantum" 0 -300 50 H V C CNN
+F2 "" 1150 100 50 H I C CNN
+F3 "" 1150 100 50 H I C CNN
+$FPLIST
+ Quantum:Macro-X-Gate
+$ENDFPLIST
+DRAW
+S -300 -250 300 250 0 0 0 N
+X Vin 1 -450 200 157 R 50 50 1 1 P
+X Hin 2 -450 -200 157 R 50 50 1 1 P
+X Vout 3 450 200 157 L 50 50 1 1 P
+X Hout 4 450 -200 157 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Macro-Y-Gate-Quantum
+#
+DEF Macro-Y-Gate-Quantum Y 0 40 Y Y 1 F N
+F0 "Y" 0 0 50 H V C CNN
+F1 "Macro-Y-Gate-Quantum" 0 -300 50 H V C CNN
+F2 "" 1150 100 50 H I C CNN
+F3 "" 1150 100 50 H I C CNN
+$FPLIST
+ Quantum:Macro-Y-Gate
+$ENDFPLIST
+DRAW
+S -300 -250 300 250 0 0 0 N
+X Vin 1 -450 200 157 R 50 50 1 1 P
+X Hin 2 -450 -200 157 R 50 50 1 1 P
+X Vout 3 450 200 157 L 50 50 1 1 P
+X Hout 4 450 -200 157 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Macro-Z-Gate-Quantum
+#
+DEF Macro-Z-Gate-Quantum Z 0 40 Y Y 1 F N
+F0 "Z" 0 0 50 H V C CNN
+F1 "Macro-Z-Gate-Quantum" 0 -300 50 H V C CNN
+F2 "" 1150 100 50 H I C CNN
+F3 "" 1150 100 50 H I C CNN
+$FPLIST
+ Quantum:Macro-Z-Gate
+$ENDFPLIST
+DRAW
+S -300 -250 300 250 0 0 0 N
+X Vin 1 -450 200 157 R 50 50 1 1 P
+X Hin 2 -450 -200 157 R 50 50 1 1 P
+X Vout 3 450 200 157 L 50 50 1 1 P
+X Hout 4 450 -200 157 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch-1x2-Quantum
+#
+DEF Switch-1x2-Quantum U 0 40 Y Y 1 F N
+F0 "U" -100 250 50 V V C CNN
+F1 "Switch-1x2-Quantum" -50 -600 50 H V C CNN
+F2 "" 50 250 50 V I C CNN
+F3 "" 50 250 50 V I C CNN
+DRAW
+S 250 -250 -250 200 0 1 0 N
+X Vcc 1 -450 0 200 R 50 50 1 1 I
+X T 2 450 0 200 L 50 50 1 1 I
+X GND 3 -450 -100 200 R 50 50 1 1 I
+X O2 4 -150 400 200 D 50 50 1 1 E
+X O1 5 150 400 200 D 50 50 1 1 E
+X Oin 6 0 -450 200 U 50 50 1 1 C
+ENDDRAW
+ENDDEF
+#
+# Switch-1x4-Quantum
+#
+DEF Switch-1x4-Quantum U 0 40 Y Y 1 F N
+F0 "U" 0 550 50 H V C CNN
+F1 "Switch-1x4-Quantum" -50 -700 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 300 -450 -300 150 0 1 0 N
+X 01 ~ -150 350 200 D 50 50 1 1 E
+X 1 ~ -500 -50 200 R 50 50 1 1 I
+X 2 ~ -500 -150 200 R 50 50 1 1 I
+X 3 ~ -500 -250 200 R 50 50 1 1 I
+X GND ~ 500 -150 200 L 50 50 1 1 w
+X O2 ~ -50 350 200 D 50 50 1 1 E
+X O3 ~ 50 350 200 D 50 50 1 1 E
+X O4 ~ 150 350 200 D 50 50 1 1 E
+X Oin ~ 0 -650 200 U 50 50 1 1 C
+X Vcc ~ -500 -350 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

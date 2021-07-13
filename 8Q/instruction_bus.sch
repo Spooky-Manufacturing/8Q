@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:8Q-cache
+LIBS:Laptop-cache
 EELAYER 26 0
 EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
-Sheet 11 13
+Sheet 9 11
 Title ""
 Date ""
 Rev ""
@@ -1961,8 +1962,8 @@ Text GLabel 29700 2750 2    51   Input ~ 0
 CQ3D
 Wire Wire Line
 	24700 9350 29700 9350
-Wire Bus Line
-	2450 2400 2450 10200
 Text GLabel 2450 2400 0    51   Input ~ 0
 QDataBus
+Wire Bus Line
+	2450 2400 2450 10200
 $EndSCHEMATC
