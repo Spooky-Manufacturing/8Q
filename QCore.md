@@ -50,22 +50,33 @@ The measurement gate counts the number of photons in each mode for each qubit, t
 
 ##### Pauli-X Gate
 
-The Pauli-X Gate performs a NOT operation on
+The Pauli-X Gate performs a NOT operation or bit flip on a single qbit.
+X|0> = |1>
 
 ##### Pauli-Y Gate
 
+The Pauli-Y Gate rotates one qbit around the y axis, it looks similar to an X gate, but with a global phase diffrence of i or -i. 
+Y|0> = i|1> and Y|1> = -i|0>
+Note: This Pauli gate does not invert itself.
+
 ##### Pauli-Z Gate
 
+The Pauli-X Gate performs a NOT operation or bit flip on a single qbit, this time in the +/- basis. 
+Z|-> = |+>
+
 ##### Hadamard Gate
+
+The Hadamard gate swaps basis states between 1/0 and +/-. It is often used to create a superposition.
+H|1> = |+> , H|-> = |0> 
 
 #### Controlled Gates
 
 Controlled gates utilize nonlinear sign-flip gates to introduce non-linearity into our programs. These non-linearities are extremely difficult to simulate as they actually entangle our qubit states, whereas the Unitary qubit transformations are easy to simulate comparatively. Effectively this is what gives our quantum computer an edge over typically digital computing.
+They act on two Qbits, the Control and Target. If the Control is 1, the operation is carried out otherwise it isn't.
 
 ##### CX Gate
 
-The Controlled-X Gate (shorthand: CX) performs a controlled NOT operation on two qubits.
-
+The Controlled-X Gate (shorthand: CX) performs a controlled NOT operation on two qubits. 
 ![CX Gate](./docs/source/imgs/cx_gate.png)
 
 ##### CY Gate
