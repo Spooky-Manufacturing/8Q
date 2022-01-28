@@ -9,4 +9,5 @@ Thanks to modern programming languages, we are fairly well spoiled when it comes
 
 8Q Pre-processing: Why?
 ============================
-8Q is different from the non-quantum processors you may be used to working with in that we use probabilistic gates, the biggest drawback is each gate introduces a possibility of losing a qubit. The way we get around this is by running a given program multiple times, collecting the results, and then testing the results via a classical processor to find the answer. To that end, the processor has a built-in pre-processor which calculates the success rate of a given algorithm, this pre-processor can be enabled/disabled as needed by setting the pre-processor flag to 1.
+8Q is different from the non-quantum processors you may be used to working with in that we use probabilistic gates, the biggest drawback is each gate introduces a possibility of losing a qubit. The way we get around this is by running a given program multiple times, collecting the results, and then testing the results via a classical processor to find the answer. To that end, the processor has a built-in pre-processor which calculates the success rate of a given algorithm and determine the time required to generate a correct answer, this pre-processor can be enabled/disabled as needed by setting the pre-processor flag to 1.
+

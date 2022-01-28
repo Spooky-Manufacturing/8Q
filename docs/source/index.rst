@@ -4,13 +4,14 @@
    contain the root `toctree` directive.
 
 Welcome to 8Q Development Board's documentation!
-========================================
+================================================
 
 .. toctree::
    :maxdepth: 2
 
    architecture
    programming
+   board
 
 
 Indices and tables
