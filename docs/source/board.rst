@@ -14,4 +14,3 @@ Built-in quantum processing unit with pre-processor
 2x USB-A
 SPI
 UART
-
