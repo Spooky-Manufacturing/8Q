@@ -27,3 +27,6 @@ fp-info-cache
 
 # Custom files
 push.sh
+
+# Other common files
+.vscode
