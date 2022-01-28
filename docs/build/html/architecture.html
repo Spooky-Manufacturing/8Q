@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,47 +12,51 @@
   
 
   
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+
+  
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-    
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Programming Guide" href="programming.html" />
-    <link rel="prev" title="8Q Instruction Set" href="instructions.html" /> 
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="8Q Processor 2020 documentation" href="index.html"/>
+        <link rel="next" title="Programming Guide" href="programming.html"/>
+        <link rel="prev" title="Welcome to 8Q Development Board’s documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> 8Q Processor
+            <a href="index.html" class="icon icon-home"> 8Q Processor
           
 
           
@@ -74,7 +79,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -83,8 +87,6 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="instructions.html">8Q Instruction Set</a></li>
-<li class="toctree-l1"><a class="reference internal" href="instructions.html#indices-and-tables">Indices and tables</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Architecture</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#opcodes">Opcodes</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#quantum-instructions">Quantum Instructions</a><ul>
@@ -103,19 +105,19 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="programming.html">Programming Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board.html">Board Information</a></li>
 </ul>
 
             
           
         </div>
-        
       </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">8Q Processor</a>
@@ -123,10 +125,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -147,7 +148,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
       <li>Architecture</li>
     
@@ -177,9 +178,93 @@
 <p>The 8Q Supports the following quantum operations with the opcodes:</p>
 <div class="section" id="unitary-gates">
 <h4>Unitary Gates<a class="headerlink" href="#unitary-gates" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="26%" />
+<col width="38%" />
+<col width="15%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operation</th>
+<th class="head">Logic</th>
+<th class="head">Digital Equivalent</th>
+<th class="head">OpCode</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Pauli-X</td>
+<td>0-&gt;1; 1-&gt;0</td>
+<td>NOT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Pauli-Y</td>
+<td>0-&gt;-i; i-&gt;0</td>
+<td>NOT (Y axis)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Pauli-Z</td>
+<td>1-&gt;0; 0-&gt;-1</td>
+<td>NOT (Z axis)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Pauli-H</td>
+<td>Pi(Z), Pi/2(Y)</td>
+<td>RANDOM(0,1)</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="other-quantum-gates">
 <h4>Other Quantum Gates<a class="headerlink" href="#other-quantum-gates" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="24%" />
+<col width="34%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operation</th>
+<th class="head">Logic</th>
+<th class="head">Digital Equivalent</th>
+<th class="head">OpCode</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Controlled-X</td>
+<td>Q1 NOT Q2 X</td>
+<td>Q1 NOT Q2</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Controlled-Y</td>
+<td>Q1 NOT Q2 Y</td>
+<td>Q1 NOT Q2 (Y axis)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Controlled-Z</td>
+<td>Q1 NOT Q2 Z</td>
+<td>Q1 NOT Q2 (Z axis)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Controlled-H</td>
+<td>Q1 (x) Q2</td>
+<td>None</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>SWAP</td>
+<td>Q1-&gt; Q2</td>
+<td>Q1 &lt;-&gt; Q2</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Measure</td>
+<td>Qn -&gt; 1,0;</td>
+<td>Yield</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="section" id="digital-instructions">
@@ -219,7 +304,9 @@ halt</p>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -228,7 +315,7 @@ halt</p>
         <a href="programming.html" class="btn btn-neutral float-right" title="Programming Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="instructions.html" class="btn btn-neutral float-left" title="8Q Instruction Set" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Welcome to 8Q Development Board’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -237,19 +324,11 @@ halt</p>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2020, Noah G. Wood
+        &copy; Copyright 2020, Noah G. Wood.
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -261,15 +340,38 @@ halt</p>
   </div>
   
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2020',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
 
   
   
-    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
    
 
 </body>
