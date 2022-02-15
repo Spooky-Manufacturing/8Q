@@ -50,18 +50,18 @@ The measurement gate counts the number of photons in each mode for each qubit, t
 
 ##### Pauli-X Gate
 
-The Pauli-X Gate performs a NOT operation or bit flip on a single qbit.
+The Pauli-X Gate performs a NOT operation or bit flip on a single qubit.
 X|0> = |1>
 
 ##### Pauli-Y Gate
 
-The Pauli-Y Gate rotates one qbit around the y axis, it looks similar to an X gate, but with a global phase diffrence of i or -i. 
+The Pauli-Y Gate rotates one qubit around the y axis, it looks similar to an X gate, but with a global phase diffrence of i or -i.
 Y|0> = i|1> and Y|1> = -i|0>
 Note: This Pauli gate does not invert itself.
 
 ##### Pauli-Z Gate
 
-The Pauli-X Gate performs a NOT operation or bit flip on a single qbit, this time in the +/- basis. 
+The Pauli-X Gate performs a NOT operation or bit flip on a single qubit, this time in the +/- basis.
 Z|-> = |+>
 
 ##### Hadamard Gate
