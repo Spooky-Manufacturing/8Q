@@ -72,7 +72,7 @@ H|1> = |+> , H|-> = |0>
 #### Controlled Gates
 
 Controlled gates utilize nonlinear sign-flip gates to introduce non-linearity into our programs. These non-linearities are extremely difficult to simulate as they actually entangle our qubit states, whereas the Unitary qubit transformations are easy to simulate comparatively. Effectively this is what gives our quantum computer an edge over typically digital computing.
-They act on two Qbits, the Control and Target. If the Control is 1, the operation is carried out otherwise it isn't.
+They act on two qubits, the Control and Target. If the Control is 1, the operation is carried out otherwise it isn't.
 
 ##### CX Gate
 
