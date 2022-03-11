@@ -17,9 +17,11 @@ Just counting Qbits is the first, quickest and easiest way to attempt to quantif
 
 ## CLOPS
 ## See question #25 on GitHub
+##  ~60,000 CLOPS
 
-CLOPS stands for Circuit Level Operations per Second. In other words, how many gates can be executed a second. Yes, this is hertz. This is probably to distinguish between the computer's speed and the frequencies needed to communicate with the qbit.
-The maximum CLOPS will be determined by the slowest part in our gate and controller setup. The question has been raised on GitHub, question #25.
+CLOPS stands for Circuit Level Operations per Second. In other words, how many gates can be executed a second. Yes, this is hertz. This is probably to distinguish between the computer's speed and the frequencies needed to communicate with some types of qbit.
+The maximum CLOPS will be determined by the slowest part in our gate and controller setup.
+ ~60,000 CLOPS is attainable. As always, your particular build may be diffrent.
 
 ## Quantum Volume
 ## Depends on build. Benchmarking software in progress.
