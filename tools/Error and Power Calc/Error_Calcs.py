@@ -7,8 +7,21 @@ import time
 def qc_err():
     return NotImplementedError
 
-def gate_err():
-    return NotImplementedError
+def gate_err(q,runs):
+    tot=total_err(q,runs)
+    QErr=Qbit_err()
+    gateErr=[]
+    i=0
+    j=0
+    while i<len(tot):
+        gateErr0=[]
+        while j<len(tot[i]):
+            gateErr0.append(tot[i][j]-QErr[i][j])
+            j+=1
+        i+=1
+        gateErr.append(gateErr0)
+            
+    return gateErr
 
 def Qbit_err():
     return NotImplementedError
