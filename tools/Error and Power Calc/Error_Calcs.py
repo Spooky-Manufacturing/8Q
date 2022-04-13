@@ -5,14 +5,21 @@ import time
 
 
 def qc_err():
+    #Need to figure out delay in qsam
     return NotImplementedError
 
 def gate_err(q,runs):
+    #Gate error= total error - Qbit error for the gate.
+    #Run the functions required to get the errors needed.
     tot=total_err(q,runs)
     QErr=Qbit_err()
+
+    #Setup the required variables
     gateErr=[]
     i=0
     j=0
+
+    #Start the math. I think there is a easier way in python, but I'm mostly a C++ dev and so I'm used to just buildng the thing and python makes that easy anyway.
     while i<len(tot):
         gateErr0=[]
         while j<len(tot[i]):
@@ -24,6 +31,7 @@ def gate_err(q,runs):
     return gateErr
 
 def Qbit_err():
+    #need to figure out delay in qsam.
     return NotImplementedError
 
 def total_err(q, runs):
