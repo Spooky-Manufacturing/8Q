@@ -67,6 +67,7 @@ def total_err(q, runs):
 
 
 def CNOT(q1,q2):
+    #Yah, this should be easy to see. Just implementiing a classical Cnot in as few lines of code as I can.
     if q1==True:
         q2= not q2
 
