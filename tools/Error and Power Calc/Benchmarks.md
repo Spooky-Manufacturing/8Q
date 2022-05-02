@@ -10,6 +10,8 @@ Quantum computing has the threefold difficulty of having low level assembly arch
 As an open source project, these quantum computers are not expected to be in the hands of Quantum physicist or developers, but rather experimenters and hobbyists. This makes documentation more critical than other quantum projects.
 This documentation will assist in fulfilling the Roadmap's Documentation success criteria.
 
+The power of the quantum computer will be some combination of these, dependant on your application.
+
 ## Qbit Count
 ### 8 Qbits
 
@@ -32,3 +34,6 @@ First we take n Qbits, and implement the Heavy output Generation algorithm for i
 Last we find QV=2^(lastNToPass). A quick use of a calculator reveals that the theoretical maximum for our 8-qbit quantum computer is 2^8=256. This is quite a bit larger than IBM's most powerful computer with a quantum volume of 128.
 With a lack of data, a QV of zero is probably to be expected. Noise canceling, incresing CLOPS, and other hardware improvements should improve this.
 It's going to be a lot of work, but the existence of an affordable quantum computer is a great improvement!
+
+## Quantum Fidelity?
+Figure this out
