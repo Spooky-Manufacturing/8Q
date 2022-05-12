@@ -50,7 +50,7 @@ Decoerance is a function that I expect to be of the form where t is time:
 	It is possible to get further orders, but I do not expect more.
 A is going to be a combination of some constant error for each Qbit, as well as QC error. Thus A = QC+a. Due to the lack of single photon source, we will assume that a is small.
 We measure this by preparing all the Qbits, holding them for a time, then measuring. We must take into account the time taken between measurements.
-i.e, if we say it takes nu milliseconds to measure a Qbits and we measure them in order, the time for Qbit n (Tn) is Tn=t+(nu*n)
+i.e, if we say it takes nu milliseconds to measure a Qbit and we measure them in order, the time for Qbit n (Tn) is Tn=t+(nu*n)
 We will then determine the function for each individual Qbit and fit a curve, as well as apply other statistics as needed.
 Lastly we will do the same for all Qbits.
 
